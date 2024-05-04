@@ -3,103 +3,107 @@
     <div class="selection">
       <header class="billboard">Classification</header>
       <button class="selected-item">
-        {{ selectedOption.label }}
+        {{ selectedOption.category }}
       </button>
       <div class="selection-content">
         <div
           v-for="option in options"
           :key="option.id"
-          :class="{ selected: option === selectedOption }"
           @click="selectOption(option)"
-          class="selection-items"
+          :class="[
+            'selection-items',
+            { selected: option.id === selectedOption.id },
+          ]"
         >
-          {{ option.label }}
+          {{ option.category }}
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      options: [
-        {
-          id: 1,
-          label: "Cactus",
-          image: "http://localhost:8082/classification/catcus.jpeg",
-        },
-        {
-          id: 2,
-          label: "Succulents",
-          image: "http://localhost:8082/classification/succulents.jpeg",
-        },
-        {
-          id: 3,
-          label: "Flower",
-          image: "http://localhost:8082/classification/flower.jpeg",
-        },
-        {
-          id: 4,
-          label: "Tree",
-          image: "http://localhost:8082/classification/tree.jpeg",
-        },
-        {
-          id: 5,
-          label: "Herbs",
-          image: "http://localhost:8082/classification/herbs.jpeg",
-        },
-        {
-          id: 6,
-          label: "Shrubs",
-          image: "http://localhost:8082/classification/shrubs.jpeg",
-        },
-        {
-          id: 7,
-          label: "Creepers",
-          image: "http://localhost:8082/classification/creepers.jpeg",
-        },
-        {
-          id: 8,
-          label: "Climbers",
-          image: "http://localhost:8082/classification/climbers.jpeg",
-        },
-        {
-          id: 9,
-          label: "Bamboo",
-          image: "http://localhost:8082/classification/bamboo.jpeg",
-        },
-        {
-          id: 10,
-          label: "Ferns",
-          image: "http://localhost:8082/classification/ferns.jpeg",
-        },
-        {
-          id: 11,
-          label: "Moss",
-          image: "http://localhost:8082/classification/moss.jpeg",
-        },
-        {
-          id: 12,
-          label: "Mushroom",
-          image: "http://localhost:8082/classification/mushroom.jpeg",
-        },
-      ],
-      selectedOption: {
-        id: 1,
-        label: "Cactus",
-        image: "http://localhost:8082/classification/catcus.jpeg",
-      },
-    };
+<script setup>
+import { ref } from "vue";
+import { useItemsState } from "~/src/store/itemsState";
+
+const options = [
+  {
+    id: 1,
+    category: "Cactus",
+    image: "http://localhost:8082/classification/catcus.jpeg",
   },
-  methods: {
-    selectOption(option) {
-      this.selectedOption = option;
-      document.querySelector(".selected-item").style.backgroundImage =
-        "url(" + option.image + ")";
-    },
+  {
+    id: 2,
+    category: "Succulents",
+    image: "http://localhost:8082/classification/succulents.jpeg",
   },
+  {
+    id: 3,
+    category: "Flower",
+    image: "http://localhost:8082/classification/flower.jpeg",
+  },
+  {
+    id: 4,
+    category: "Tree",
+    image: "http://localhost:8082/classification/tree.jpeg",
+  },
+  {
+    id: 5,
+    category: "Herbs",
+    image: "http://localhost:8082/classification/herbs.jpeg",
+  },
+  {
+    id: 6,
+    category: "Shrubs",
+    image: "http://localhost:8082/classification/shrubs.jpeg",
+  },
+  {
+    id: 7,
+    category: "Creepers",
+    image: "http://localhost:8082/classification/creepers.jpeg",
+  },
+  {
+    id: 8,
+    category: "Climbers",
+    image: "http://localhost:8082/classification/climbers.jpeg",
+  },
+  {
+    id: 9,
+    category: "Bamboo",
+    image: "http://localhost:8082/classification/bamboo.jpeg",
+  },
+  {
+    id: 10,
+    category: "Ferns",
+    image: "http://localhost:8082/classification/ferns.jpeg",
+  },
+  {
+    id: 11,
+    category: "Moss",
+    image: "http://localhost:8082/classification/moss.jpeg",
+  },
+  {
+    id: 12,
+    category: "Mushroom",
+    image: "http://localhost:8082/classification/mushroom.jpeg",
+  },
+];
+
+const selectedOption = ref({
+  id: 1,
+  category: "Cactus",
+  image: "http://localhost:8082/classification/catcus.jpeg",
+});
+
+const itemsState = useItemsState();
+itemsState.setPlants();
+
+const selectOption = (option) => {
+  selectedOption.value = option;
+  itemsState.setCategory(option.category);
+  itemsState.setPlants();
+  document.querySelector(".selected-item").style.backgroundImage =
+    "url(" + option.image + ")";
 };
 </script>
 
@@ -145,7 +149,7 @@ export default {
 .selection-content {
   margin-top: 20px;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0);
+  background: none;
   z-index: 1;
   min-width: 250px;
   max-height: 270px;
@@ -171,6 +175,6 @@ export default {
 }
 
 .selection-items.selected {
-  background-color: rgba(100, 50, 0, 0.5);
+  background-color: rgba(100, 50, 0, 0.6);
 }
 </style>

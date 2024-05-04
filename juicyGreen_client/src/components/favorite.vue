@@ -11,7 +11,7 @@ export default {};
 <style>
 .favorite {
   margin-top: 330px;
-  background-image: url("http://localhost:8082/favorite.png");
+  background-image: url("http://localhost:8082/favorite.jpeg");
   background-size: cover;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
   color: rgb(255, 85, 0);

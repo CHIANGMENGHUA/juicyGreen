@@ -2,86 +2,52 @@
   <div class="itemsList">
     <div class="box">
       <div
-        class="list"
-        v-for="item in items"
+        v-for="item in itemsState.getPlants"
         :key="item.id"
-        :class="{ selected: item === selectedItem }"
+        :class="[
+          'list',
+          { selected: item === selectedItem },
+
+          { first: item === itemsState.getPlants[0] },
+        ]"
         @click="selectItem(item)"
       >
         <div class="imgBox">
-          <img class="listImg" :src="item.imageUrl" />
+          <img class="listImg" :src="item.image" />
         </div>
         <div class="content">
           <h3 class="commonName">{{ item.commonName }}</h3>
-          <p class="BotanicalName">{{ item.botanicalName }}</p>
+          <p class="BotanicalName">Botanical Name: {{ item.botanicalName }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          id: 1,
-          commonName: "Barrel Cactus",
-          imageUrl: "http://localhost:8082/items/catcus/BarrelCactus.jpeg",
-          botanicalName: "Botanical Name: Ferocactus spp.",
-        },
-        {
-          id: 2,
-          commonName: "Cephalocereus",
-          imageUrl: "http://localhost:8082/items/catcus/Cephalocereus.jpeg",
-          botanicalName: "Botanical Name: Cephalocereus spp.",
-        },
-        {
-          id: 3,
-          commonName: "Cholla Cactus",
-          imageUrl: "http://localhost:8082/items/catcus/ChollaCactus.jpeg",
-          botanicalName: "Botanical Name: Cylindropuntia spp.",
-        },
-        {
-          id: 4,
-          commonName: "Barrel Cactus",
-          imageUrl: "http://localhost:8082/items/catcus/BarrelCactus.jpeg",
-          botanicalName: "Botanical Name: Ferocactus spp.",
-        },
-        {
-          id: 5,
-          commonName: "Cephalocereus",
-          imageUrl: "http://localhost:8082/items/catcus/Cephalocereus.jpeg",
-          botanicalName: "Botanical Name: Cephalocereus spp.",
-        },
-        {
-          id: 6,
-          commonName: "Cholla Cactus",
-          imageUrl: "http://localhost:8082/items/catcus/ChollaCactus.jpeg",
-          botanicalName: "Botanical Name: Cylindropuntia spp.",
-        },
-      ],
-      selectedItem: null,
-    };
-  },
-  methods: {
-    selectItem(item) {
-      this.selectedItem = item;
-    },
-  },
+<script setup>
+import { useItemsState } from "~/src/store/itemsState";
+const itemsState = useItemsState();
+const items = itemsState.plants;
+const selectedItem = ref(items);
+const selectItem = (item) => {
+  selectedItem.value = item;
+
+  const firstItem = document.querySelector(".list.first");
+  firstItem.classList.remove("first");
 };
 </script>
 
 <style>
 .itemsList {
   width: 500px;
+  max-height: 770px;
+  overflow-y: scroll;
 }
 
 .commonName {
   font-size: 2em;
   color: rgb(73, 82, 0);
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
@@ -99,7 +65,7 @@ export default {
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-  background-color: rgb(173, 149, 117, 0.7);
+  background-color: rgb(170, 150, 120, 0.7);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -107,6 +73,10 @@ export default {
   transform: translateX(10px);
   background-color: rgb(255, 196, 95);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.list.first {
+  background-color: rgba(100, 50, 0, 0.6);
 }
 
 .list.selected {

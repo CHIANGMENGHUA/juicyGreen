@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "Cactus",
-    "commonName": "SaguaroCactus",
+    "commonName": "Saguaro Cactus",
     "botanicalName": "Carnegiea gigantea",
     "description": "The saguaro (Carnegiea gigantea) is an iconic symbol of the American Southwest. It is a tall, tree-like cactus that can grow up to 60 feet (18 meters) tall and live for over 200 years. The saguaro has a thick, cylindrical stem with numerous vertically aligned ribs and clusters of sharp spines. In late spring, it produces large, white, waxy flowers that bloom at night and wilt the following day. Its red, oval fruits are an important food source for desert wildlife.",
     "image": "http://localhost:8082/items/catcus/SaguaroCactus.jpeg",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "category": "Cactus",
-    "commonName": "PricklyPearCactus",
+    "commonName": "Prickly Pear Cactus",
     "botanicalName": "Opuntia spp.",
     "description": "Prickly pear cacti (Opuntia spp.) are a genus of flat, pad-like cacti with large, flattened stems called pads or nopales. They are covered in clusters of sharp, barbed spines and typically grow low to the ground, forming dense mats or shrubs. Prickly pears produce edible fruits, known as tunas, which are often used in Mexican cuisine. These cacti are well-adapted to arid environments and are found throughout the Americas.",
     "image": "http://localhost:8082/items/catcus/PricklyPearCactus.jpeg",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "category": "Cactus",
-    "commonName": "BarrelCactus",
+    "commonName": "Barrel Cactus",
     "botanicalName": "Ferocactus spp.",
     "description": "Barrel cacti (Ferocactus spp.) are globe-shaped cacti with vertical ribs and clusters of spines. They are well-suited to the hot, dry conditions of the desert and can store large amounts of water in their thick, barrel-shaped stems. Barrel cacti are native to the southwestern United States and Mexico and can grow up to 3 feet (1 meter) tall. They produce rings of yellow, red, or pink flowers at the top of their stems.",
     "image": "http://localhost:8082/items/catcus/BarrelCactus.jpeg",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "category": "Cactus",
-    "commonName": "OldManCactus",
+    "commonName": "Old Man Cactus",
     "botanicalName": "Cephalocereus senilis",
     "description": "The old man cactus (Cephalocereus senilis), also known as the woolly cactus, is a tall, columnar cactus with a distinctive appearance. Its stems are covered in long, white, hair-like spines that resemble an old man's beard, giving it a shaggy, unkempt look. This cactus can grow up to 50 feet (15 meters) tall and is native to eastern Mexico.",
     "image": "http://localhost:8082/items/catcus/OldManCactus.jpeg",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "category": "Cactus",
-    "commonName": "OrganPipeCactus",
+    "commonName": "Organ Pipe Cactus",
     "botanicalName": "Stenocereus thurberi",
     "description": "The organ pipe cactus (Stenocereus thurberi) is a large, multi-stemmed cactus found in the Sonoran Desert. It gets its name from its clusters of cylindrical, pipe-like stems that resemble the pipes of an organ. These cacti can grow up to 23 feet (7 meters) tall and produce white or pale pink flowers at the tops of their stems. The organ pipe cactus is an important food source for desert wildlife and was used by Native Americans for various purposes.",
     "image": "http://localhost:8082/items/catcus/OrganPipeCactus.jpeg",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "category": "Cactus",
-    "commonName": "HedgehogCactus",
+    "commonName": "Hedgehog Cactus",
     "botanicalName": "Echinocereus spp.",
     "description": "Hedgehog cacti (Echinocereus spp.) are small, spherical cacti that are densely covered in spines arranged in clusters, giving them a spiny, hedgehog-like appearance. They typically grow close to the ground and can be found throughout the southwestern United States and Mexico. Despite their prickly exterior, many hedgehog cacti produce colorful, funnel-shaped flowers that bloom in spring and summer.",
     "image": "http://localhost:8082/items/catcus/HedgehogCactus.jpeg",
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "category": "Cactus",
-    "commonName": "FishhookBarrelCactus",
+    "commonName": "Fishhook Barrel Cactus",
     "botanicalName": "Ferocactus wislizeni",
     "description": "The fishhook barrel cactus (Ferocactus wislizeni) is a barrel-shaped cactus with a distinctive feature – its hooked spines. These sharp, curved spines resemble fishhooks and can easily catch on clothing or skin. The fishhook barrel cactus is found in the deserts of the southwestern United States and northern Mexico and can grow up to 3 feet (1 meter) tall. It produces yellow or red flowers at the top of its stem.",
     "image": "http://localhost:8082/items/catcus/FishhookBarrelCactus.jpeg",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "category": "Cactus",
-    "commonName": "GoldenBarrelCactus",
+    "commonName": "Golden Barrel Cactus",
     "botanicalName": "Kroenleinia grusonii",
     "description": "The golden barrel cactus (Echinocactus grusonii) is a spherical cactus native to eastern Mexico. Its name comes from its striking golden-yellow spines that cover its stem in a dense, radial pattern. This cactus can grow up to 3 feet (1 meter) in diameter and produces yellow or red flowers at the top of its stem. Due to its attractive appearance, the golden barrel cactus is a popular choice for cactus gardens and landscaping.",
     "image": "http://localhost:8082/items/catcus/GoldenBarrelCactus.jpeg",
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "category": "Cactus",
-    "commonName": "TotemPoleCactus",
+    "commonName": "Totem Pole Cactus",
     "botanicalName": "Lophocereus schottii",
     "description": "The totem pole cactus (Lophocereus schottii) is a tall, columnar cactus found in the Sonoran Desert. Its most distinctive feature is its growth habit, where new stems emerge from the top of existing stems, creating a stacked or totem pole-like appearance. These cacti can grow up to 20 feet (6 meters) tall and produce pink or red flowers at the tops of their stems. The totem pole cactus is an important nesting site for various bird species in the desert.",
     "image": "http://localhost:8082/items/catcus/TotemPoleCactus.jpeg",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "category": "Cactus",
-    "commonName": "BunnyEarCactus",
+    "commonName": "Bunny Ear Cactus",
     "botanicalName": "Opuntia microdasys",
     "description": "The bunny ear cactus (Opuntia microdasys), also known as the polka-dot cactus, is a small, pad-like cactus with a unique appearance. Its pads are covered in long, white spines that give them a fuzzy, bunny ear-like look. Despite its prickly exterior, the bunny ear cactus produces yellow or red flowers in the spring and summer. It is native to northern Mexico and is a popular choice for indoor and outdoor cactus gardens.",
     "image": "http://localhost:8082/items/catcus/BunnyEarCactus.jpeg",

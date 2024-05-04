@@ -23,11 +23,16 @@
           old.
         </p>
         <div class="link">
-          <a class="wiki" href="https://en.wikipedia.org/wiki/Barrel_cactus">
+          <a
+            class="wiki"
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Barrel_cactus"
+          >
             <img src="http://localhost:8082/wikipedia.jpeg"
           /></a>
           <a
             class="moreImages"
+            target="_blank"
             href="https://www.google.com/search?sca_esv=f9f535e90c1b9ce5&sca_upv=1&sxsrf=ACQVn0-HpCqS7__EzEXO1ZWa2RWkcNk5gQ:1714560057412&q=Barrel+Cactus&uds=AMwkrPuyqEkls4Ckdf3Xn72nW7ALslgxDkho5AvofMKHlm82DsqSI00DDs_FFF6oK3dfiisIcZ8iSSCYGByqlGp8GCccesGM3kH3QX9BV9AxWW84V2ez2JDtMoctb5jKEAP7EniIRX7GEq08ABeWMjWwHWYcrU6yJVGvZqKvvZNBZ1mi2LvmMiQ83MQzXxhs-qwZ-57dVmNP1-yp9s-eIQM4Dl7-emQRqaqGgQiMWzhx90Pk3WrVeqHIAiNN3SsPDOm0P7ntgc8dXFH1UtSQEXjI6acfHi5o3EzQPU9SqjJ_KwoBhUo0P2uQ4SaOPdi9eG-XLDoJlWG6&udm=2&prmd=isvnmbtz&sa=X&ved=2ahUKEwjZ16v5oeyFAxXOma8BHTmOAMgQtKgLegQIExAB&biw=1920&bih=966&dpr=1"
             ><img src="http://localhost:8082/images.jpeg"
           /></a>
@@ -70,6 +75,7 @@ export default {};
 }
 
 .description {
+  height: 360px;
   font-size: 20px;
   margin-bottom: 10px;
   padding: 2px 10px;
@@ -80,7 +86,7 @@ export default {};
 
 .cardH4 {
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 

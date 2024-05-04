@@ -2,7 +2,7 @@
   {
     "id": 11,
     "category": "Succulents",
-    "commonName": "JadePlant",
+    "commonName": "Jade Plant",
     "botanicalName": "Crassula ovata",
     "description": "The jade plant is a small, shrub-like succulent that can grow up to 3-6 feet tall. Its thick, oval-shaped leaves are a rich, glossy green color and are arranged in opposing pairs along the woody stems. This low-maintenance plant is believed to bring good luck and prosperity, making it a popular choice for homes and offices. It can tolerate some neglect but thrives with bright, indirect light and infrequent watering.",
     "image": "http://localhost:8082/items/succulents/JadePlant.jpeg",
@@ -22,7 +22,7 @@
   {
     "id": 13,
     "category": "Succulents",
-    "commonName": "AloeVera",
+    "commonName": "Aloe Vera",
     "botanicalName": "Aloe barbadensis miller",
     "description": "Aloe vera is a popular succulent known for its medicinal properties. It has thick, lance-shaped, fleshy leaves that can grow up to 2 feet long, arranged in a rosette pattern. The leaves are green with serrated edges and contain a clear, gel-like sap that is widely used for treating burns, cuts, and other skin conditions due to its soothing and healing properties. Aloe vera is easy to grow and can thrive indoors or outdoors in warm, dry climates.",
     "image": "http://localhost:8082/items/succulents/AloeVera.jpeg",
@@ -32,7 +32,7 @@
   {
     "id": 14,
     "category": "Succulents",
-    "commonName": "Burro'sTail",
+    "commonName": "Burro's Tail",
     "botanicalName": "Sedum morganianum",
     "description": "Burro's tail is a trailing succulent with long, slender stems that can reach up to 3 feet in length. The stems are covered in small, fleshy, blue-green leaves that resemble a furry tail, giving the plant its whimsical common name. This drought-tolerant plant is well-suited for hanging baskets, where its trailing stems can cascade over the sides, or as a groundcover in rock gardens. It requires bright light and well-draining soil to thrive.",
     "image": "http://localhost:8082/items/succulents/Burro'sTail.jpeg",
@@ -42,7 +42,7 @@
   {
     "id": 15,
     "category": "Succulents",
-    "commonName": "PandaPlant",
+    "commonName": "Panda Plant",
     "botanicalName": "Kalanchoe tomentosa",
     "description": "The panda plant is a unique succulent with fuzzy, oval-shaped leaves that are green with reddish-brown markings, resembling the markings of a panda bear. These markings are more pronounced in bright light conditions. It is a low-growing, drought-tolerant plant that forms a dense, spreading mat, making it an excellent choice for rock gardens or as a groundcover. The panda plant is easy to care for and can tolerate some neglect, but it requires well-draining soil and protection from frost.",
     "image": "http://localhost:8082/items/succulents/PandaPlant.jpeg",
@@ -52,7 +52,7 @@
   {
     "id": 16,
     "category": "Succulents",
-    "commonName": "ZebraPlant",
+    "commonName": "Zebra Plant",
     "botanicalName": "Aphelandra squarrosa",
     "description": "The zebra plant is a small, slow-growing succulent that forms compact rosettes of spiky, striped leaves. The leaves are green with distinctive white horizontal stripes, resembling the markings of a zebra. These unique markings are more pronounced in bright light conditions. Zebra plants are easy to care for and make excellent indoor plants or additions to rock gardens. They prefer well-draining soil and bright, indirect light, and they can tolerate periods of drought.",
     "image": "http://localhost:8082/items/succulents/ZebraPlant.jpeg",
@@ -62,7 +62,7 @@
   {
     "id": 17,
     "category": "Succulents",
-    "commonName": "StringOfPearls",
+    "commonName": "String Of Pearls",
     "botanicalName": "Senecio rowleyanus",
     "description": "String of pearls is a unique trailing succulent with spherical, pea-sized leaves that resemble pearls strung together. The leaves are green and slightly fuzzy, and the stems can grow up to several feet long, making it an excellent choice for hanging baskets or as a groundcover. This drought-tolerant plant requires bright, indirect light and well-draining soil. It is a fascinating and eye-catching addition to any succulent collection.",
     "image": "http://localhost:8082/items/succulents/StringOfPearls.jpeg",
