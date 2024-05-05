@@ -22,6 +22,9 @@
         </div>
       </div>
     </div>
+    <div class="scroll-to-top" @click="scrollToTop">
+      <img src="http://localhost:8082/scrollToTop.png" />
+    </div>
   </div>
 </template>
 
@@ -40,13 +43,19 @@ const selectItem = (item) => {
   itemsState.setPlantId(item.id);
   itemsState.setPlantDetail();
 };
+
+const scrollToTop = () => {
+  const itemsList = document.querySelector(".itemsList");
+  itemsList.scrollTo({ top: 0, behavior: "smooth" });
+};
 </script>
 
 <style>
 .itemsList {
   width: 500px;
   max-height: 770px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .commonName {
@@ -96,5 +105,15 @@ const selectItem = (item) => {
   width: 93px;
   height: 93px;
   border-radius: 10px;
+}
+
+.scroll-to-top {
+  position: sticky;
+  bottom: 0px;
+  margin-left: 410px;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
 </style>

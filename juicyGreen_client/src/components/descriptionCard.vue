@@ -45,7 +45,11 @@ const itemsState = useItemsState();
 <style>
 .descriptionCard {
   max-height: 820px;
-  overflow-y: scroll;
+  width: 530px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  top: 0;
 }
 
 .plantName {
@@ -56,6 +60,7 @@ const itemsState = useItemsState();
   background-color: rgb(255, 170, 70);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
   margin-top: 0;
+  margin-left: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   width: 500px;
@@ -65,6 +70,7 @@ const itemsState = useItemsState();
 
 .card {
   background-color: rgba(255, 255, 255, 0);
+  margin-left: 10px;
   width: 500px;
 }
 

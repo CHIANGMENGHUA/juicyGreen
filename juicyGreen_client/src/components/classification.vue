@@ -169,6 +169,7 @@ const selectOption = (option) => {
   min-width: 250px;
   max-height: 270px;
   overflow-y: auto;
+  scroll-behavior: smooth;
   border-radius: 10px;
 }
 
