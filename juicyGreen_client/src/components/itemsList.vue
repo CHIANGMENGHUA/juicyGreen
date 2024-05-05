@@ -22,7 +22,11 @@
         </div>
       </div>
     </div>
-    <div class="scroll-to-top" @click="scrollToTop">
+    <div
+      v-if="showScrollToTopButton"
+      class="scroll-to-top"
+      @click="scrollToTop"
+    >
       <img src="http://localhost:8082/scrollToTop.png" />
     </div>
   </div>
@@ -48,11 +52,28 @@ const scrollToTop = () => {
   const itemsList = document.querySelector(".itemsList");
   itemsList.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+const showScrollToTopButton = ref(false);
+const itemsList = ref(null);
+
+const handleScroll = () => {
+  showScrollToTopButton.value = itemsList.value.scrollTop > 0;
+};
+
+onMounted(() => {
+  itemsList.value = document.querySelector(".itemsList");
+  itemsList.value.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  itemsList.value.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style>
 .itemsList {
   width: 500px;
+  margin-top: 10px;
   max-height: 770px;
   overflow-y: auto;
   scroll-behavior: smooth;

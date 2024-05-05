@@ -44,7 +44,7 @@ const itemsState = useItemsState();
 
 <style>
 .descriptionCard {
-  max-height: 820px;
+  max-height: 830px;
   width: 530px;
   overflow-y: auto;
   overflow-x: hidden;
