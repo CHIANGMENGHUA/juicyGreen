@@ -6,9 +6,10 @@
         :key="item.id"
         :class="[
           'list',
+          {
+            first: item === itemsState.getPlants[0] && itemsState.counter == 0,
+          },
           { selected: item === selectedItem },
-
-          { first: item === itemsState.getPlants[0] },
         ]"
         @click="selectItem(item)"
       >
@@ -27,13 +28,17 @@
 <script setup>
 import { useItemsState } from "~/src/store/itemsState";
 const itemsState = useItemsState();
+
+itemsState.setPlantDetail();
+
 const items = itemsState.plants;
 const selectedItem = ref(items);
+
 const selectItem = (item) => {
   selectedItem.value = item;
-
-  const firstItem = document.querySelector(".list.first");
-  firstItem.classList.remove("first");
+  itemsState.increaseCounter();
+  itemsState.setPlantId(item.id);
+  itemsState.setPlantDetail();
 };
 </script>
 

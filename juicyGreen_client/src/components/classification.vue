@@ -29,61 +29,73 @@ import { useItemsState } from "~/src/store/itemsState";
 const options = [
   {
     id: 1,
+    firstPlantId: 1,
     category: "Cactus",
     image: "http://localhost:8082/classification/catcus.jpeg",
   },
   {
     id: 2,
+    firstPlantId: 11,
     category: "Succulents",
     image: "http://localhost:8082/classification/succulents.jpeg",
   },
   {
     id: 3,
+    firstPlantId: 21,
     category: "Flower",
     image: "http://localhost:8082/classification/flower.jpeg",
   },
   {
     id: 4,
+    firstPlantId: 31,
     category: "Tree",
     image: "http://localhost:8082/classification/tree.jpeg",
   },
   {
     id: 5,
+    firstPlantId: 41,
     category: "Herbs",
     image: "http://localhost:8082/classification/herbs.jpeg",
   },
   {
     id: 6,
+    firstPlantId: 51,
     category: "Shrubs",
     image: "http://localhost:8082/classification/shrubs.jpeg",
   },
   {
     id: 7,
+    firstPlantId: 61,
     category: "Creepers",
     image: "http://localhost:8082/classification/creepers.jpeg",
   },
   {
     id: 8,
+    firstPlantId: 71,
     category: "Climbers",
     image: "http://localhost:8082/classification/climbers.jpeg",
   },
   {
     id: 9,
+    firstPlantId: 81,
     category: "Bamboo",
     image: "http://localhost:8082/classification/bamboo.jpeg",
   },
   {
     id: 10,
+    firstPlantId: 91,
     category: "Ferns",
     image: "http://localhost:8082/classification/ferns.jpeg",
   },
   {
     id: 11,
+    firstPlantId: 101,
     category: "Moss",
     image: "http://localhost:8082/classification/moss.jpeg",
   },
   {
     id: 12,
+    firstPlantId: 111,
     category: "Mushroom",
     image: "http://localhost:8082/classification/mushroom.jpeg",
   },
@@ -99,9 +111,12 @@ const itemsState = useItemsState();
 itemsState.setPlants();
 
 const selectOption = (option) => {
+  itemsState.resetCounter();
   selectedOption.value = option;
   itemsState.setCategory(option.category);
   itemsState.setPlants();
+  itemsState.setPlantId(option.firstPlantId);
+  itemsState.setPlantDetail();
   document.querySelector(".selected-item").style.backgroundImage =
     "url(" + option.image + ")";
 };

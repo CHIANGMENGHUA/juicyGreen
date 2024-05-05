@@ -1,39 +1,34 @@
 <template>
   <div class="descriptionCard">
-    <div class="plantName">
-      <h1>Barrel Cactus</h1>
+    <div
+      v-for="detail in itemsState.getPlantDetail"
+      :key="detail.id"
+      class="plantName"
+    >
+      <h1>{{ detail.commonName }}</h1>
     </div>
 
-    <div class="card">
-      <img
-        class="bigImage"
-        src="http://localhost:8082/items/catcus/BarrelCactus.jpeg"
-        alt="Avatar"
-        style="width: 100%"
-      />
+    <div
+      v-for="detail in itemsState.getPlantDetail"
+      :key="detail.id"
+      class="card"
+    >
+      <img class="bigImage" :src="detail.image" />
       <div class="description">
-        <h4 class="cardH4"><b>Botanical Name: Echinocactus</b></h4>
+        <h4 class="cardH4">
+          <b>Botanical Name: {{ detail.botanicalName }}</b>
+        </h4>
         <p>
-          Some species of barrel cactus reach over 1 metre (3.3 ft) in height at
-          maturity, and have been known to reach 3 metres (9.8 ft) in some
-          regions. The ribs are numerous and pronounced, and the spines are long
-          and can range in color from yellow to tan to red, depending on the age
-          of the plant and the species. Flowers appear at the top of the plant
-          only after many years. The barrel cactus can live to be over 100 years
-          old.
+          {{ detail.description }}
         </p>
         <div class="link">
-          <a
-            class="wiki"
-            target="_blank"
-            href="https://en.wikipedia.org/wiki/Barrel_cactus"
-          >
+          <a class="wiki" target="_blank" :href="detail.wikiLink">
             <img src="http://localhost:8082/wikipedia.jpeg"
           /></a>
           <a
             class="moreImages"
             target="_blank"
-            href="https://www.google.com/search?sca_esv=f9f535e90c1b9ce5&sca_upv=1&sxsrf=ACQVn0-HpCqS7__EzEXO1ZWa2RWkcNk5gQ:1714560057412&q=Barrel+Cactus&uds=AMwkrPuyqEkls4Ckdf3Xn72nW7ALslgxDkho5AvofMKHlm82DsqSI00DDs_FFF6oK3dfiisIcZ8iSSCYGByqlGp8GCccesGM3kH3QX9BV9AxWW84V2ez2JDtMoctb5jKEAP7EniIRX7GEq08ABeWMjWwHWYcrU6yJVGvZqKvvZNBZ1mi2LvmMiQ83MQzXxhs-qwZ-57dVmNP1-yp9s-eIQM4Dl7-emQRqaqGgQiMWzhx90Pk3WrVeqHIAiNN3SsPDOm0P7ntgc8dXFH1UtSQEXjI6acfHi5o3EzQPU9SqjJ_KwoBhUo0P2uQ4SaOPdi9eG-XLDoJlWG6&udm=2&prmd=isvnmbtz&sa=X&ved=2ahUKEwjZ16v5oeyFAxXOma8BHTmOAMgQtKgLegQIExAB&biw=1920&bih=966&dpr=1"
+            :href="detail.externalImagesLink"
             ><img src="http://localhost:8082/images.jpeg"
           /></a>
         </div>
@@ -42,11 +37,17 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { useItemsState } from "~/src/store/itemsState";
+const itemsState = useItemsState();
 </script>
 
 <style>
+.descriptionCard {
+  max-height: 820px;
+  overflow-y: scroll;
+}
+
 .plantName {
   display: flex;
   flex-direction: column;
@@ -68,6 +69,7 @@ export default {};
 }
 
 .bigImage {
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;
   height: auto;
@@ -75,7 +77,6 @@ export default {};
 }
 
 .description {
-  height: 360px;
   font-size: 20px;
   margin-bottom: 10px;
   padding: 2px 10px;
