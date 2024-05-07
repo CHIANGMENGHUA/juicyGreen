@@ -1,0 +1,102 @@
+[
+  {
+    "id": 61,
+    "category": "Vine",
+    "commonName": "Virginia Creeper",
+    "botanicalName": "Parthenocissus quinquefolia",
+    "description": "The Virginia Creeper is a woody, deciduous vine native to eastern and central North America. It is known for its striking foliage that turns a brilliant red in autumn, making it a popular ornamental plant for covering walls, fences, and trellises. The vine produces clusters of small, greenish-white flowers in the summer, followed by blue-black berries that are eaten by birds and other wildlife. While it can be an aggressive grower, the Virginia Creeper is a hardy and adaptable plant that adds seasonal interest to any garden.",
+    "image": "http://localhost:8082/items/vines/VirginiaCreeper.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Virginia+Creeper&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILvfitdr9DPy1_doKw5ENWCqkIJ6Q%3A1715006733813&ei=De04ZuOZMbHQ1e8P6YCjwAk&ved=0ahUKEwij1J_5ofmFAxUxaPUHHWnACJgQ4dUDCBE&oq=Virginia+Creeper&gs_lp=Egxnd3Mtd2l6LXNlcnAiEFZpcmdpbmlhIENyZWVwZXIyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMsHUIgBWIgBcAF4AJABAJgBNqABNqoBATG4AQzIAQD4AQH4AQKYAgKgAj-oAgrCAgcQIxgnGOoCmAMGkgcBMqAHsAU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Parthenocissus_quinquefolia"
+  },
+  {
+    "id": 62,
+    "category": "Vine",
+    "commonName": "Boston Ivy",
+    "botanicalName": "Parthenocissus tricuspidata",
+    "description": "Boston Ivy, also known as Japanese Creeper, is a climbing plant native to China and Japan. It is widely cultivated as an ornamental vine for its attractive foliage and ability to cover walls and buildings. The leaves of the Boston Ivy are palmate, with three to five lobes, and turn a vibrant crimson red in autumn. The plant produces small, greenish-white flowers in the summer, followed by blue-black berries that are eaten by birds. While it can be invasive in some areas, the Boston Ivy is valued for its ability to provide insulation and aesthetic appeal to buildings.",
+    "image": "http://localhost:8082/items/vines/BostonIvy.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Boston+Ivy&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJPbxyQE7sWGvrI0ddb-bF56V8o6w%3A1715007275490&ei=K-84ZtjFHYPP1e8Pm76isAQ&ved=0ahUKEwiYh8X7o_mFAxWDZ_UHHRufCEYQ4dUDCBE&oq=Boston+Ivy&gs_lp=Egxnd3Mtd2l6LXNlcnAiCkJvc3RvbiBJdnkyChAAGIAEGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgARI2wdQdVh1cAF4AJABAJgBMKABMKoBATG4AQzIAQD4AQH4AQKYAgKgAjqoAgrCAgcQIxgnGOoCmAMGkgcBMqAHlQU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Parthenocissus_tricuspidata"
+  },
+  {
+    "id": 63,
+    "category": "Vine",
+    "commonName": "English Ivy",
+    "botanicalName": "Hedera helix",
+    "description": "English Ivy is an evergreen, climbing vine native to most of Europe and western Asia. It is a popular choice for ground cover, wall coverings, and for trailing from hanging baskets. The plant has glossy, dark green leaves that are lobed or entire, and produces small, greenish-white flowers in the fall, followed by black berries. English Ivy is known for its ability to thrive in shady areas and to cling to vertical surfaces using its aerial roots. While it can be invasive in some regions, it is widely cultivated for its attractive foliage and versatility in landscaping.",
+    "image": "http://localhost:8082/items/vines/EnglishIvy.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=English+Ivy&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIK5leI5WnpKxNUTXOLKpqwguplnyw%3A1715007583919&ei=X_A4ZuHRN8Xl1e8PpKe6iAc&ved=0ahUKEwih_c2OpfmFAxXFcvUHHaSTDnEQ4dUDCBE&oq=English+Ivy&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0VuZ2xpc2ggSXZ5Mg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgARItwtQlQFYlQFwAXgAkAEAmAE4oAE4qgEBMbgBDMgBAPgBAfgBApgCAqACP6gCCsICBxAjGCcY6gKYAwWSBwEyoAeWBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hedera_helix"
+  },
+  {
+    "id": 64,
+    "category": "Vine",
+    "commonName": "Trumpet Creeper",
+    "botanicalName": "Campsis radicans",
+    "description": "The Trumpet Creeper is a semi-evergreen, woody vine native to the eastern United States. It is known for its showy, trumpet-shaped flowers that bloom in late summer and come in shades of orange or red. The vine can grow up to 40 feet long and is often used to cover walls, fences, and arbors. The leaves are compound and dark green, and the plant produces long, pod-like seed capsules in the fall. While it can be invasive in some areas, the Trumpet Creeper is valued for its striking flowers and ability to attract hummingbirds and butterflies to the garden.",
+    "image": "http://localhost:8082/items/vines/TrumpetCreeper.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Trumpet+Creeper&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJpXzTjYU-QIWiA34fnhX7n8WWMBg%3A1715007652790&ei=pPA4ZtvvL9HY1e8P7M2T-As&ved=0ahUKEwjb0bmvpfmFAxVRbPUHHezmBL8Q4dUDCBE&oq=Trumpet+Creeper&gs_lp=Egxnd3Mtd2l6LXNlcnAiD1RydW1wZXQgQ3JlZXBlcjIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvgZQhgFYhgFwAXgAkAEAmAE4oAE4qgEBMbgBDMgBAPgBAfgBApgCAqACQagCCsICBxAjGCcY6gKYAwaSBwEyoAeMBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Campsis_radicans"
+  },
+  {
+    "id": 65,
+    "category": "Vine",
+    "commonName": "Honeysuckle",
+    "botanicalName": "Lonicera spp.",
+    "description": "Honeysuckle is a genus of climbing vines known for their fragrant, tubular flowers and attractiveness to pollinators like hummingbirds and butterflies. These vines can grow up to 30 feet long and produce clusters of white, yellow, pink, or red flowers, depending on the species. Honeysuckle vines are often used to cover trellises, fences, and arbors, adding a sweet floral scent to outdoor spaces. They are also valued for their ability to provide food and shelter for wildlife. While some species can be invasive, Honeysuckle vines are a popular choice for adding beauty and fragrance to gardens, as well as supporting local ecosystems.",
+    "image": "http://localhost:8082/items/vines/Honeysuckle.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Honeysuckle&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILO6-cOKzv8C9gADEBYTDJ96UMsSQ%3A1715008280921&ei=GPM4ZqrgN4vT1e8Pl-WAMA&ved=0ahUKEwiqzPvap_mFAxWLafUHHZcyAAYQ4dUDCBE&oq=Honeysuckle&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0hvbmV5c3Vja2xlMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABEjTB1DkAljkAnABeACQAQCYATOgATOqAQExuAEMyAEA-AEB-AECmAICoAI6qAIKwgIHECMYJxjqApgDBJIHATKgB4YF&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Honeysuckle"
+  },
+  {
+    "id": 66,
+    "category": "Vine",
+    "commonName": "Wisteria",
+    "botanicalName": "Wisteria spp.",
+    "description": "Wisteria is a genus of climbing vines native to China, Japan, and eastern United States. These vines are known for their stunning displays of hanging clusters of purple or white flowers that bloom in the spring. The flowers have a sweet, fragrant scent and are followed by long, bean-like seed pods. Wisteria can grow up to 30 feet long and is often used to cover pergolas, arbors, and trellises. While it can be an aggressive grower, Wisteria is prized for its elegant, cascading blooms and the way it can transform outdoor spaces into dreamy, romantic settings.",
+    "image": "http://localhost:8082/items/vines/Wisteria.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Wisteria&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJNfZtde05Pq1EMdpTh1SOdogjcPg%3A1715008334213&ei=TvM4ZsrFDIG4vr0P36SniAY&ved=0ahUKEwjKpLD0p_mFAxUBnK8BHV_SCWEQ4dUDCBE&oq=Wisteria&gs_lp=Egxnd3Mtd2l6LXNlcnAiCFdpc3RlcmlhMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQNIvApQvQFYvQFwAXgAkAEAmAE6oAE6qgEBMbgBDMgBAPgBAfgBApgCAqACP6gCCsICBxAjGCcY6gKYAwOSBwEyoAfrBA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Wisteria"
+  },
+  {
+    "id": 67,
+    "category": "Vine",
+    "commonName": "Climbing Hydrangea",
+    "botanicalName": "Hydrangea petiolaris",
+    "description": "The Climbing Hydrangea is a deciduous, self-clinging vine native to Asia. It is known for its large, flat clusters of white flowers that bloom in late spring or early summer. The flowers are surrounded by showy, sterile florets that give the appearance of a lacecap. The vine can grow up to 60 feet tall and clings to surfaces using its aerial roots, making it an excellent choice for covering walls, fences, and trellises. The foliage turns a beautiful yellow in autumn, adding seasonal interest to the garden. While it may take several years to establish, the Climbing Hydrangea is a low-maintenance and long-lived vine.",
+    "image": "http://localhost:8082/items/vines/ClimbingHydrangea.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Climbing+Hydrangea&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIISvVsT_9ZLxGzzfKLZDfXPJl2RWQ%3A1715008466375&ei=0vM4ZqHGFuDAvr0PorGE6AE&ved=0ahUKEwih97KzqPmFAxVgoK8BHaIYAR0Q4dUDCBE&oq=Climbing+Hydrangea&gs_lp=Egxnd3Mtd2l6LXNlcnAiEkNsaW1iaW5nIEh5ZHJhbmdlYTIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIzQdQ8QFY8QFwAXgAkAEAmAE5oAE5qgEBMbgBDMgBAPgBAfgBApgCAqACQKgCCsICBxAjGCcY6gKYAwSSBwEyoAetBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hydrangea_petiolaris"
+  },
+  {
+    "id": 68,
+    "category": "Vine",
+    "commonName": "Clematis",
+    "botanicalName": "Clematis spp.",
+    "description": "Clematis is a genus of flowering vines native to temperate regions of the Northern Hemisphere. They are known for their large, showy flowers in a wide range of colors, including purple, blue, pink, white, and yellow. Clematis vines can grow to be 10 to 30 feet long and are a popular choice for trellises, arbors, and fences. They prefer well-drained soil and full sun to partial shade. Clematis vines are relatively low-maintenance but do require some pruning after flowering.",
+    "image": "http://localhost:8082/items/vines/Clematis.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Clematis&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKL-Hw5-Su64BrQBT2Fls91cw8_KA%3A1715009766288&ei=5vg4ZqiPEbHS1e8Pzu2t-Aw&ved=0ahUKEwiomp-frfmFAxUxafUHHc52C88Q4dUDCBE&oq=Clematis&gs_lp=Egxnd3Mtd2l6LXNlcnAiCENsZW1hdGlzMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMggQABiABBixAzIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUjoB1DQAljQAnABeACQAQCYATWgATWqAQExuAEMyAEA-AEB-AECmAICoAI-qAIKwgIHECMYJxjqApgDBpIHATKgB6QF&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Clematis"
+  },
+  {
+    "id": 69,
+    "category": "Vine",
+    "commonName": "Jasmine Vine",
+    "botanicalName": "Jasminum spp.",
+    "description": "Jasmine Vines are a genus of climbing vines native to tropical and warm temperate regions. They are highly valued for their fragrant white or yellow flowers that bloom throughout the growing season. The vines can grow up to 20 feet long and are often used to cover trellises, arbors, and fences, providing a sweet, floral scent to outdoor spaces. Jasmine Vines are also popular as indoor plants, as they can be trained to grow on a trellis or along a windowsill. With their delicate, star-shaped flowers and intoxicating aroma, Jasmine Vines are a beloved addition to any garden or home.",
+    "image": "http://localhost:8082/items/vines/JasmineVine.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Jasmine+Vine&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJicn7vKSrSi1t6PYm81HiVRI-PRg%3A1715010277164&ei=5fo4ZsPACbrn1e8PmIiSkAg&ved=0ahUKEwiDx-ySr_mFAxW6c_UHHRiEBIIQ4dUDCBE&oq=Jasmine+Vine&gs_lp=Egxnd3Mtd2l6LXNlcnAiDEphc21pbmUgVmluZTIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI8gdQrAFYrAFwAXgAkAEAmAE6oAE6qgEBMbgBDMgBAPgBAfgBApgCAqACQ6gCCsICBxAjGCcY6gKYAwaSBwEyoAfoBA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Jasmine"
+  },
+  {
+    "id": 70,
+    "category": "Vine",
+    "commonName": "Morning Glory",
+    "botanicalName": "Ipomoea spp.",
+    "description": "Morning Glories are a group of annual or perennial vines known for their funnel-shaped, colorful flowers that bloom in the morning and close by noon. These vines are fast-growing and can reach heights of up to 15 feet, making them perfect for covering trellises, fences, and walls. Morning Glories come in a wide range of colors, including blue, purple, pink, and white, and their flowers can be solid or have intricate patterns. While some species are considered invasive, Morning Glories are a popular choice for adding vibrant color and a touch of whimsy to any garden.",
+    "image": "http://localhost:8082/items/vines/MorningGlory.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Morning+Glory&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILU3D2tx9CGyaXd96gfF9DfnKYuFA%3A1715010455635&ei=l_s4ZvW6JvDCvr0Pu96s-A0&ved=0ahUKEwi14vnnr_mFAxVwoa8BHTsvC98Q4dUDCBE&oq=Morning+Glory&gs_lp=Egxnd3Mtd2l6LXNlcnAiDU1vcm5pbmcgR2xvcnkyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyBBAAGAMyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyBRAAGIAEMgoQABiABBhDGIoFMgoQABiABBhDGIoFSIkIUKkBWKkBcAF4AJABAJgBOqABOqoBATG4AQzIAQD4AQH4AQKYAgKgAkGoAgrCAgcQIxgnGOoCmAMDkgcBMqAHywU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Ipomoea"
+  }
+]

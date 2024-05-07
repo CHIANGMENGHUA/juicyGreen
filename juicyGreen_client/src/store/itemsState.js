@@ -27,9 +27,11 @@ export const useItemsState = defineStore("itemsState", {
   actions: {
     async setPlants() {
       try {
+        // GET request from DB by category
         const response = await fetch(
           `http://localhost:8080/plants/category/${this.category}`
         );
+        // Refresh palnts list state
         this.plants = await response.json();
       } catch (err) {
         console.log(err);
@@ -38,9 +40,11 @@ export const useItemsState = defineStore("itemsState", {
 
     async setPlantDetail() {
       try {
+        // GET request from DB by ID
         const response = await fetch(
           `http://localhost:8080/plants/${this.plantId}`
         );
+        // Refresh palnt detail state
         this.plantDetail.splice(0, 1, await response.json());
       } catch (err) {
         console.log(err);
@@ -55,10 +59,10 @@ export const useItemsState = defineStore("itemsState", {
       this.category = c;
     },
 
+    /* Counter for itemsList */
     increaseCounter() {
       this.counter++;
     },
-
     resetCounter() {
       this.counter = 0;
     },

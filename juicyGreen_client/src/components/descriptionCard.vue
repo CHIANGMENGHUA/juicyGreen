@@ -23,13 +23,15 @@
         </p>
         <div class="link">
           <a class="wiki" target="_blank" :href="detail.wikiLink">
-            <img src="http://localhost:8082/wikipedia.jpeg"
+            <img class="wiwkiLogo" src="http://localhost:8082/wikipedia.jpeg"
           /></a>
           <a
             class="moreImages"
             target="_blank"
             :href="detail.externalImagesLink"
-            ><img src="http://localhost:8082/images.jpeg"
+            ><img
+              class="moreImagesLogo"
+              src="http://localhost:8082/images.jpeg"
           /></a>
         </div>
       </div>
@@ -45,7 +47,7 @@ const itemsState = useItemsState();
 <style>
 .descriptionCard {
   max-height: 830px;
-  width: 530px;
+  width: 635px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -63,7 +65,7 @@ const itemsState = useItemsState();
   margin-left: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
-  width: 500px;
+  width: 600px;
   height: 50px;
   font-size: 20px;
 }
@@ -71,7 +73,7 @@ const itemsState = useItemsState();
 .card {
   background-color: rgba(255, 255, 255, 0);
   margin-left: 10px;
-  width: 500px;
+  width: 600px;
 }
 
 .bigImage {
@@ -97,7 +99,21 @@ const itemsState = useItemsState();
   margin-bottom: 0;
 }
 
+.link {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
 .wiki {
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.wiwkiLogo:hover {
+  scale: 1.1;
+}
+
+.moreImagesLogo:hover {
+  scale: 1.1;
 }
 </style>

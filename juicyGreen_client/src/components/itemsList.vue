@@ -7,9 +7,13 @@
         :class="[
           'list',
           {
+            /* If counter == 0, set first item style (initial view), or remove it */
             first: item === itemsState.getPlants[0] && itemsState.counter == 0,
           },
-          { selected: item === selectedItem },
+          {
+            /* Set selected item style */
+            selected: item === selectedItem,
+          },
         ]"
         @click="selectItem(item)"
       >
@@ -36,26 +40,31 @@
 import { useItemsState } from "~/src/store/itemsState";
 const itemsState = useItemsState();
 
+/* initialize description card */
 itemsState.setPlantDetail();
 
 const items = itemsState.plants;
 const selectedItem = ref(items);
 
+/* Handle click event */
 const selectItem = (item) => {
+  // Set selected plant
   selectedItem.value = item;
+
+  // Pinia state handler
   itemsState.increaseCounter();
   itemsState.setPlantId(item.id);
   itemsState.setPlantDetail();
 };
 
+/* scrollToTop button */
+const showScrollToTopButton = ref(false);
+const itemsList = ref(null);
+
 const scrollToTop = () => {
   const itemsList = document.querySelector(".itemsList");
   itemsList.scrollTo({ top: 0, behavior: "smooth" });
 };
-
-const showScrollToTopButton = ref(false);
-const itemsList = ref(null);
-
 const handleScroll = () => {
   showScrollToTopButton.value = itemsList.value.scrollTop > 0;
 };
@@ -64,7 +73,6 @@ onMounted(() => {
   itemsList.value = document.querySelector(".itemsList");
   itemsList.value.addEventListener("scroll", handleScroll);
 });
-
 onUnmounted(() => {
   itemsList.value.removeEventListener("scroll", handleScroll);
 });
@@ -76,19 +84,21 @@ onUnmounted(() => {
   margin-top: 10px;
   max-height: 770px;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 .commonName {
-  font-size: 2em;
+  font-size: 30px;
   color: rgb(73, 82, 0);
   margin-top: 15px;
   margin-bottom: 0;
 }
 
 .BotanicalName {
-  font-size: 1.2em;
+  font-size: 18px;
   color: rgb(65, 35, 0);
+  margin-top: 12px;
   margin-bottom: 0;
 }
 
@@ -110,10 +120,12 @@ onUnmounted(() => {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* If counter == 0, set first item style (initial view), or remove it */
 .list.first {
   background-color: rgba(100, 50, 0, 0.6);
 }
 
+/* Set selected item style */
 .list.selected {
   background-color: rgba(100, 50, 0, 0.6);
 }
@@ -136,5 +148,9 @@ onUnmounted(() => {
   padding: 10px;
   cursor: pointer;
   z-index: 1;
+}
+
+.scroll-to-top:hover {
+  scale: 1.2;
 }
 </style>

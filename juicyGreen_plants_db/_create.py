@@ -12,7 +12,7 @@ db_connection = mysql.connector.connect(
 cursor = db_connection.cursor()
 
 # Read JSON data from file
-with open("trees.json", "r") as json_file:
+with open("all.json", "r") as json_file:
     data = json.load(json_file)
 
 # Insert data into MySQL

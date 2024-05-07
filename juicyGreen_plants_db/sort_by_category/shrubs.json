@@ -1,0 +1,102 @@
+[
+  {
+    "id": 51,
+    "category": "Shrubs",
+    "commonName": "Japanese Spirea",
+    "botanicalName": "Spiraea japonica",
+    "description": "The Japanese Spirea is a deciduous shrub native to Japan and Korea. It is renowned for its arching branches adorned with flat clusters of small, pink or white flowers that bloom in early summer. This hardy shrub grows well in full sun to partial shade and is a popular choice for borders, foundation plantings, and informal hedges. With its graceful form and attractive blooms, the Japanese Spirea adds a touch of elegance to any garden landscape.",
+    "image": "http://localhost:8082/items/shrubs/JapaneseSpirea.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Japanese+Spirea&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWII1dxTjMwpPFF2zTpxI4eX123h0wQ%3A1715001314188&ei=4tc4ZouOC4bu1e8P176G-Ak&ved=0ahUKEwiLh_zgjfmFAxUGd_UHHVefAZ8Q4dUDCBE&oq=Japanese+Spirea&gs_lp=Egxnd3Mtd2l6LXNlcnAiD0phcGFuZXNlIFNwaXJlYTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI9whQyAFYyAFwAXgAkAEAmAE6oAE6qgEBMbgBDMgBAPgBAfgBApgCAqACQagCCsICBxAjGCcY6gKYAwWSBwEyoAeNBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Spiraea_japonica"
+  },
+  {
+    "id": 52,
+    "category": "Shrubs",
+    "commonName": "Forsythia",
+    "botanicalName": "Forsythia x intermedia",
+    "description": "Forsythia, also known as the golden bell, is a deciduous shrub that heralds the arrival of spring with its stunning display of bright yellow flowers. Its arching branches are covered in a profusion of bell-shaped blooms that emerge before the leaves, creating a visual spectacle in the garden. Forsythia is a hardy and low-maintenance shrub that thrives in full sun to partial shade, making it a popular choice for borders, hedges, and foundation plantings. Its vibrant yellow color and early bloom time bring joy and warmth to the landscape.",
+    "image": "http://localhost:8082/items/shrubs/Forsythia.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Forsythia&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJ6-0dERkqOpeutDYHmqlxH3OOR2g%3A1715002402400&ei=Itw4ZuOFGOeavr0Plcqt2A8&ved=0ahUKEwjjnu_nkfmFAxVnja8BHRVlC_sQ4dUDCBE&oq=Forsythia&gs_lp=Egxnd3Mtd2l6LXNlcnAiCUZvcnN5dGhpYTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESJqfFlDHmRZYx5kWcAJ4AJABAJgBTqABiQGqAQEyuAEMyAEA-AEB-AECmAIDoAJXqAIKwgIHECMYJxjqApgDA4gGAZIHATOgB5UL&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Forsythia"
+  },
+  {
+    "id": 53,
+    "category": "Shrubs",
+    "commonName": "Hydrangea",
+    "botanicalName": "Hydrangea macrophylla",
+    "description": "The Hydrangea is a deciduous shrub renowned for its large, showy flower clusters that can range in color from vibrant pinks and blues to crisp whites. These stunning blooms are affected by the soil pH, creating a mesmerizing display of colors within a single plant. Hydrangeas thrive in partial shade and moist, well-drained soils, making them a popular choice for shade gardens, borders, and containers. With their bold, eye-catching flowers and lush foliage, hydrangeas are a true showstopper in any garden setting.",
+    "image": "http://localhost:8082/items/shrubs/Hydrangea.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Hydrangea&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKo4xtMBwfqB_9HReWwLLFieYAWFg%3A1715002834999&ei=0t04ZpWhPO-lvr0Pt7GAoAc&ved=0ahUKEwiV0pK2k_mFAxXvkq8BHbcYAHQQ4dUDCBE&uact=5&oq=Hydrangea&gs_lp=Egxnd3Mtd2l6LXNlcnAiCUh5ZHJhbmdlYTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyCBAAGIAEGLEDMggQABiABBixA0jeCVCyA1iyA3ABeACQAQCYAUSgAUSqAQExuAEDyAEA-AEB-AECmAICoAJMqAIKwgIHECMYJxjqApgDBZIHATKgB64F&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hydrangea_macrophylla"
+  },
+  {
+    "id": 54,
+    "category": "Shrubs",
+    "commonName": "Azalea",
+    "botanicalName": "Rhododendron sp.",
+    "description": "Azaleas are a beloved group of flowering shrubs known for their vibrant and colorful blooms. These members of the Rhododendron family produce clusters of funnel-shaped flowers in a wide range of shades, including reds, pinks, whites, and yellows. With their versatile size and growth habits, azaleas can be used in various garden settings, from borders and foundation plantings to woodland gardens and containers. Their showy flowers and evergreen or semi-evergreen foliage make them a stunning addition to any landscape, providing a burst of color and beauty throughout the spring and summer.",
+    "image": "http://localhost:8082/items/shrubs/Azalea.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Azalea&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIcWdZV_xdif127NKM_7iP1FPaW8w%3A1715003143280&ei=B984Zq_YEPzQ1e8PjLmjSA&ved=0ahUKEwjv95LJlPmFAxV8aPUHHYzcCAkQ4dUDCBE&oq=Azalea&gs_lp=Egxnd3Mtd2l6LXNlcnAiBkF6YWxlYTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBUiGCVC5AVi5AXABeACQAQCYAWygAWyqAQMwLjG4AQzIAQD4AQH4AQKYAgKgAnOoAgrCAgcQIxgnGOoCmAMEkgcDMS4xoAefBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Azalea"
+  },
+  {
+    "id": 55,
+    "category": "Shrubs",
+    "commonName": "Lilac",
+    "botanicalName": "Syringa vulgaris",
+    "description": "The Lilac is a beloved deciduous shrub that captivates gardeners with its intoxicating fragrance and stunning clusters of purple or white flowers. These blooms adorn the shrub in late spring, filling the air with their sweet, unmistakable scent. Lilacs are hardy and low-maintenance, thriving in full sun and well-drained soils. They make excellent additions to borders, hedges, and foundation plantings, and their abundant blooms are perfect for cutting and bringing indoors. With their timeless beauty and nostalgic charm, lilacs hold a special place in many gardens.",
+    "image": "http://localhost:8082/items/shrubs/Lilac.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Lilac&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILHPxLodDXI6AumpmqoVAatIBXt5w%3A1715003248159&ei=cN84ZvmnCYCXvr0Pl5CiYA&ved=0ahUKEwj5n5T7lPmFAxWAi68BHReICAwQ4dUDCBE&oq=Lilac&gs_lp=Egxnd3Mtd2l6LXNlcnAiBUxpbGFjMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgUQABiABDIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDSOkHUPQBWPQBcAF4AJABAJgBYqABYqoBATG4AQzIAQD4AQH4AQKYAgKgAmyoAgrCAgcQIxgnGOoCmAMFkgcDMS4xoAffBA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Syringa_vulgaris"
+  },
+  {
+    "id": 56,
+    "category": "Shrubs",
+    "commonName": "Rose of Sharon",
+    "botanicalName": "Hibiscus syriacus",
+    "description": "The Rose of Sharon, also known as the Shrub Althea, is a deciduous shrub that adds a tropical flair to any garden. This member of the Hibiscus family produces large, showy flowers in shades of white, pink, purple, and blue that bloom in late summer, providing a vibrant display when many other plants have faded. With its upright, vase-shaped form and attractive foliage, the Rose of Sharon makes an excellent addition to borders, foundation plantings, and even as a small tree. Its long-lasting blooms and drought tolerance make it a low-maintenance choice for adding color and interest to the late summer landscape.",
+    "image": "http://localhost:8082/items/shrubs/RoseOfSharon.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Rose+of+Sharon&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJPjwkhJ94PHvllQLJlWzC0cE25Ug%3A1715003412516&ei=FOA4ZtaNH7_Dvr0PwPuU-AE&ved=0ahUKEwjW58PJlfmFAxW_oa8BHcA9BR8Q4dUDCBE&oq=Rose+of+Sharon&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlJvc2Ugb2YgU2hhcm9uMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiwEFDtCVjtCXACeACQAQCYATmgATmqAQExuAEMyAEA-AEB-AECmAIDoAJGqAIKwgINEAAYgAQYsQMYQxiKBcICBxAjGCcY6gKYAwOIBgGSBwEzoAeABQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hibiscus_syriacus"
+  },
+  {
+    "id": 57,
+    "category": "Shrubs",
+    "commonName": "Butterfly Bush",
+    "botanicalName": "Buddleja davidii",
+    "description": "The Butterfly Bush, true to its name, is a deciduous shrub that attracts a multitude of butterflies and other pollinators with its fragrant, spike-like clusters of flowers. These blooms come in a variety of colors, including shades of purple, pink, white, and yellow, and provide a long-lasting display throughout the summer months. With its arching branches and distinctive flower spikes, the Butterfly Bush adds both beauty and activity to any garden. It is a low-maintenance choice that thrives in full sun and well-drained soils, making it a popular addition to borders, naturalized areas, and butterfly gardens.",
+    "image": "http://localhost:8082/items/shrubs/ButterflyBush.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Butterfly+Bush&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKTizupvf3MSBTXeEQHKcPkzwX9kg%3A1715003587628&ei=w-A4ZqP9Jeuivr0P7Pu0wA8&ved=0ahUKEwjj6oOdlvmFAxVrka8BHew9DfgQ4dUDCBE&oq=Butterfly+Bush&gs_lp=Egxnd3Mtd2l6LXNlcnAiDkJ1dHRlcmZseSBCdXNoMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiqCFDIAVjIAXABeACQAQCYATygATyqAQExuAEMyAEA-AEB-AECmAICoAJEqAIKwgIHECMYJxjqApgDBZIHATKgB4MF&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Buddleja_davidii"
+  },
+  {
+    "id": 58,
+    "category": "Shrubs",
+    "commonName": "Potentilla",
+    "botanicalName": "Potentilla fruticosa",
+    "description": "Potentilla, also known as the Shrubby Cinquefoil, is a hardy and versatile deciduous shrub that adds a touch of charm to any garden. This compact plant produces small, dense clusters of bright yellow, white, or red flowers that bloom continuously throughout the summer, providing a long-lasting display of color. With its tidy habit and attractive foliage, Potentilla is well-suited for borders, rock gardens, and even as a low-growing hedge. It thrives in full sun and well-drained soils, making it a low-maintenance choice for adding texture and interest to the landscape.",
+    "image": "http://localhost:8082/items/shrubs/Potentilla.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Potentilla&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIfpM6KQtm5g8XhFrTJIFxn7-VmNw%3A1715003739311&ei=W-E4ZsK7EsCmvr0PxuWTwAE&ved=0ahUKEwiC1a3llvmFAxVAk68BHcbyBBgQ4dUDCBE&oq=Potentilla&gs_lp=Egxnd3Mtd2l6LXNlcnAiClBvdGVudGlsbGEyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjRDFDfA1jfA3ABeACQAQCYAUOgAUOqAQExuAEMyAEA-AEB-AECmAICoAJKqAIKwgIHECMYJxjqApgDBZIHATKgB-wE&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Potentilla"
+  },
+  {
+    "id": 59,
+    "category": "Shrubs",
+    "commonName": "Viburnum",
+    "botanicalName": "Viburnum spp.",
+    "description": "The Viburnum is a diverse group of deciduous or evergreen shrubs that offer a wide range of ornamental features. Some varieties produce clusters of fragrant, white or pink flowers in the spring, while others are prized for their colorful berries that persist through the winter months. With their attractive foliage and versatile growth habits, viburnums can be used for hedges, borders, or as specimen plants. They thrive in well-drained soils and varying levels of sunlight, making them a valuable addition to many garden settings.",
+    "image": "http://localhost:8082/items/shrubs/Viburnum.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Viburnum&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKeTr9-EH0_C0PKWG4fX4Dy-2hN5g%3A1715003913033&ei=CeI4ZrDQAYbk1e8PxfmauAI&ved=0ahUKEwjw-Ji4l_mFAxUGcvUHHcW8BicQ4dUDCBE&oq=Viburnum&gs_lp=Egxnd3Mtd2l6LXNlcnAiCFZpYnVybnVtMggQABiABBixAzINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMggQABiABBixAzIFEAAYgARIrQpQ1QJY1QJwAXgAkAEAmAFDoAFDqgEBMbgBDMgBAPgBAfgBApgCAqACTagCCsICBxAjGCcY6gKYAwaSBwEyoAfyBA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Viburnum"
+  },
+  {
+    "id": 60,
+    "category": "Shrubs",
+    "commonName": "Weigela",
+    "botanicalName": "Weigela",
+    "description": "The Weigela is a deciduous shrub that adds a burst of color to the late spring and early summer garden. It produces clusters of trumpet-shaped flowers in shades of pink, red, or white that attract hummingbirds and other pollinators. With its graceful, arching branches and attractive foliage, the Weigela is a versatile choice for borders, foundation plantings, and even as a small hedge. It thrives in full sun to partial shade and is relatively low-maintenance, making it a popular choice for gardeners seeking a reliable and showy flowering shrub.",
+    "image": "http://localhost:8082/items/shrubs/Weigela.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Weigela&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWII8GWymXqku836lqKD6uRFL3dufrQ%3A1715004272299&ei=cOM4Zo3oEeWSvr0PjuSGmAc&ved=0ahUKEwiN4MDjmPmFAxVlia8BHQ6yAXMQ4dUDCBE&oq=Weigela&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1dlaWdlbGEyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMgUQABiABDIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFSK4HUIICWIICcAF4AJABAJgBPaABPaoBATG4AQzIAQD4AQH4AQKYAgKgAkWoAgrCAgcQIxgnGOoCmAMFkgcBMqAHjwU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Weigela"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 41,
+    "category": "Herbs",
+    "commonName": "Basil",
+    "botanicalName": "Ocimum basilicum",
+    "description": "Basil is an aromatic herb with a sweet, slightly peppery flavor. Its bright green leaves are widely used in Italian and Thai cuisines. Basil adds a fresh and fragrant note to dishes like pesto, tomato sauces, and Thai curries. It also pairs well with ingredients like garlic, tomatoes, and mozzarella. Different varieties of basil have distinct flavors, ranging from sweet to spicy.",
+    "image": "http://localhost:8082/items/herbs/Basil.jpeg",
+    "externalImagesLink": "https://www.google.com/search?sca_esv=d497ec08d6a1353d&sca_upv=1&sxsrf=ADLYWIKdLalZLWV-vwvlawxa9WwYso8KSw:1714999565059&q=Basil&uds=ADvngMjTNPKEE-q7I44lun7GC2_xVgpDE6jAwhuXcYHtdDtlwYnmYRg9Q4uIIG-S822v2lCm74OJUpzOCe95vB-4cGa7bfLyofcl8rPKNVj9Jto_Do_VGLpH8zD7pY8QFJEllgqR3Mpn0VHwmNcbpiG4aPDphgAHpUa1pCNrQnKZ0YomJlaEII6KmzrHgZTh7kfmjImSDXXzEgTSqIEZnj4EtdnhuebZrYYJ7y3LqqWNeTT2AeF8O3v2rtrOwmg8ZgD3PtsrUoCUOmdzIe-XgfZGKkr67ydhUtwn0lGkUo2MAlqk_KCG-H4&udm=2&prmd=isvmnbtz&sa=X&ved=2ahUKEwi33vWeh_mFAxVEk68BHUVpDDIQtKgLegQIDxAB&biw=1920&bih=966&dpr=1",
+    "wikiLink": "https://en.wikipedia.org/wiki/Basil"
+  },
+  {
+    "id": 42,
+    "category": "Herbs",
+    "commonName": "Rosemary",
+    "botanicalName": "Rosmarinus officinalis",
+    "description": "Rosemary is an evergreen herb with a woody aroma and a piney, slightly astringent flavor. Its needle-like leaves are commonly used in Mediterranean cuisine, particularly in roasted meats, vegetables, and breads. Rosemary pairs well with garlic, olive oil, and lemon, and adds a distinctive flavor to dishes like focaccia, lamb, and potatoes. It is also used in some cocktails and teas.",
+    "image": "http://localhost:8082/items/herbs/Rosemary.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Rosemary&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKmNfQ8SN2Bk1q4auC-7cpO3MA2Xg%3A1714999568337&ei=ENE4ZpqfFN2B1e8PjrubmAo&ved=0ahUKEwia572gh_mFAxXdQPUHHY7dBqMQ4dUDCBE&oq=Rosemary&gs_lp=Egxnd3Mtd2l6LXNlcnAiCFJvc2VtYXJ5Mg0QABiABBixAxhDGIoFMggQABiABBixAzINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyCBAAGIAEGLEDMgoQABiABBhDGIoFMgoQABiABBhDGIoFMggQABiABBixAzINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBUiPCFCEAliEAnABeACQAQCYAUagAUaqAQExuAEMyAEA-AEB-AECmAICoAJRqAIKwgIHECMYJxjqApgDCJIHATKgB_4E&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Rosemary"
+  },
+  {
+    "id": 43,
+    "category": "Herbs",
+    "commonName": "Thyme",
+    "botanicalName": "Thymus vulgaris",
+    "description": "Thyme is an aromatic herb with a warm, slightly minty flavor and a pleasant earthy aroma. Its tiny leaves are a staple in French and Mediterranean cooking, often used in bouquet garni and herb blends like herbes de Provence. Thyme pairs well with roasted meats, stews, soups, and vegetables, adding depth and complexity to dishes. It is also used in marinades, dressings, and bread recipes.",
+    "image": "http://localhost:8082/items/herbs/Thyme.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Thyme&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIInl4PETuaFePNLFgSAZLKxr7YRhA%3A1714999812492&ei=BNI4ZtXRHcuhvr0Pt8sB&ved=0ahUKEwjV4_OUiPmFAxXLkK8BHbdlAAAQ4dUDCBE&oq=Thyme&gs_lp=Egxnd3Mtd2l6LXNlcnAiBVRoeW1lMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYQxiKBUi6BlAAWABwAHgAkAEAmAFOoAFOqgEBMbgBDMgBAPgBAvgBAZgCAaACVZgDAJIHATGgB_ME&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Thyme"
+  },
+  {
+    "id": 44,
+    "category": "Herbs",
+    "commonName": "Mint",
+    "botanicalName": "Mentha",
+    "description": "Mint is a fragrant herb with a cool, refreshing flavor and a distinctive aroma. Its bright green leaves are used in various cuisines and beverages, such as tea, cocktails, and Middle Eastern dishes. Mint adds a burst of freshness to salads, drinks, and desserts. It also pairs well with lamb, yogurt, and chocolate. Different varieties of mint, like peppermint and spearmint, have unique flavors and aromas.",
+    "image": "http://localhost:8082/items/herbs/Mint.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Mint&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILcXQvzHCj3NTGZe9tM1DbdojlwSw%3A1714999992031&ei=uNI4Zq3GAaLO1e8PtMaiqAo&ved=0ahUKEwitgsLqiPmFAxUiZ_UHHTSjCKUQ4dUDCBE&uact=5&oq=Mint&gs_lp=Egxnd3Mtd2l6LXNlcnAiBE1pbnQyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixA0j4C1DRA1jRA3ABeACQAQCYAT-gAT-qAQExuAEDyAEA-AEB-AECmAICoAJKqAIKwgIHECMYJxjqApgDCJIHATKgB-cE&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Mentha"
+  },
+  {
+    "id": 45,
+    "category": "Herbs",
+    "commonName": "Parsley",
+    "botanicalName": "Petroselinum crispum",
+    "description": "Parsley is a bright green herb with a fresh, slightly bitter flavor and a distinctive aroma. Its curly or flat leaves are widely used as a garnish and seasoning in various cuisines, adding a burst of freshness and color to dishes. Parsley is a key ingredient in many Middle Eastern, Mediterranean, and European recipes, such as tabbouleh, chimichurri sauce, and gremolata. It is also used in soups, stews, and as a finishing touch for meats and vegetables.",
+    "image": "http://localhost:8082/items/herbs/Parsley.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Parsley&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJVkRKvdPSu-xDDP6NC7yA6ueqeVg%3A1715000216890&ei=mNM4ZsD2NYqpvr0Pkr2z2A8&ved=0ahUKEwjAot7VifmFAxWKlK8BHZLeDPsQ4dUDCBE&oq=Parsley&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1BhcnNsZXkyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEj-CFC3AVi3AXABeACQAQCYAUKgAUKqAQExuAEMyAEA-AEB-AECmAICoAJKqAIKwgIHECMYJxjqApgDBZIHATKgB-0E&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Parsley"
+  },
+  {
+    "id": 46,
+    "category": "Herbs",
+    "commonName": "Cilantro",
+    "botanicalName": "Coriandrum sativum",
+    "description": "Cilantro, also known as coriander leaves, has a bold and distinct flavor that is often described as citrusy or soapy. Its bright green, feathery leaves are widely used in Latin American, Indian, and Asian cuisines, adding a fresh and vibrant flavor to dishes like salsa, curries, and chutneys. Cilantro is an essential ingredient in guacamole, and it pairs well with lime, avocado, and spicy flavors. The seeds of the cilantro plant are known as coriander seeds and have a different, warm and earthy flavor.",
+    "image": "http://localhost:8082/items/herbs/Cilantro.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Cilantro&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIGbF9FoMCO0P5eE5d1C25_t1oMQQ%3A1715000351820&ei=H9Q4ZvjXMfKhvr0P34aGsAw&ved=0ahUKEwi444mWivmFAxXykK8BHV-DAcYQ4dUDCBE&oq=Cilantro&gs_lp=Egxnd3Mtd2l6LXNlcnAiCENpbGFudHJvMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMggQABiABBixAzILEAAYgAQYsQMYgwEyBRAAGIAEMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAESJ4JUJcCWJcCcAF4AJABAJgBN6ABN6oBATG4AQzIAQD4AQH4AQKYAgKgAkCoAgrCAgcQIxgnGOoCmAMFkgcBMqAH-QQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Coriander"
+  },
+  {
+    "id": 47,
+    "category": "Herbs",
+    "commonName": "Sage",
+    "botanicalName": "Salvia officinalis",
+    "description": "Sage is an herb with a warm, earthy flavor and a slight peppery taste. Its grayish-green leaves are commonly used in stuffing and seasoning for poultry dishes, particularly turkey. Sage adds depth and complexity to dishes like sausages, pork, and root vegetables. It also pairs well with cheese, beans, and hearty breads. In addition to culinary uses, sage has a long history of medicinal and spiritual applications.",
+    "image": "http://localhost:8082/items/herbs/Lithops.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Sage&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILGcBE3LqJtHytN0gaRC3sDvmUWmQ%3A1715000642411&ei=QtU4ZrnZGN7X1e8Pk72v-AY&ved=0ahUKEwi5gtKgi_mFAxXea_UHHZPeC28Q4dUDCBE&oq=Sage&gs_lp=Egxnd3Mtd2l6LXNlcnAiBFNhZ2UyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARInwhQzQFYzQFwAXgAkAEAmAE8oAE8qgEBMbgBDMgBAPgBAfgBApgCAqACR6gCCsICBxAjGCcY6gKYAweSBwEyoAfrBA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Salvia_officinalis"
+  },
+  {
+    "id": 48,
+    "category": "Herbs",
+    "commonName": "Oregano",
+    "botanicalName": "Origanum vulgare",
+    "description": "Oregano is an aromatic herb with a warm, slightly bitter flavor and a robust aroma. Its small, dark green leaves are a staple in Italian and Mediterranean cuisines, particularly in tomato-based dishes like pizza, pasta sauces, and Greek salads. Oregano pairs well with garlic, olive oil, and red wine vinegar, and is often used in herb blends like Italian seasoning. It adds depth and complexity to dishes, and is also used in marinades and bread recipes.",
+    "image": "http://localhost:8082/items/herbs/Oregano.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Oregano&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKPFEOfew_hjGN5jEmyN_Ch47XikA%3A1715000925584&ei=XdY4ZqqmI6azvr0Pq7ujyAo&ved=0ahUKEwjqyNWnjPmFAxWmma8BHavdCKkQ4dUDCBE&oq=Oregano&gs_lp=Egxnd3Mtd2l6LXNlcnAiB09yZWdhbm8yDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEilC1CnAlinAnABeACQAQCYAT-gAT-qAQExuAEMyAEA-AEB-AECmAICoAJHqAIKwgIHECMYJxjqApgDBZIHATKgB-wE&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Oregano"
+  },
+  {
+    "id": 49,
+    "category": "Herbs",
+    "commonName": "Dill",
+    "botanicalName": "Anethum graveolens",
+    "description": "Dill is an herb with a fresh, slightly tangy flavor and a distinct aroma reminiscent of anise or licorice. Its feathery leaves and seeds are commonly used in pickles, sauces, and fish dishes, particularly in Scandinavian and Russian cuisines. Dill adds a bright, refreshing note to dishes like dill pickles, tzatziki sauce, and gravlax. It also pairs well with potatoes, eggs, and creamy sauces. Both the leaves and seeds of the dill plant are used for culinary purposes.",
+    "image": "http://localhost:8082/items/herbs/Dill.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Dill&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKMEV0rcvmrlUVW-Gl6sReG_tPBOQ%3A1715001121277&ei=Idc4ZsvHENfR1e8PptOyoAg&ved=0ahUKEwiL3P2EjfmFAxXXaPUHHaapDIQQ4dUDCBE&oq=Dill&gs_lp=Egxnd3Mtd2l6LXNlcnAiBERpbGwyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMg0QABiABBixAxhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyCBAAGIAEGLEDMgUQABiABEjmD1CwBliwBnABeACQAQCYAU6gAU6qAQExuAEMyAEA-AEB-AECmAICoAJXqAIKwgIHECMYJxjqApgDBJIHATKgB7sE&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Dill"
+  },
+  {
+    "id": 50,
+    "category": "Herbs",
+    "commonName": "Chives",
+    "botanicalName": "Allium schoenoprasum",
+    "description": "Chives are a delicate herb with a mild onion-like flavor. Their slender, green hollow stems are often used as a garnish or seasoning in soups, salads, and egg dishes. Chives add a fresh, slightly pungent flavor to various dishes, including dips, spreads, and baked goods. They pair well with dairy products like cream cheese, sour cream, and cottage cheese, as well as potatoes and seafood. Chives are also a popular topping for baked potatoes and omelets.",
+    "image": "http://localhost:8082/items/herbs/Chives.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Chives&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIKhBk72LRr2jnclkKogirIwb0xhg%3A1715001215441&ei=f9c4ZtHBGtCmvr0P9oq44Ak&ved=0ahUKEwiR_fCxjfmFAxVQk68BHXYFDpwQ4dUDCBE&oq=Chives&gs_lp=Egxnd3Mtd2l6LXNlcnAiBkNoaXZlczINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIiAlQ7AFY7AFwAXgAkAEAmAE9oAE9qgEBMbgBDMgBAPgBAfgBApgCAqACSagCCsICBxAjGCcY6gKYAwmSBwEyoAfSBA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Chives"
+  }
+]

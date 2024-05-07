@@ -1,0 +1,102 @@
+[
+  {
+    "id": 91,
+    "category": "Moss",
+    "commonName": "Fern Moss",
+    "botanicalName": "Thuidium delicatulum",
+    "description": "Fern moss, also known as delicate fern moss or feather moss, is a species of moss that forms dense, feathery mats. It is commonly found in moist, shady habitats such as forests, where it grows on rocks, soil, and tree trunks. Fern moss is characterized by its finely branched, delicate appearance, resembling the fronds of ferns. It plays a role in soil conservation and provides habitat and moisture retention for small organisms.",
+    "image": "http://localhost:8082/items/moss/FernMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?sca_esv=7978873cf7ff4aec&sca_upv=1&sxsrf=ADLYWILrdW5J4CuBtRItH-PinlX_rYxj6w:1715090559176&q=fern+moss&uds=ADvngMjOfaSrNC2thZQzcNTI5fuXhLTMpqybI1lFJjPbhQbO-jVw-c5bF5l8_9dmaQPZLkOqUHsjIu0mfwFwW9fMQsKSodF-fqwQfsK7UyxOO3aMnP4JZ90hfO8AuiAx5PTTqhDMzq3Tea9f81m15QmJzHGFIG_AYYYScppcviw7XINwoJtPAm7Pry80MIP7TmG-zRRoZ4rf5U5Kd-4n5Tx_1m1pLwf5nBF-FukeGvqY3rBaxiIBJAxn3nY1VS9OQoHfj74q3WSGVyy1HMU7SRg2ITmgYygnUK-hkk3IQYXsd4yHx5uMh4VtDxMww9dsYyng-uDe3isH&udm=2&prmd=isvnmbtz&sa=X&sqi=2&ved=2ahUKEwjI7qWc2vuFAxVAk68BHcbyBBgQtKgLegQIChAB&biw=1920&bih=966&dpr=1#vhid=I4_khew3sb6bgM&vssid=mosaic",
+    "wikiLink": "https://en.wikipedia.org/wiki/Thuidium_delicatulum"
+  },
+  {
+    "id": 92,
+    "category": "Moss",
+    "commonName": "Cushion Moss",
+    "botanicalName": "Leucobryum glaucum",
+    "description": "Cushion moss, scientifically known as Leucobryum glaucum, is a species of moss that forms compact, rounded cushions or mounds. It is commonly found in moist, shaded areas such as forests, bogs, and rocky slopes. Cushion mosses play a role in retaining moisture, preventing soil erosion, and providing habitat for small invertebrates. They are often used in landscaping and gardening for their aesthetic appeal and ability to create soft, green cushions.",
+    "image": "http://localhost:8082/items/moss/CushionMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Cushion+Moss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIIFZgW0fykhaGdeoMdZ7F2ZB-5MA%3A1715090562519&ei=gjQ6Zt6qH8Gnvr0PvoCg0Ao&ved=0ahUKEwje8_Gd2vuFAxXBk68BHT4ACKoQ4dUDCBA&oq=Cushion+Moss&gs_lp=Egxnd3Mtd2l6LXNlcnAiDEN1c2hpb24gTW9zczIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeSOEFUABYAHAAeACQAQCYAUygAUyqAQExuAEMyAEA-AEC-AEBmAIBoAJPmAMAkgcBMaAH7QQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Leucobryum_glaucum"
+  },
+  {
+    "id": 93,
+    "category": "Moss",
+    "commonName": "Haircap Moss",
+    "botanicalName": "Polytrichum",
+    "description": "Haircap moss, scientifically known as Polytrichum, is a distinctive species of moss characterized by its tall, hair-like structures called setae. These structures give haircap moss a unique appearance, resembling miniature forests. It is commonly found in damp, shaded habitats such as woodlands, bogs, and moorlands. Haircap mosses play a role in retaining moisture, regulating soil pH, and providing habitat for various small organisms.",
+    "image": "http://localhost:8082/items/moss/HaircapMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Haircap+Moss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIeSIZ0NCZVljCODLf1G9ZLS_ci1g%3A1715090872082&ei=uDU6ZrnMBOegvr0P_suUmAo&ved=0ahUKEwi5iMCx2_uFAxVnkK8BHf4lBaMQ4dUDCBA&oq=Haircap+Moss&gs_lp=Egxnd3Mtd2l6LXNlcnAiDEhhaXJjYXAgTW9zczIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBxAAGIAEGBhI-gdQjAFYjAFwAXgAkAEAmAFEoAFEqgEBMbgBDMgBAPgBAfgBApgCAqACTqgCCsICBxAjGCcY6gKYAweSBwEyoAf9BA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Polytrichum"
+  },
+  {
+    "id": 94,
+    "category": "Moss",
+    "commonName": "Star Moss",
+    "botanicalName": "Syntrichia ruralis",
+    "description": "Star moss, scientifically known as Syntrichia ruralis, is a species of moss known for its star-shaped clusters of leaves. These clusters create a distinctive pattern, giving star moss its name. It is commonly found in damp, shaded habitats such as forests, bogs, and wetlands. Star mosses play a role in moisture retention, soil stabilization, and providing habitat for small organisms like insects and microfauna.",
+    "image": "http://localhost:8082/items/moss/StarMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Star+Moss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKogg09Nm71XNWOUMT6tD1U57cm5Q%3A1715091134393&ei=vjY6ZqnGF5_Avr0P1t-tmA0&ved=0ahUKEwipncqu3PuFAxUfoK8BHdZvC9MQ4dUDCBA&oq=Star+Moss&gs_lp=Egxnd3Mtd2l6LXNlcnAiCVN0YXIgTW9zczIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeSPIHULwCWLwCcAF4AJABAJgBTqABTqoBATG4AQzIAQD4AQH4AQKYAgKgAlWoAgrCAgcQIxgnGOoCmAMFkgcBMqAH0gQ&sclient=gws-wiz-serp#vhid=kTYuHY-Zqkub-M&vssid=mosaic",
+    "wikiLink": "https://en.wikipedia.org/wiki/Syntrichia_ruralis"
+  },
+  {
+    "id": 95,
+    "category": "Moss",
+    "commonName": "Sphagnum Moss",
+    "botanicalName": "Sphagnum spp.",
+    "description": "Sphagnum moss, also known simply as sphagnum, is a genus of mosses known for their ability to retain water. They are commonly found in boggy or wetland habitats, where they form dense, spongy mats. Sphagnum mosses play a crucial role in peatland ecosystems, contributing to peat formation and carbon storage. They are also used horticulturally for their water-retaining properties in gardening and as a substrate in terrariums.",
+    "image": "http://localhost:8082/items/moss/SphagnumMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Sphagnum+Moss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIL49piSLuSgYrCN0ge27a0ebi9Q6A%3A1715091393557&ei=wTc6ZvfPIcGnvr0P89WPkAs&ved=0ahUKEwi3tJSq3fuFAxXBk68BHfPqA7IQ4dUDCBA&oq=Sphagnum+Moss&gs_lp=Egxnd3Mtd2l6LXNlcnAiDVNwaGFnbnVtIE1vc3MyDRAAGIAEGLEDGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI_gtQiQJYiQJwAXgAkAEAmAE7oAE7qgEBMbgBDMgBAPgBAfgBApgCAqACRKgCCsICBxAjGCcY6gKYAwaSBwEyoAeNBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Sphagnum"
+  },
+  {
+    "id": 96,
+    "category": "Moss",
+    "commonName": "Woolly Moss",
+    "botanicalName": "Racomitrium lanuginosum",
+    "description": "Woolly moss, scientifically known as Dicranum scoparium, is a species of moss characterized by its soft, fuzzy appearance. It typically grows in dense, cushion-like clumps on rocks, soil, and tree trunks in moist environments such as forests and woodlands. Woolly mosses play a role in moisture retention, soil stabilization, and providing habitat for small organisms like insects and microfauna. They are often used in landscaping for their texture and visual appeal.",
+    "image": "http://localhost:8082/items/moss/WoollyMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Woolly+Moss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIK8YMcY-3UjrCMPxKf31SRQIdD9mw%3A1715091595324&ei=izg6Zo6xE8ekvr0PyKuW6A8&ved=0ahUKEwjOoq-K3vuFAxVHkq8BHciVBf0Q4dUDCBA&oq=Woolly+Moss&gs_lp=Egxnd3Mtd2l6LXNlcnAiC1dvb2xseSBNb3NzMgYQABgIGB4yBxAAGIAEGBhI4wlQ1gFY1gFwAXgAkAEAmAE3oAE3qgEBMbgBDMgBAPgBAfgBApgCAqACPagCCsICBxAjGCcY6gKYAwSSBwEyoAeDAQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Racomitrium_lanuginosum"
+  },
+  {
+    "id": 97,
+    "category": "Moss",
+    "commonName": "African Clubmoss",
+    "botanicalName": "Selaginella kraussiana",
+    "description": "African clubmoss, scientifically known as Selaginella kraussiana, is a species of moss known for its bright golden coloration. It forms dense patches or mats on rocks, soil, and other surfaces in habitats such as alpine regions, rocky outcrops, and riverbanks. Golden mosses play a role in stabilizing soil, preventing erosion, and providing habitat for small organisms. They add a splash of color to natural landscapes and are of interest to botanists and horticulturalists.",
+    "image": "http://localhost:8082/items/moss/AfricanClubmoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=African+clubmoss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJ6nkyU9k0s5uaegMQ-bvjDZVOyxw%3A1715092013903&ei=LTo6ZqPfNrOevr0PgYmNyAM&ved=0ahUKEwjjqfvR3_uFAxUzj68BHYFEAzkQ4dUDCBA&oq=African+clubmoss&gs_lp=Egxnd3Mtd2l6LXNlcnAiEEFmcmljYW4gY2x1Ym1vc3MyBRAAGIAESMgSUJgNWJgNcAF4AJABAJgBQ6ABQ6oBATG4AQzIAQD4AQH4AQKYAgKgAkmoAgrCAgcQIxgnGOoCmAMFkgcBMqAHSQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Selaginella_kraussiana"
+  },
+  {
+    "id": 98,
+    "category": "Moss",
+    "commonName": "Silver Moss",
+    "botanicalName": "Bryum argenteum",
+    "description": "Silver moss, scientifically known as Bryum argenteum, is a species of moss characterized by its silvery sheen on the leaves. It is commonly found in diverse habitats such as urban areas, forests, and rocky slopes. Silver mosses play a role in soil stabilization, moisture retention, and providing habitat for small organisms. They are adaptable and can thrive in various environmental conditions, making them a common sight in many landscapes.",
+    "image": "http://localhost:8082/items/moss/SilverMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Silver+Moss&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKD5i_eTAVleND21UHtRE9qsxGkrQ%3A1715092154275&ei=ujo6ZuyxEMDDvr0P45mRsAw&ved=0ahUKEwjs9vKU4PuFAxXAoa8BHeNMBMYQ4dUDCBA&oq=Silver+Moss&gs_lp=Egxnd3Mtd2l6LXNlcnAiC1NpbHZlciBNb3NzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiVC1CaA1iaA3ABeACQAQCYAT-gAT-qAQExuAEMyAEA-AEB-AECmAICoAJLqAIKwgIHECMYJxjqApgDCZIHATKgB-EE&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Bryum_argenteum"
+  },
+  {
+    "id": 99,
+    "category": "Moss",
+    "commonName": "Fork Mosses",
+    "botanicalName": "Dicranum spp.",
+    "description": "Fork mosses, belonging to the genus Dicranum, are a group of moss species commonly found in forested habitats around the world. They form lush, green carpets on the forest floor, providing moisture retention, soil stabilization, and habitat for small organisms. Forest mosses play an important role in the ecology of forests, contributing to nutrient cycling and biodiversity. They are resilient to varying environmental conditions and are integral to forest ecosystems.",
+    "image": "http://localhost:8082/items/moss/Forkmosses.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=fork+mosses&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILfSDA_JUBThzkzNA9cLYlnIM_GWA%3A1715092693437&ei=1Tw6ZoWdGuaH1e8P_OOquA8&ved=0ahUKEwjF2_6V4vuFAxXmQ_UHHfyxCvcQ4dUDCBA&oq=fork+mosses&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2ZvcmsgbW9zc2VzMgcQABiABBgYSMoaUJkDWJcRcAF4AJABAJgBVqABjgGqAQEyuAEMyAEA-AEB-AECmAIDoAKUAagCCsICBxAjGCcY6gKYAwOSBwEzoAeqAQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Dicranum"
+  },
+  {
+    "id": 100,
+    "category": "Moss",
+    "commonName": "Hypnum Moss",
+    "botanicalName": "Hypnum cupressiforme",
+    "description": "Hypnum moss, scientifically known as Hypnum cupressiforme, is a species of moss characterized by its soft, fuzzy texture. It typically grows on rocks, tree trunks, and soil in damp environments such as forests, wetlands, and stream banks. Fuzzy mosses play a role in moisture retention, soil stabilization, and providing habitat for small organisms like insects and microfauna. They are often used in landscaping for their aesthetic appeal and ability to create lush green patches.",
+    "image": "http://localhost:8082/items/moss/HypnumMoss.jpeg",
+    "externalImagesLink": "https://www.google.com/search?sca_esv=7978873cf7ff4aec&sca_upv=1&sxsrf=ADLYWIKUbqXqKeUwH_dzLlV_v-AGmm0aBQ:1715093093171&q=hypnum+moss&uds=ADvngMj53AHIJt2KifqzVbYVXLyJzVALruLXwEV3aNI0KlYy8-UbpkhNUZ0Jmgh3JjVlZ6RAqpzdT4vD1R8ZFa4TdkrjQw3_JhkM8x-UQqIXJBRSpqzH1rHYA3Fx-F46dMFPScnlBMYvhNDmriRId1OWrRD8wOJRq_aevLpqJ4a_SrwvOPmc8wU7ObiE163iwV1HcBgnV76j3foSMHQv2dWmdln3b0ISHLASARi9MurmgGtbTghjExwZm23r5QnfzyS2IFiK_qDvRolAHOpgHnrfz57dEQtzhepG2_gOLJbwFbqUrRz5czKYww5QWVBtX8zzZ2LdhNNO&udm=2&prmd=isvnmbtz&sa=X&ved=2ahUKEwjo0MzU4_uFAxUom68BHbGtC-wQtKgLegQIFhAB&biw=1920&bih=966&dpr=1",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hypnum_cupressiforme"
+  }
+]

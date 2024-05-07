@@ -26,6 +26,7 @@
 import { ref } from "vue";
 import { useItemsState } from "~/src/store/itemsState";
 
+/* All categories */
 const options = [
   {
     id: 1,
@@ -66,57 +67,61 @@ const options = [
   {
     id: 7,
     firstPlantId: 61,
-    category: "Creepers",
-    image: "http://localhost:8082/classification/creepers.jpeg",
+    category: "Vine",
+    image: "http://localhost:8082/classification/vine.jpeg",
   },
   {
     id: 8,
     firstPlantId: 71,
-    category: "Climbers",
-    image: "http://localhost:8082/classification/climbers.jpeg",
-  },
-  {
-    id: 9,
-    firstPlantId: 81,
     category: "Bamboo",
     image: "http://localhost:8082/classification/bamboo.jpeg",
   },
   {
-    id: 10,
-    firstPlantId: 91,
+    id: 9,
+    firstPlantId: 81,
     category: "Ferns",
     image: "http://localhost:8082/classification/ferns.jpeg",
   },
   {
-    id: 11,
-    firstPlantId: 101,
+    id: 10,
+    firstPlantId: 91,
     category: "Moss",
     image: "http://localhost:8082/classification/moss.jpeg",
   },
   {
-    id: 12,
-    firstPlantId: 111,
+    id: 11,
+    firstPlantId: 101,
     category: "Mushroom",
     image: "http://localhost:8082/classification/mushroom.jpeg",
   },
 ];
 
+/* Default selected category */
 const selectedOption = ref({
   id: 1,
   category: "Cactus",
   image: "http://localhost:8082/classification/catcus.jpeg",
 });
 
+/* Set plants by category */
 const itemsState = useItemsState();
 itemsState.setPlants();
 
+/* Click event */
 const selectOption = (option) => {
+  // Reset counter for itemsList (set .list.first style for first item)
   itemsState.resetCounter();
+
+  // Set selected category
   selectedOption.value = option;
+
+  // Pinia state handler
   itemsState.setCategory(option.category);
   itemsState.setPlants();
   itemsState.setPlantId(option.firstPlantId);
   itemsState.setPlantDetail();
+
+  // Change classification image
   document.querySelector(".selected-item").style.backgroundImage =
     "url(" + option.image + ")";
 };

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 81,
+    "category": "Ferns",
+    "commonName": "Boston Fern",
+    "botanicalName": "Nephrolepis exaltata",
+    "description": "The Boston Fern, scientifically known as Nephrolepis exaltata, is a classic choice for indoor greenery. With its lush, arching fronds, this fern adds a touch of elegance to any space. Originating from tropical regions, it thrives in humid environments and prefers indirect light. Its feathery foliage makes it a popular decorative plant, often displayed in hanging baskets or as part of a botanical arrangement.",
+    "image": "http://localhost:8082/items/ferns/BostonFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Boston+Fern&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJryH1iMS9gYB0lad1skYWNt4hEVQ%3A1715013864828&ei=6Ag5ZtCbMrfk1e8PzJCgqAE&ved=0ahUKEwjQr8rBvPmFAxU3cvUHHUwICBUQ4dUDCBE&oq=Boston+Fern&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0Jvc3RvbiBGZXJuMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI_ZBZULSIWVi0iFlwAngAkAEAmAE3oAE3qgEBMbgBDMgBAPgBAfgBApgCA6ACQqgCCsICBxAjGCcY6gKYAwSSBwEzoAf0BA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Nephrolepis_exaltata"
+  },
+  {
+    "id": 82,
+    "category": "Ferns",
+    "commonName": "Maidenhair Fern",
+    "botanicalName": "Adiantum spp.",
+    "description": "The Maidenhair Fern, belonging to the Adiantum genus, is renowned for its delicate, lacy fronds. Native to various climates worldwide, these ferns are prized for their airy appearance and graceful movement. They thrive in filtered sunlight and moist, well-drained soil. Gardeners often appreciate their fine texture and use them to create soft, woodland-themed landscapes or as accents in shaded gardens.",
+    "image": "http://localhost:8082/items/ferns/MaidenhairFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Maidenhair+Fern&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJf7rHr-kvEDQWggoobN5wvfTyO4g%3A1715015417112&ei=-Q45Zpi-BuOTvr0PyqGl0Aw&ved=0ahUKEwjYnuKlwvmFAxXjia8BHcpQCcoQ4dUDCBE&oq=Maidenhair+Fern&gs_lp=Egxnd3Mtd2l6LXNlcnAiD01haWRlbmhhaXIgRmVybjINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNsHUKMEWKMEcAF4AJABAJgBOKABOKoBATG4AQzIAQD4AQH4AQKYAgKgAkCoAgrCAgcQIxgnGOoCmAMFkgcBMqAHqAU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Adiantum"
+  },
+  {
+    "id": 83,
+    "category": "Ferns",
+    "commonName": "Bird's Nest Fern",
+    "botanicalName": "Asplenium nidus",
+    "description": "The Bird's Nest Fern, scientifically known as Asplenium nidus, is characterized by its broad, wavy fronds that form a nest-like shape. Originating from tropical regions, it thrives in humid environments with indirect light. This fern's unique appearance makes it a favorite among plant enthusiasts, adding a touch of exotic charm to interiors or shaded outdoor spaces. Its low maintenance requirements make it an ideal choice for beginners.",
+    "image": "http://localhost:8082/items/ferns/Bird'sNestFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Bird%27s+Nest+Fern&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIKQhmpobDQdc70cwWaqBzgrGyy7Ew%3A1715015520795&ei=YA85ZuKVMLbR1e8Pr9Ou4AY&ved=0ahUKEwjixZrXwvmFAxW2aPUHHa-pC2wQ4dUDCBE&oq=Bird%27s+Nest+Fern&gs_lp=Egxnd3Mtd2l6LXNlcnAiEEJpcmQncyBOZXN0IEZlcm4yChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI5U9Q8UlY8UlwAngAkAEAmAE7oAE7qgEBMbgBDMgBAPgBAfgBApgCA6ACRKgCCsICBxAjGCcY6gKYAwSSBwEzoAeoCA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Asplenium_nidus"
+  },
+  {
+    "id": 84,
+    "category": "Ferns",
+    "commonName": "Staghorn Fern",
+    "botanicalName": "Platycerium spp.",
+    "description": "The Staghorn Fern, belonging to the Platycerium genus, is named for its antler-like fronds that resemble a stag's horns. Native to tropical and subtropical regions, these ferns are often mounted on boards or tree trunks for display. They prefer bright, indirect light and regular misting to mimic their natural habitat. With their striking appearance and epiphytic growth habit, Staghorn Ferns are a captivating addition to botanical collections.",
+    "image": "http://localhost:8082/items/ferns/StaghornFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Platycerium&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIIVJ9F5AF4Of60dLWHXUgubpZPB0w%3A1715015793373&ei=cRA5ZuOzFqCmvr0Pj8Sd2AU&ved=0ahUKEwijsJfZw_mFAxUgk68BHQ9iB1sQ4dUDCBE&oq=Platycerium&gs_lp=Egxnd3Mtd2l6LXNlcnAiC1BsYXR5Y2VyaXVtMhAQABiABBixAxhDGIMBGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABEj5BVBsWGxwAXgAkAEAmAE4oAE4qgEBMbgBDMgBAPgBAfgBApgCAqACPqgCCsICBxAjGCcY6gKYAwOSBwEyoAevBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Platycerium"
+  },
+  {
+    "id": 85,
+    "category": "Ferns",
+    "commonName": "Rabbit's Foot Fern",
+    "botanicalName": "Davallia spp.",
+    "description": "The Rabbit's Foot Fern, part of the Davallia genus, is named for its furry rhizomes that resemble a rabbit's foot. Native to tropical and subtropical regions, these ferns thrive in well-draining soil with consistent moisture. They are often grown in hanging baskets or as ground cover in shaded areas. The charming appearance of their rhizomes adds a playful touch to gardens, making them a popular choice among plant enthusiasts.",
+    "image": "http://localhost:8082/items/ferns/Rabbit'sFootFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Davallia&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJw3NfvkyByEf5mJXlAAGSbpjDebg%3A1715015935022&ei=_xA5Ztt7__jV7w_ToYfgAg&ved=0ahUKEwib99ycxPmFAxV_fPUHHdPQASwQ4dUDCBE&oq=Davallia&gs_lp=Egxnd3Mtd2l6LXNlcnAiCERhdmFsbGlhMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAESNEJUJABWJABcAF4AJABAJgBOKABOKoBATG4AQzIAQD4AQH4AQKYAgKgAj6oAgrCAgcQIxgnGOoCmAMEkgcBMqAHuAU&sclient=gws-wiz-serp#vhid=AAKr0bgubPV-CM&vssid=mosaic",
+    "wikiLink": "https://en.wikipedia.org/wiki/Davallia"
+  },
+  {
+    "id": 86,
+    "category": "Ferns",
+    "commonName": "Japanese Painted Fern",
+    "botanicalName": "Athyrium niponicum",
+    "description": "The Japanese Painted Fern, scientifically known as Athyrium niponicum, is prized for its colorful fronds and unique texture. Originating from Japan and Korea, these ferns thrive in shaded or partially shaded areas with moist, well-draining soil. Their silver, burgundy, and green hues create a striking contrast, making them an attractive choice for shaded gardens, borders, or woodland landscapes.",
+    "image": "http://localhost:8082/items/ferns/JapanesePaintedFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Japanese+Painted+Fern&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIJQD3Tq84dpYLTrfGT__hhjMyk2zA%3A1715015971888&ei=IxE5ZrToNYqnvr0P1PO4qAQ&ved=0ahUKEwj0haeuxPmFAxWKk68BHdQ5DkUQ4dUDCBE&oq=Japanese+Painted+Fern&gs_lp=Egxnd3Mtd2l6LXNlcnAiFUphcGFuZXNlIFBhaW50ZWQgRmVybjIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIiQlQkwFYkwFwAXgAkAEAmAExoAExqgEBMbgBDMgBAPgBAfgBApgCAqACOKgCCsICBxAjGCcY6gKYAwSSBwEyoAfUBQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Athyrium_niponicum"
+  },
+  {
+    "id": 87,
+    "category": "Ferns",
+    "commonName": "Macho Fern",
+    "botanicalName": "Nephrolepis biserrata",
+    "description": "The Macho Fern, scientifically known as Nephrolepis biserrata, is a robust fern with bold, arching fronds. Native to tropical regions, it thrives in moist, well-draining soil and partial shade. Its large size and vigorous growth make it a statement plant in landscapes, adding a tropical touch to gardens or indoor spaces. Macho Ferns are relatively low maintenance, making them a popular choice for greenery enthusiasts.",
+    "image": "http://localhost:8082/items/ferns/MachoFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Nephrolepis+biserrata&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWII9VcfHi-c11BuWyZVDaaIllsG7xQ%3A1715016250265&ei=OhI5ZoztD7Sjvr0P7rm64Ac&ved=0ahUKEwiM8oWzxfmFAxW0ka8BHe6cDnwQ4dUDCBE&oq=Nephrolepis+biserrata&gs_lp=Egxnd3Mtd2l6LXNlcnAiFU5lcGhyb2xlcGlzIGJpc2VycmF0YTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgQQABgeMgQQABgeMgQQABgeSNMIUJcBWJcBcAF4AJABAJgBPKABPKoBATG4AQzIAQD4AQH4AQKYAgKgAkWoAgrCAgcQIxgnGOoCmAMGkgcBMqAH3AU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Nephrolepis_biserrata"
+  },
+  {
+    "id": 88,
+    "category": "Ferns",
+    "commonName": "Pellaea",
+    "botanicalName": "Pellaea spp.",
+    "description": "The Button Fern, part of the Pellaea genus, derives its name from the round leaflets that resemble buttons. Native to various regions worldwide, these ferns thrive in well-draining soil and partial shade. They are valued for their compact growth habit and suitability for containers or small garden spaces. Button Ferns add a charming touch to indoor or outdoor settings, making them a popular choice for green thumbs.",
+    "image": "http://localhost:8082/items/ferns/Pellaea.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Pellaea&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILwoZWt88Q3GHRyOCv37_iKQn75Fg%3A1715016846231&ei=jhQ5ZsngDYeDvr0PkdG1-AE&ved=0ahUKEwjJ35zPx_mFAxWHga8BHZFoDR8Q4dUDCBE&oq=Pellaea&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1BlbGxhZWEyBBAjGCcyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESPUMUIgFWIgFcAF4AJABAJgBRaABRaoBATG4AQzIAQD4AQH4AQKYAgKgAkyoAgrCAgcQIxgnGOoCmAMEkgcBMqAHjwY&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Pellaea_(plant)"
+  },
+  {
+    "id": 89,
+    "category": "Ferns",
+    "commonName": "Sword Fern",
+    "botanicalName": "Nephrolepis cordifolia",
+    "description": "The Sword Fern, scientifically known as Nephrolepis cordifolia, is recognized for its sword-shaped fronds and hardy nature. Native to tropical and subtropical regions, these ferns thrive in moist, well-draining soil and prefer partial shade. They are commonly used in landscaping for their resilience and lush foliage, adding a touch of greenery to gardens, borders, or shaded areas. Sword Ferns are relatively easy to care for, making them a popular choice among gardeners.",
+    "image": "http://localhost:8082/items/ferns/SwordFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Sword+Fern&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILaju9nEf6-egYPLut4XM57sMlMUw%3A1715016447297&ei=_xI5ZurkEdO9vr0PlsC4-As&ved=0ahUKEwiq4P-QxvmFAxXTnq8BHRYgDr8Q4dUDCBE&oq=Sword+Fern&gs_lp=Egxnd3Mtd2l6LXNlcnAiClN3b3JkIEZlcm4yBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESP4IUIABWIABcAF4AJABAJgBNaABNaoBATG4AQzIAQD4AQH4AQKYAgKgAjuoAgrCAgcQIxgnGOoCmAMDkgcBMqAH1wQ&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Nephrolepis_cordifolia"
+  },
+  {
+    "id": 90,
+    "category": "Ferns",
+    "commonName": "Japanese Holly Fern",
+    "botanicalName": "Cyrtomium falcatum",
+    "description": "The Japanese Holly Fern, scientifically known as Cyrtomium falcatum, is a shade-loving fern prized for its glossy, holly-like fronds. Originating from East Asia, these ferns thrive in well-draining soil and partial to full shade. They are popular choices for gardens, borders, or woodland settings where they add texture and greenery. Japanese Holly Ferns are relatively low maintenance and can tolerate a range of environmental conditions, making them versatile plants for landscapes.",
+    "image": "http://localhost:8082/items/ferns/JapaneseHollyFern.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Japanese+Holly+Fern&sca_esv=d497ec08d6a1353d&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWILxjSBCj0oUOOy3c_NoB4N8sKL58A%3A1715016536985&ei=WBM5Zt_hO_jP1e8Psem7oAc&ved=0ahUKEwjf7eG7xvmFAxX4Z_UHHbH0DnQQ4dUDCBE&oq=Japanese+Holly+Fern&gs_lp=Egxnd3Mtd2l6LXNlcnAiE0phcGFuZXNlIEhvbGx5IEZlcm4yBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgFGB4yBhAAGAUYHjIHEAAYgAQYGEi0CVCWA1iWA3ABeACQAQCYATWgATWqAQExuAEMyAEA-AEB-AECmAICoAI7qAIKwgIHECMYJxjqApgDA5IHATKgB8EF&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Cyrtomium_falcatum"
+  }
+]

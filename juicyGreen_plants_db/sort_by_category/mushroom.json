@@ -1,0 +1,102 @@
+[
+  {
+    "id": 101,
+    "category": "Mushroom",
+    "commonName": "Golden Chanterelle",
+    "botanicalName": "Cantharellus cibarius",
+    "description": "Golden Chanterelles are prized for their fruity aroma and delicate flavor. They are often found in deciduous forests, growing in clusters near oak, beech, and chestnut trees. These mushrooms have a bright golden color and a funnel-shaped cap with distinctive ridges. They have a fruity, apricot-like scent and a mild, slightly peppery taste. Golden Chanterelles are versatile in cooking, used in sauces, soups, risottos, and as a topping for pizzas and pastas.",
+    "image": "http://localhost:8082/items/mushroom/GoldenChanterelle.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Golden+Chanterelle&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&biw=1920&bih=966&sxsrf=ADLYWIId-lGcB126nS0jw6SXsS-DIQThAA%3A1715093096347&ei=aD46ZpPSFK2-vr0Pt4ev4A0&ved=0ahUKEwiTpo7W4_uFAxUtn68BHbfDC9wQ4dUDCBA&oq=Golden+Chanterelle&gs_lp=Egxnd3Mtd2l6LXNlcnAiEkdvbGRlbiBDaGFudGVyZWxsZTIFEAAYgAQyBRAAGIAEMgYQABgFGB4yBhAAGAUYHjIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGEjv9RJQ-QlYyu8ScAN4AJABAJgBRqABRqoBATG4AQzIAQD4AQH4AQKYAgSgAlaoAgrCAgcQIxgnGOoCmAMIkgcBNKAH4QU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Cantharellus_cibarius"
+  },
+  {
+    "id": 102,
+    "category": "Mushroom",
+    "commonName": "Shiitake",
+    "botanicalName": "Lentinula edodes",
+    "description": "Shiitake mushrooms have a rich, savory flavor and are popular in Asian cuisine. They are cultivated on logs or sawdust blocks, mimicking their natural habitat in forests. These mushrooms have a dark brown cap and a firm, meaty texture. They are used in stir-fries, soups, noodle dishes, and as a meat substitute in vegetarian and vegan recipes. Shiitake mushrooms are also valued for their potential health benefits, including immune system support and cholesterol management.",
+    "image": "http://localhost:8082/items/mushroom/Shiitake.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Shiitake&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&cs=1&hl=en&biw=1920&bih=966&sxsrf=ADLYWIIR0WRBRJBfprfn32n9xW-4B0oY3A%3A1715096605430&ei=HUw6ZvvsGZyovr0Pp9q52Ak&ved=0ahUKEwi776_f8PuFAxUclK8BHSdtDpsQ4dUDCBA&oq=Shiitake&gs_lp=Egxnd3Mtd2l6LXNlcnAiCFNoaWl0YWtlMgoQABiABBhDGIoFMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMMKULACWLACcAF4AJABAJgBOqABOqoBATG4AQzIAQD4AQH4AQKYAgKgAkSoAgrCAgcQIxgnGOoCmAMHkgcBMqAHiwU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Shiitake"
+  },
+  {
+    "id": 103,
+    "category": "Mushroom",
+    "commonName": "Porcini",
+    "botanicalName": "Boletus edulis",
+    "description": "Porcini mushrooms, also known as King Boletes, are prized for their nutty flavor and meaty texture. They are found in coniferous and mixed forests, particularly under pine, spruce, and fir trees. These mushrooms have a large, brown cap with a white pore surface underneath. Porcini mushrooms are highly versatile in cooking, used in risottos, pasta dishes, soups, and as a flavorful addition to sauces and gravies. They are often dried for long-term storage and culinary use.",
+    "image": "http://localhost:8082/items/mushroom/Porcini.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Porcini&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&cs=1&hl=en&biw=1920&bih=966&sxsrf=ADLYWILW8ppff4M6g0OhNl1wG3AmQfUA0Q%3A1715096768992&ei=wEw6ZsWRPI7k1e8P-YygsAw&ved=0ahUKEwjF8a6t8fuFAxUOcvUHHXkGCMYQ4dUDCBA&oq=Porcini&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1BvcmNpbmkyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABEjaCVDGA1jGA3ABeACQAQCYAUugAUuqAQExuAEMyAEA-AEB-AECmAICoAJTqAIKwgIHECMYJxjqApgDBZIHATKgB_QE&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Boletus_edulis"
+  },
+  {
+    "id": 104,
+    "category": "Mushroom",
+    "commonName": "Lion's Mane",
+    "botanicalName": "Hericium erinaceus",
+    "description": "Lion's Mane mushrooms have a unique appearance resembling a lion's mane, with cascading white spines. They are prized for their medicinal properties and delicate flavor. Lion's Mane mushrooms are believed to support cognitive function, nerve health, and digestive wellness. In cooking, they have a mild, seafood-like taste and a firm, chewy texture. Lion's Mane mushrooms can be sautéed, grilled, or used in soups, stir-fries, and as a meat substitute in vegan dishes.",
+    "image": "http://localhost:8082/items/mushroom/Lion'sMane.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Lion%27s+Mane&sca_esv=7978873cf7ff4aec&sca_upv=1&udm=2&cs=1&hl=en&biw=1920&bih=966&sxsrf=ADLYWIIZ7cfuGgjNB1PSZfKuD9NVfcvXPA%3A1715097025104&ei=wU06ZsL_BfTQ1e8P54av0Ao&ved=0ahUKEwiC5L6n8vuFAxV0aPUHHWfDC6oQ4dUDCBA&oq=Lion%27s+Mane&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0xpb24ncyBNYW5lMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjFCVC2A1i2A3ABeACQAQCYAUKgAUKqAQExuAEMyAEA-AEB-AECmAICoAJKqAIKwgIHECMYJxjqApgDBZIHATKgB68I&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hericium_erinaceus"
+  },
+  {
+    "id": 105,
+    "category": "Mushroom",
+    "commonName": "Enoki",
+    "botanicalName": "Flammulina filiformis",
+    "description": "Enoki mushrooms have long, slender stems and small caps. They have a mild, slightly fruity flavor and a crunchy texture. Enoki mushrooms are commonly used in Asian cuisine, particularly in soups, hot pots, stir-fries, and salads. They add a delicate and decorative touch to dishes, with their long, thin appearance. Enoki mushrooms are also known for their potential health benefits, including immune system support and antioxidant properties.",
+    "image": "http://localhost:8082/items/mushroom/Enoki.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Enoki&sca_esv=7978873cf7ff4aec&sca_upv=1&hl=en&udm=2&cs=1&biw=1920&bih=966&sxsrf=ADLYWILwmpOIwgLXEXXwO3HquNsnXVF2rQ%3A1715097441940&ei=YU86ZrX5OLievr0PgtawoAE&ved=0ahUKEwj1raDu8_uFAxU4j68BHQIrDBQQ4dUDCBA&oq=Enoki&gs_lp=Egxnd3Mtd2l6LXNlcnAiBUVub2tpMg0QABiABBixAxhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMsIUKIBWKIBcAF4AJABAJgBNKABNKoBATG4AQzIAQD4AQH4AQKYAgKgAj6oAgrCAgcQIxgnGOoCmAMHkgcBMqAHhQU&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Flammulina_filiformis"
+  },
+  {
+    "id": 106,
+    "category": "Mushroom",
+    "commonName": "Morel",
+    "botanicalName": "Morchella",
+    "description": "Morel mushrooms have a distinctive honeycomb appearance with a spongy texture. They are highly prized for their earthy, nutty flavor and are often foraged in spring. Morel mushrooms are found in various habitats, including forests, grasslands, and burned areas. They have a hollow, cone-shaped cap with a wrinkled surface. Morels are used in gourmet cooking, including sauces, pastas, and as a topping for meats and vegetables. They are considered a delicacy due to their short seasonal availability and unique taste.",
+    "image": "http://localhost:8082/items/mushroom/Morel.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Morel&sca_esv=7978873cf7ff4aec&sca_upv=1&hl=en&udm=2&cs=1&biw=1920&bih=966&sxsrf=ADLYWIKujOHLY_sz4HXbWp5J5Sz4nAedeQ%3A1715097730955&ei=glA6ZpL3OeXZ1e8PyLmG0Ak&ved=0ahUKEwiSwIj49PuFAxXlbPUHHcicAZoQ4dUDCBA&oq=Morel&gs_lp=Egxnd3Mtd2l6LXNlcnAiBU1vcmVsMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixA0jaClCQA1iQA3ABeACQAQCYAS-gAS-qAQExuAEMyAEA-AEB-AECmAICoAI4qAIKwgIHECMYJxjqApgDBpIHATKgB78E&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Morchella"
+  },
+  {
+    "id": 107,
+    "category": "Mushroom",
+    "commonName": "Oyster Mushroom",
+    "botanicalName": "Pleurotus ostreatus",
+    "description": "Oyster mushrooms have a mild, slightly sweet flavor and a tender texture. They are cultivated on a variety of substrates, including logs, straw, and agricultural waste. Oyster mushrooms are popular in Asian and European cuisines, used in stir-fries, soups, risottos, and as a meat substitute. They have a distinctive fan-like shape with a pale to dark brown color. Oyster mushrooms are also valued for their potential health benefits, including cholesterol management and immune system support.",
+    "image": "http://localhost:8082/items/mushroom/OysterMushroom.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Oyster+Mushroom&sca_esv=7978873cf7ff4aec&sca_upv=1&hl=en&udm=2&cs=1&biw=1920&bih=966&sxsrf=ADLYWIIAHbA3kXHAe0C3708olghBirH8EA%3A1715097841899&ei=8VA6ZtbANufb1e8P6_SO0A0&ved=0ahUKEwiW_fus9fuFAxXnbfUHHWu6A9oQ4dUDCBA&oq=Oyster+Mushroom&gs_lp=Egxnd3Mtd2l6LXNlcnAiD095c3RlciBNdXNocm9vbTINEAAYgAQYsQMYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjVB1CxAlixAnABeACQAQCYATKgATKqAQExuAEMyAEA-AEB-AECmAICoAI6qAIKwgIHECMYJxjqApgDBZIHATKgB5oF&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Pleurotus_ostreatus"
+  },
+  {
+    "id": 108,
+    "category": "Mushroom",
+    "commonName": "King Trumpet Mushroom",
+    "botanicalName": "Pleurotus eryngii",
+    "description": "King Trumpet mushrooms have a firm texture and a mild, slightly nutty flavor. They are often used in Asian cuisine, particularly in stir-fries, soups, and grilled dishes. King Trumpet mushrooms have a thick, white stem and a small cap, making them versatile in cooking. They are sometimes referred to as the 'poor man's abalone' due to their resemblance in taste and texture to seafood. King Trumpet mushrooms are also valued for their nutritional content, including protein, vitamins, and minerals.",
+    "image": "http://localhost:8082/items/mushroom/KingTrumpetMushroom.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Pleurotus+eryngii&sca_esv=7978873cf7ff4aec&sca_upv=1&hl=en&udm=2&cs=1&biw=1920&bih=966&sxsrf=ADLYWIISaZLDneN3cN4EzIxpR0_rDrKkMA%3A1715098063199&ei=z1E6ZvfnC428vr0PgZuhcA&ved=0ahUKEwi3i7-W9vuFAxUNnq8BHYFNCA4Q4dUDCBA&oq=Pleurotus+eryngii&gs_lp=Egxnd3Mtd2l6LXNlcnAiEVBsZXVyb3R1cyBlcnluZ2lpMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIEEAAYHjIEEAAYHjIEEAAYHkiUDFDiAljiAnABeACQAQCYATOgATOqAQExuAEMyAEA-AEB-AECmAICoAI6qAIKwgIHECMYJxjqApgDBJIHATKgB7gF&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Pleurotus_eryngii"
+  },
+  {
+    "id": 109,
+    "category": "Mushroom",
+    "commonName": "Cultivated Mushroom",
+    "botanicalName": "Agaricus bisporus",
+    "description": "Crimini mushrooms, also known as baby portobellos, are similar to white button mushrooms but have a firmer texture and a more intense flavor. They are commonly used in various dishes, from pizzas and pastas to stir-fries and soups. Crimini mushrooms have a rich umami taste that adds depth to recipes, making them a popular choice among chefs and home cooks alike.",
+    "image": "http://localhost:8082/items/mushroom/CultivatedMushroom.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=cultivated+mushroom&sca_esv=7978873cf7ff4aec&sca_upv=1&hl=en&udm=2&cs=1&biw=1920&bih=966&sxsrf=ADLYWIKQa5UE9YOSDWTJ5iBBno3quaPrbw%3A1715098248007&ei=iFI6ZtsMuPPV7w-75I0o&ved=0ahUKEwjb8M7u9vuFAxW4efUHHTtyAwUQ4dUDCBA&oq=cultivated+mushroom&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2N1bHRpdmF0ZWQgbXVzaHJvb20yBRAAGIAEMgUQABiABDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGDIHEAAYgAQYGEiuB1DnAVjnAXABeACQAQCYAS2gAS2qAQExuAEMyAEA-AEB-AECmAICoAI1qAIKwgIHECMYJxjqApgDBJIHATKgB9cG&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Agaricus_bisporus"
+  },
+  {
+    "id": 110,
+    "category": "Mushroom",
+    "commonName": "Maitake",
+    "botanicalName": "Grifola frondosa",
+    "description": "Maitake mushrooms, also known as hen of the woods, are prized for their robust flavor and frilly appearance. They are often used in Japanese and Chinese cuisines, particularly in stir-fries, soups, and hot pots. Maitake mushrooms have a meaty texture and absorb flavors well, making them a versatile ingredient in various dishes. They are also believed to have health benefits, including immune system support and potential anti-inflammatory properties.",
+    "image": "http://localhost:8082/items/mushroom/Maitake.jpeg",
+    "externalImagesLink": "https://www.google.com/search?q=Maitake&sca_esv=7978873cf7ff4aec&sca_upv=1&hl=en&udm=2&cs=1&biw=1920&bih=966&sxsrf=ADLYWILLt3uczZD5U9EvxEq-jOGuIIo7jw%3A1715098300544&ei=vFI6Zo3mIPKhvr0P34aGsAw&ved=0ahUKEwiNtNWH9_uFAxXykK8BHV-DAcYQ4dUDCBA&oq=Maitake&gs_lp=Egxnd3Mtd2l6LXNlcnAiB01haXRha2UyChAAGIAEGEMYigUyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItQdQ7QFY7QFwAXgAkAEAmAE7oAE7qgEBMbgBDMgBAPgBAfgBApgCAqACQagCCsICBxAjGCcY6gKYAwOSBwEyoAf1BA&sclient=gws-wiz-serp",
+    "wikiLink": "https://en.wikipedia.org/wiki/Grifola_frondosa"
+  }
+]
