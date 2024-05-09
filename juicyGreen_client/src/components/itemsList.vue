@@ -12,7 +12,7 @@
           },
           {
             /* Set selected item style */
-            selected: item === selectedItem,
+            selected: item === itemsState.selectedItem,
           },
         ]"
         @click="selectItem(item)"
@@ -21,7 +21,7 @@
           <img class="listImg" :src="item.image" />
         </div>
         <div class="content">
-          <h3 class="commonName">{{ item.commonName }}</h3>
+          <h3 class="commonName" v-html="highlightText(item.commonName)"></h3>
           <p class="BotanicalName">Botanical Name: {{ item.botanicalName }}</p>
         </div>
       </div>
@@ -38,18 +38,26 @@
 
 <script setup>
 import { useItemsState } from "~/src/store/itemsState";
+import { onMounted, onUnmounted, ref } from "vue";
 const itemsState = useItemsState();
+
+/* Highlighting plant name with search input */
+const highlightText = (text) => {
+  if (itemsState.highlight !== "") {
+    const searchInput = itemsState.highlight;
+    const regex = new RegExp(`^${searchInput}`, "gi");
+    return text.replace(regex, "<mark>$&</mark>");
+  }
+  return text;
+};
 
 /* initialize description card */
 itemsState.setPlantDetail();
 
-const items = itemsState.plants;
-const selectedItem = ref(items);
-
 /* Handle click event */
 const selectItem = (item) => {
   // Set selected plant
-  selectedItem.value = item;
+  itemsState.selectedItem = item;
 
   // Pinia state handler
   itemsState.increaseCounter();

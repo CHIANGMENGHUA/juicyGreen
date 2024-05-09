@@ -6,15 +6,23 @@
       </button>
       <input
         type="text"
-        class="searchTerm"
+        class="searchInput"
         placeholder="Find your favorite plants!"
+        @input="handleInput"
       />
     </div>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { useItemsState } from "~/src/store/itemsState";
+const itemsState = useItemsState();
+
+/* Handle input from search bar */
+const handleInput = (event) => {
+  const searchInput = event.target.value;
+  itemsState.setPlantsRegex(searchInput);
+};
 </script>
 
 <style>
@@ -29,7 +37,7 @@ export default {};
   display: flex;
 }
 
-.searchTerm {
+.searchInput {
   font-size: 20px;
   width: 100%;
   border: 3px solid rgb(180, 140, 100);
@@ -41,7 +49,7 @@ export default {};
   color: rgb(90, 60, 30);
 }
 
-.searchTerm:focus {
+.searchInput:focus {
   background-color: rgb(230, 210, 200);
 }
 

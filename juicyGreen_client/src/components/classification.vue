@@ -117,9 +117,15 @@ const selectOption = (option) => {
 
   // Pinia state handler
   itemsState.setCategory(option.category);
-  itemsState.setPlants();
-  itemsState.setPlantId(option.firstPlantId);
-  itemsState.setPlantDetail();
+
+  // if search bar has been use, setPlantsRegex
+  if (itemsState.highlight === "") {
+    itemsState.setPlants();
+    itemsState.setPlantId(option.firstPlantId);
+    itemsState.setPlantDetail();
+  } else {
+    itemsState.setPlantsRegex(itemsState.highlight);
+  }
 
   // Change classification image
   document.querySelector(".selected-item").style.backgroundImage =
