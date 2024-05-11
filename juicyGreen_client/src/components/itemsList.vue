@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div v-if="itemsState.noResult" class="noResult">
+    <div v-if="!itemsState.hasResult" class="noResult">
       <img src="http://localhost:8082/noResult.png" />
     </div>
 

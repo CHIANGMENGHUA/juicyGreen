@@ -6,10 +6,12 @@ export const useItemsState = defineStore("itemsState", {
     plantId: 1,
     selectedPlant: [],
     plantDetail: [],
+    favorite: [],
     category: "Cactus",
     counter: 0,
     highlight: "",
-    noResult: false,
+    hasResult: true,
+    intoFavorite: false,
   }),
 
   getters: {
@@ -61,10 +63,10 @@ export const useItemsState = defineStore("itemsState", {
           const firstPlant = this.plants[0];
           this.setPlantId(firstPlant.id);
           this.setPlantDetail();
-          this.noResult = false;
+          this.hasResult = true;
         } else {
           this.setPlantDetailNull();
-          this.noResult = true;
+          this.hasResult = false;
         }
 
         // Set highlight character for item list
@@ -87,6 +89,21 @@ export const useItemsState = defineStore("itemsState", {
         this.plantDetail.splice(0, 1, await response.json());
       } catch (err) {
         console.log(err);
+      }
+    },
+
+    checkFavorite(item) {
+      return this.favorite.includes(item);
+    },
+
+    addToFavorite(item) {
+      this.favorite.push(item);
+    },
+
+    removeFromFavorite(item) {
+      const index = this.favorite.indexOf(item);
+      if (index !== -1) {
+        this.favorite.splice(index, 1);
       }
     },
 

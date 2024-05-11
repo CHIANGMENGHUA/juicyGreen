@@ -25,6 +25,7 @@
           <a class="wiki" target="_blank" :href="detail.wikiLink">
             <img class="wiwkiLogo" src="http://localhost:8082/wikipedia.jpeg"
           /></a>
+
           <a
             class="moreImages"
             target="_blank"
@@ -33,6 +34,22 @@
               class="moreImagesLogo"
               src="http://localhost:8082/images.jpeg"
           /></a>
+
+          <div
+            v-if="!itemsState.checkFavorite(detail)"
+            class="addToFavorite"
+            @click="itemsState.addToFavorite(detail)"
+          >
+            <img src="http://localhost:8082/favorite.png" />
+          </div>
+
+          <div
+            v-if="itemsState.checkFavorite(detail)"
+            class="removeFromFavorite"
+            @click="itemsState.removeFromFavorite(detail)"
+          >
+            <img src="http://localhost:8082/trashCan.png" />
+          </div>
         </div>
       </div>
     </div>
@@ -104,8 +121,7 @@ onMounted(() => {
 
 .description {
   font-size: 20px;
-  margin-bottom: 10px;
-  padding: 2px 10px;
+  padding: 5px 20px;
   border-radius: 10px;
   background-color: rgb(255, 170, 70);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
@@ -118,6 +134,7 @@ onMounted(() => {
 }
 
 .link {
+  display: flex;
   margin-top: 50px;
   margin-bottom: 10px;
 }
@@ -132,6 +149,15 @@ onMounted(() => {
 }
 
 .moreImagesLogo:hover {
+  scale: 1.1;
+}
+
+.addToFavorite .removeFromFavorite {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.addToFavorite:hover .removeFromFavorite:hover {
   scale: 1.1;
 }
 </style>

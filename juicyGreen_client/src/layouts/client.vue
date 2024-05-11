@@ -4,7 +4,10 @@
       <webSiteLogo class="webSiteLogo" />
       <div class="container2">
         <div class="container3">
-          <classification class="classification" />
+          <classification
+            v-if="!itemsState.intoFavorite"
+            class="classification"
+          />
           <favorite class="favorite" />
         </div>
         <div class="container4">
@@ -19,24 +22,16 @@
   </body>
 </template>
 
-<script>
+<script setup>
+import { useItemsState } from "~/src/store/itemsState";
+const itemsState = useItemsState();
+
 import classification from "../components/classification.vue";
 import searchBar from "../components/searchBar.vue";
 import webSiteLogo from "../components/webSiteLogo.vue";
 import itemsList from "../components/itemsList.vue";
 import descriptionCard from "../components/descriptionCard.vue";
 import favorite from "../components/favorite.vue";
-
-export default {
-  components: {
-    classification,
-    searchBar,
-    webSiteLogo,
-    itemsList,
-    descriptionCard,
-    favorite,
-  },
-};
 </script>
 
 <style>
@@ -50,6 +45,10 @@ export default {
 .container2 {
   display: flex;
   margin-top: 10px;
+}
+
+.classification {
+  margin-bottom: 340px;
 }
 
 .container4 {
