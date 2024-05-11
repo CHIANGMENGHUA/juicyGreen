@@ -42,6 +42,24 @@
 <script setup>
 import { useItemsState } from "~/src/store/itemsState";
 const itemsState = useItemsState();
+
+// execution scroll to top
+const scrollToTop = () => {
+  const itemsList = document.querySelector(".descriptionCard");
+  itemsList.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+onMounted(() => {
+  // Watch for changes in itemsState and scroll to top
+  watch(
+    () => itemsState.plantId,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        scrollToTop();
+      }
+    }
+  );
+});
 </script>
 
 <style>

@@ -1,31 +1,34 @@
 <template>
   <div class="itemsList">
-    <div class="box">
-      <div
-        v-for="item in itemsState.getPlants"
-        :key="item.id"
-        :class="[
-          'list',
-          {
-            /* If counter == 0, set first item style (initial view), or remove it */
-            first: item === itemsState.getPlants[0] && itemsState.counter == 0,
-          },
-          {
-            /* Set selected item style */
-            selected: item === itemsState.selectedItem,
-          },
-        ]"
-        @click="selectItem(item)"
-      >
-        <div class="imgBox">
-          <img class="listImg" :src="item.image" />
-        </div>
-        <div class="content">
-          <h3 class="commonName" v-html="highlightText(item.commonName)"></h3>
-          <p class="BotanicalName">Botanical Name: {{ item.botanicalName }}</p>
-        </div>
+    <div
+      v-for="item in itemsState.getPlants"
+      :key="item.id"
+      :class="[
+        'list',
+        {
+          /* If counter == 0, set first item style (initial view), or remove it */
+          first: item === itemsState.getPlants[0] && itemsState.counter == 0,
+        },
+        {
+          /* Set selected item style */
+          selected: item === itemsState.selectedItem,
+        },
+      ]"
+      @click="selectItem(item)"
+    >
+      <div class="imgBox">
+        <img class="listImg" :src="item.image" />
+      </div>
+      <div class="content">
+        <h3 class="commonName" v-html="highlightText(item.commonName)"></h3>
+        <p class="BotanicalName">Botanical Name: {{ item.botanicalName }}</p>
       </div>
     </div>
+
+    <div v-if="itemsState.noResult" class="noResult">
+      <img src="http://localhost:8082/noResult.png" />
+    </div>
+
     <div
       v-if="showScrollToTopButton"
       class="scroll-to-top"
@@ -38,10 +41,10 @@
 
 <script setup>
 import { useItemsState } from "~/src/store/itemsState";
-import { onMounted, onUnmounted, ref } from "vue";
+import { onMounted, ref } from "vue";
 const itemsState = useItemsState();
 
-/* Highlighting plant name with search input */
+/* Highlighting plants name with search input key words */
 const highlightText = (text) => {
   if (itemsState.highlight !== "") {
     const searchInput = itemsState.highlight;
@@ -66,23 +69,36 @@ const selectItem = (item) => {
 };
 
 /* scrollToTop button */
+// don't show scrollToTop button when initial
 const showScrollToTopButton = ref(false);
+
 const itemsList = ref(null);
 
+// execution scroll to top
 const scrollToTop = () => {
   const itemsList = document.querySelector(".itemsList");
   itemsList.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// if start scroll down, show scrollToTop button
 const handleScroll = () => {
   showScrollToTopButton.value = itemsList.value.scrollTop > 0;
 };
 
 onMounted(() => {
+  // add eventListener for scrollToTop button
   itemsList.value = document.querySelector(".itemsList");
   itemsList.value.addEventListener("scroll", handleScroll);
-});
-onUnmounted(() => {
-  itemsList.value.removeEventListener("scroll", handleScroll);
+
+  // Watch for changes in itemsState and scroll to top
+  watch(
+    () => itemsState.plants[0],
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        scrollToTop();
+      }
+    }
+  );
 });
 </script>
 
@@ -146,6 +162,11 @@ onUnmounted(() => {
   width: 93px;
   height: 93px;
   border-radius: 10px;
+}
+
+.noResult {
+  margin-top: 50px;
+  width: 100px;
 }
 
 .scroll-to-top {
