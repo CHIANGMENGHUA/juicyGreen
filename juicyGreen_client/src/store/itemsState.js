@@ -92,8 +92,8 @@ export const useItemsState = defineStore("itemsState", {
       }
     },
 
-    checkFavorite(item) {
-      return this.favorite.includes(item);
+    checkFavorite() {
+      return this.favorite.includes(this.selectedPlant[0]);
     },
 
     addToFavorite(item) {

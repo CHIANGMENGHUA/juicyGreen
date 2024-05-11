@@ -11,7 +11,7 @@
         },
         {
           /* Set selected item style */
-          selected: item === itemsState.selectedItem,
+          selected: item === itemsState.selectedPlant[0],
         },
       ]"
       @click="selectItem(item)"
@@ -60,7 +60,7 @@ itemsState.setPlantDetail();
 /* Handle click event */
 const selectItem = (item) => {
   // Set selected plant
-  itemsState.selectedItem = item;
+  itemsState.selectedPlant.splice(0, 1, item);
 
   // Pinia state handler
   itemsState.increaseCounter();

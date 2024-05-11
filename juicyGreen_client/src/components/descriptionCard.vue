@@ -36,17 +36,17 @@
           /></a>
 
           <div
-            v-if="!itemsState.checkFavorite(detail)"
+            v-if="!itemsState.checkFavorite()"
             class="addToFavorite"
-            @click="itemsState.addToFavorite(detail)"
+            @click="itemsState.addToFavorite(itemsState.selectedPlant[0])"
           >
             <img src="http://localhost:8082/favorite.png" />
           </div>
 
           <div
-            v-if="itemsState.checkFavorite(detail)"
+            v-if="itemsState.checkFavorite()"
             class="removeFromFavorite"
-            @click="itemsState.removeFromFavorite(detail)"
+            @click="itemsState.removeFromFavorite(itemsState.selectedPlant[0])"
           >
             <img src="http://localhost:8082/trashCan.png" />
           </div>
@@ -152,12 +152,21 @@ onMounted(() => {
   scale: 1.1;
 }
 
-.addToFavorite .removeFromFavorite {
+.addToFavorite {
   margin-left: 25px;
   cursor: pointer;
 }
 
-.addToFavorite:hover .removeFromFavorite:hover {
+.addToFavorite:hover {
+  scale: 1.1;
+}
+
+.removeFromFavorite {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.removeFromFavorite:hover {
   scale: 1.1;
 }
 </style>
