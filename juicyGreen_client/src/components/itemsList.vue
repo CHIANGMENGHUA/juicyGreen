@@ -54,45 +54,54 @@ const highlightText = (text) => {
   return text;
 };
 
-/* initialize description card */
-itemsState.setPlantDetail();
-
 /* Handle click event */
 const selectItem = (item) => {
   // Set selected plant
   itemsState.selectedPlant.splice(0, 1, item);
-
   // Pinia state handler
   itemsState.increaseCounter();
   itemsState.setPlantId(item.id);
   itemsState.setPlantDetail();
 };
 
-/* scrollToTop button */
-// don't show scrollToTop button when initial
+/* ScrollToTop button */
+// Don't show scrollToTop button when initial
 const showScrollToTopButton = ref(false);
-
 const itemsList = ref(null);
-
-// execution scroll to top
+// Execution scroll to top
 const scrollToTop = () => {
   const itemsList = document.querySelector(".itemsList");
   itemsList.scrollTo({ top: 0, behavior: "smooth" });
 };
-
-// if start scroll down, show scrollToTop button
+// If start scroll down, show scrollToTop button
 const handleScroll = () => {
   showScrollToTopButton.value = itemsList.value.scrollTop > 0;
 };
 
 onMounted(() => {
-  // add eventListener for scrollToTop button
+  /* Initialize description card */
+  itemsState.setPlantDetail();
+  // Add eventListener for scrollToTop button
   itemsList.value = document.querySelector(".itemsList");
   itemsList.value.addEventListener("scroll", handleScroll);
 
+  // Watch for change with favoritePlants
+  const favoriteItem = localStorage.getItem("favoritePlants");
+  watch(
+    () => favoriteItem,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        const favPlants = JSON.parse(localStorage.getItem("favoritePlants"));
+        itemsState.plants = favPlants;
+        itemsState.setPlantId(itemsState.plants[0].id);
+        itemsState.setPlantDetail();
+      }
+    }
+  );
+
   // Watch for changes in itemsState and scroll to top
   watch(
-    () => itemsState.plants[0],
+    () => itemsState.categoryNumber,
     (newValue, oldValue) => {
       if (newValue !== oldValue) {
         scrollToTop();
@@ -106,7 +115,7 @@ onMounted(() => {
 .itemsList {
   width: 500px;
   margin-top: 10px;
-  max-height: 770px;
+  max-height: 740px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -139,7 +148,7 @@ onMounted(() => {
 }
 
 .list:hover {
-  transform: translateX(10px);
+  transform: translateX(5px);
   background-color: rgb(255, 196, 95);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }

@@ -47,17 +47,14 @@ export const useItemsState = defineStore("itemsState", {
       try {
         // Create a case-insensitive regular expression
         const regex = new RegExp(`^${searchInput}`, "i");
-
         // GET request from DB by category
         const response = await fetch(
           `http://localhost:8080/plants/category/${this.category}`
         );
-
         // Refresh plants list state with filtered results
         this.plants = (await response.json()).filter((plant) =>
           regex.test(plant.commonName)
         );
-
         // refresh state for plant id and plant detail if plants existing
         if (this.plants.length !== 0) {
           const firstPlant = this.plants[0];
@@ -68,10 +65,8 @@ export const useItemsState = defineStore("itemsState", {
           this.setPlantDetailNull();
           this.hasResult = false;
         }
-
         // Set highlight character for item list
         this.highlight = searchInput;
-
         // Reset counter for itemsList (set .list.first style for first item)
         this.resetCounter();
       } catch (err) {
@@ -93,17 +88,44 @@ export const useItemsState = defineStore("itemsState", {
     },
 
     checkFavorite() {
-      return this.favorite.includes(this.selectedPlant[0]);
+      try {
+        const itemToCheck = JSON.stringify(this.plantDetail[0]);
+        const storedItems =
+          JSON.parse(localStorage.getItem("favoritePlants")) || [];
+        return storedItems.some((item) => JSON.stringify(item) === itemToCheck);
+      } catch (err) {
+        console.log(err);
+        return false;
+      }
     },
 
-    addToFavorite(item) {
-      this.favorite.push(item);
+    addToFavorite() {
+      try {
+        const itemToStore = this.plantDetail[0];
+        let storedItems = localStorage.getItem("favoritePlants") || "[]";
+        const parsedItems = JSON.parse(storedItems);
+        parsedItems.push(itemToStore);
+        localStorage.setItem("favoritePlants", JSON.stringify(parsedItems));
+      } catch (err) {
+        console.log(err);
+      }
     },
 
-    removeFromFavorite(item) {
-      const index = this.favorite.indexOf(item);
-      if (index !== -1) {
-        this.favorite.splice(index, 1);
+    removeFromFavorite() {
+      try {
+        const itemToRemove = JSON.stringify(this.plantDetail[0]);
+        const storedItems = localStorage.getItem("favoritePlants");
+        if (!storedItems) {
+          console.log("No favorite items to remove.");
+          return;
+        }
+        const parsedItems = JSON.parse(storedItems);
+        const updatedItems = parsedItems.filter(
+          (item) => JSON.stringify(item) !== itemToRemove
+        );
+        localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
+      } catch (err) {
+        console.log(err);
       }
     },
 

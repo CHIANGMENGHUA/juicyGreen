@@ -48,7 +48,7 @@ import favorite from "../components/favorite.vue";
 }
 
 .classification {
-  margin-bottom: 340px;
+  margin-bottom: 315px;
 }
 
 .container4 {

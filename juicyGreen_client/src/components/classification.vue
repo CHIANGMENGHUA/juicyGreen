@@ -25,6 +25,7 @@
 <script setup>
 import { ref } from "vue";
 import { useItemsState } from "~/src/store/itemsState";
+const itemsState = useItemsState();
 
 /* All categories */
 const options = [
@@ -97,27 +98,16 @@ const options = [
 ];
 
 /* Default selected category */
-const selectedOption = ref({
-  id: 1,
-  category: "Cactus",
-  image: "http://localhost:8082/classification/catcus.jpeg",
-});
-
-/* Set plants by category */
-const itemsState = useItemsState();
-itemsState.setPlants();
+const selectedOption = ref(options[0]);
 
 /* Click event */
 const selectOption = (option) => {
   // Reset counter for itemsList (set .list.first style for first item)
   itemsState.resetCounter();
-
   // Set selected category
   selectedOption.value = option;
-
   // Pinia state handler
   itemsState.setCategory(option.category);
-
   // if search bar has been use, setPlantsRegex
   if (itemsState.highlight === "") {
     itemsState.setPlants();
@@ -126,20 +116,24 @@ const selectOption = (option) => {
   } else {
     itemsState.setPlantsRegex(itemsState.highlight);
   }
-
   // Change classification image
   document.querySelector(".selected-item").style.backgroundImage =
     "url(" + option.image + ")";
 };
+
+onMounted(() => {
+  // Set plants by category
+  itemsState.setPlants();
+});
 </script>
 
 <style>
 .billboard {
+  margin-bottom: 10px;
   background-color: rgba(60, 60, 0, 0.7);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   text-align: center;
-  margin-bottom: 10px;
   width: 250px;
   height: 50px;
   border-radius: 10px;

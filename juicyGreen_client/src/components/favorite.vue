@@ -14,10 +14,22 @@ const itemsState = useItemsState();
 
 const getIntoFavorite = () => {
   itemsState.intoFavorite = true;
+  itemsState.resetCounter();
+  itemsState.selectedPlant = [];
+  const favPlants = JSON.parse(localStorage.getItem("favoritePlants"));
+  itemsState.plants = favPlants;
+  itemsState.setPlantId(itemsState.plants[0].id);
+  itemsState.setPlantDetail();
 };
 
 const getOutFavorite = () => {
   itemsState.intoFavorite = false;
+  itemsState.resetCounter();
+  itemsState.selectedPlant = [];
+  itemsState.category = "Cactus";
+  itemsState.setPlants();
+  itemsState.setPlantId(itemsState.plantId);
+  itemsState.setPlantDetail();
 };
 </script>
 

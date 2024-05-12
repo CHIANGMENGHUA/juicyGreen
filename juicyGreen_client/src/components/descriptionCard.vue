@@ -1,54 +1,58 @@
 <template>
   <div class="descriptionCard">
-    <div
-      v-for="detail in itemsState.getPlantDetail"
-      :key="detail.id"
-      class="plantName"
-    >
-      <h1>{{ detail.commonName }}</h1>
-    </div>
+    <div class="descriptionCard-content">
+      <div
+        v-for="detail in itemsState.getPlantDetail"
+        :key="detail.id"
+        class="plantName"
+      >
+        <h1>{{ detail.commonName }}</h1>
+      </div>
 
-    <div
-      v-for="detail in itemsState.getPlantDetail"
-      :key="detail.id"
-      class="card"
-    >
-      <img class="bigImage" :src="detail.image" />
-      <div class="description">
-        <h4 class="cardH4">
-          <b>Botanical Name: {{ detail.botanicalName }}</b>
-        </h4>
-        <p>
-          {{ detail.description }}
-        </p>
-        <div class="link">
-          <a class="wiki" target="_blank" :href="detail.wikiLink">
-            <img class="wiwkiLogo" src="http://localhost:8082/wikipedia.jpeg"
-          /></a>
+      <div
+        v-for="detail in itemsState.getPlantDetail"
+        :key="detail.id"
+        class="card"
+      >
+        <img class="bigImage" :src="detail.image" />
+        <div class="description">
+          <h4 class="h4-card">
+            <b>Botanical Name: {{ detail.botanicalName }}</b>
+          </h4>
+          <p>
+            {{ detail.description }}
+          </p>
+          <div class="link">
+            <a class="wiki" target="_blank" :href="detail.wikiLink">
+              <img class="wiwkiLogo" src="http://localhost:8082/wikipedia.jpeg"
+            /></a>
 
-          <a
-            class="moreImages"
-            target="_blank"
-            :href="detail.externalImagesLink"
-            ><img
-              class="moreImagesLogo"
-              src="http://localhost:8082/images.jpeg"
-          /></a>
+            <a
+              class="moreImages"
+              target="_blank"
+              :href="detail.externalImagesLink"
+              ><img
+                class="moreImagesLogo"
+                src="http://localhost:8082/images.jpeg"
+            /></a>
 
-          <div
-            v-if="!itemsState.checkFavorite()"
-            class="addToFavorite"
-            @click="itemsState.addToFavorite(itemsState.selectedPlant[0])"
-          >
-            <img src="http://localhost:8082/favorite.png" />
-          </div>
+            <div
+              v-if="!itemsState.checkFavorite()"
+              class="addToFavorite"
+              :key="favoriteKey"
+              @click="handleAddToFavorite"
+            >
+              <img src="http://localhost:8082/favorite.png" />
+            </div>
 
-          <div
-            v-if="itemsState.checkFavorite()"
-            class="removeFromFavorite"
-            @click="itemsState.removeFromFavorite(itemsState.selectedPlant[0])"
-          >
-            <img src="http://localhost:8082/trashCan.png" />
+            <div
+              v-if="itemsState.checkFavorite()"
+              class="removeFromFavorite"
+              :key="favoriteKey"
+              @click="handleRemoveFromFavorite"
+            >
+              <img src="http://localhost:8082/trashCan.png" />
+            </div>
           </div>
         </div>
       </div>
@@ -60,7 +64,19 @@
 import { useItemsState } from "~/src/store/itemsState";
 const itemsState = useItemsState();
 
-// execution scroll to top
+let favoriteKey = ref(0);
+
+const handleAddToFavorite = () => {
+  itemsState.addToFavorite();
+  favoriteKey.value++;
+};
+
+const handleRemoveFromFavorite = () => {
+  itemsState.removeFromFavorite();
+  favoriteKey.value++;
+};
+
+/* Execution scroll to top */
 const scrollToTop = () => {
   const itemsList = document.querySelector(".descriptionCard");
   itemsList.scrollTo({ top: 0, behavior: "smooth" });
@@ -81,12 +97,16 @@ onMounted(() => {
 
 <style>
 .descriptionCard {
-  max-height: 830px;
+  max-height: 800px;
   width: 635px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
   top: 0;
+}
+
+.descriptionCard-content {
+  margin: 0px 10px 10px 10px;
 }
 
 .plantName {
@@ -96,8 +116,6 @@ onMounted(() => {
   justify-content: center;
   background-color: rgb(255, 170, 70);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-  margin-top: 0;
-  margin-left: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   width: 600px;
@@ -107,7 +125,7 @@ onMounted(() => {
 
 .card {
   background-color: rgba(255, 255, 255, 0);
-  margin-left: 10px;
+
   width: 600px;
 }
 
@@ -127,10 +145,9 @@ onMounted(() => {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
-.cardH4 {
+.h4-card {
   font-size: 25px;
   margin-top: 20px;
-  margin-bottom: 0;
 }
 
 .link {
