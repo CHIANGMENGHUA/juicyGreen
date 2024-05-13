@@ -85,23 +85,9 @@ onMounted(() => {
   itemsList.value = document.querySelector(".itemsList");
   itemsList.value.addEventListener("scroll", handleScroll);
 
-  // Watch for change with favoritePlants
-  const favoriteItem = localStorage.getItem("favoritePlants");
-  watch(
-    () => favoriteItem,
-    (newValue, oldValue) => {
-      if (newValue !== oldValue) {
-        const favPlants = JSON.parse(localStorage.getItem("favoritePlants"));
-        itemsState.plants = favPlants;
-        itemsState.setPlantId(itemsState.plants[0].id);
-        itemsState.setPlantDetail();
-      }
-    }
-  );
-
   // Watch for changes in itemsState and scroll to top
   watch(
-    () => itemsState.categoryNumber,
+    () => itemsState.category,
     (newValue, oldValue) => {
       if (newValue !== oldValue) {
         scrollToTop();

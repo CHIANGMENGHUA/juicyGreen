@@ -6,7 +6,6 @@ export const useItemsState = defineStore("itemsState", {
     plantId: 1,
     selectedPlant: [],
     plantDetail: [],
-    favorite: [],
     category: "Cactus",
     counter: 0,
     highlight: "",
@@ -45,16 +44,27 @@ export const useItemsState = defineStore("itemsState", {
 
     async setPlantsRegex(searchInput) {
       try {
+        let response = [];
         // Create a case-insensitive regular expression
         const regex = new RegExp(`^${searchInput}`, "i");
-        // GET request from DB by category
-        const response = await fetch(
-          `http://localhost:8080/plants/category/${this.category}`
-        );
-        // Refresh plants list state with filtered results
-        this.plants = (await response.json()).filter((plant) =>
-          regex.test(plant.commonName)
-        );
+        if (!this.intoFavorite) {
+          // GET request from DB by category
+          response = await fetch(
+            `http://localhost:8080/plants/category/${this.category}`
+          );
+          // Refresh plants list state with filtered results
+          this.plants = (await response.json()).filter((plant) =>
+            regex.test(plant.commonName)
+          );
+        } else {
+          // GET request from localStorage by category
+          const favoritePlants = localStorage.getItem("favoritePlants");
+          response = favoritePlants ? JSON.parse(favoritePlants) : [];
+          // Refresh plants list state with filtered results
+          this.plants = response.filter((plant) =>
+            regex.test(plant.commonName)
+          );
+        }
         // refresh state for plant id and plant detail if plants existing
         if (this.plants.length !== 0) {
           const firstPlant = this.plants[0];

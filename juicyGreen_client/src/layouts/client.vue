@@ -15,7 +15,7 @@
           <itemsList class="itemsList" />
         </div>
         <div class="container5">
-          <descriptionCard />
+          <descriptionCard class="descriptionCard" />
         </div>
       </div>
     </div>
