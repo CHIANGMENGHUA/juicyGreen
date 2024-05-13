@@ -5,7 +5,7 @@
       <div class="container2">
         <div class="container3">
           <classification
-            v-if="!itemsState.intoFavorite"
+            v-if="!itemsState.inFavorite"
             class="classification"
           />
           <favorite class="favorite" />

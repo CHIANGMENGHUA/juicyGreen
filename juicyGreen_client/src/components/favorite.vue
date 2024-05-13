@@ -1,10 +1,12 @@
 <template>
-  <div class="favorite" @click="getIntoFavorite">
+  <div v-if="!itemsState.inFavorite" class="favorite" @click="getInFavorite">
     <header class="favorite-title">Favorite</header>
   </div>
-  <div v-if="itemsState.intoFavorite" class="goBack" @click="getOutFavorite">
-    <img class="image-goBack" src="http://localhost:8082/goBack.png" />
-    <p class="p-goBack">GO BACK</p>
+  <div v-if="itemsState.inFavorite" class="inFavorite">
+    <header class="favorite-title">Favorite</header>
+  </div>
+  <div v-if="itemsState.inFavorite" class="home" @click="getOutFavorite">
+    <img class="image-goBack" src="http://localhost:8082/home.png" />
   </div>
 </template>
 
@@ -12,24 +14,27 @@
 import { useItemsState } from "~/src/store/itemsState";
 const itemsState = useItemsState();
 
-const getIntoFavorite = () => {
-  itemsState.intoFavorite = true;
-  itemsState.resetCounter();
+const getInFavorite = () => {
+  itemsState.inFavorite = true;
+  // Get favorite plants
+  itemsState.setPlants();
+  // Set condition logic if has favorite plants or not
+  if (itemsState.plants.length === 0) {
+    // If not, set descriptionCard display nothing
+    itemsState.plantDetail = [];
+  } else {
+    // If has favorite plants, set descriptionCard display first plant
+    itemsState.plantId = itemsState.plants[0].id;
+    itemsState.setPlantDetail();
+  }
+  // Set none selected plant
+  itemsState.counter = 0;
   itemsState.selectedPlant = [];
-  const favPlants = JSON.parse(localStorage.getItem("favoritePlants"));
-  itemsState.plants = favPlants;
-  itemsState.setPlantId(itemsState.plants[0].id);
-  itemsState.setPlantDetail();
 };
 
 const getOutFavorite = () => {
-  itemsState.intoFavorite = false;
-  itemsState.resetCounter();
-  itemsState.selectedPlant = [];
-  itemsState.category = "Cactus";
-  itemsState.setPlants();
-  itemsState.setPlantId(itemsState.plantId);
-  itemsState.setPlantDetail();
+  // Reload page
+  window.location.reload();
 };
 </script>
 
@@ -54,9 +59,24 @@ const getOutFavorite = () => {
   box-shadow: 0px 8px 16px 0px rgb(0, 150, 0);
 }
 
-.goBack {
+.inFavorite {
+  background-image: url("http://localhost:8082/favorite.jpeg");
+  background-size: cover;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 85, 0);
+  text-align: center;
+  text-shadow: 5px 5px rgb(250, 190, 0);
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  border-radius: 10px;
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+.home {
   margin-top: 10px;
-  margin-left: 140px;
+  margin-left: 160px;
   font-size: 20px;
   scale: 0.7;
   cursor: pointer;

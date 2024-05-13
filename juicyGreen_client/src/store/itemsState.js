@@ -10,44 +10,45 @@ export const useItemsState = defineStore("itemsState", {
     counter: 0,
     highlight: "",
     hasResult: true,
-    intoFavorite: false,
+    inFavorite: false,
   }),
 
-  getters: {
-    getPlants() {
-      return this.plants;
-    },
-    getFirstPlant() {
-      return this.plants[0];
-    },
-    getPlantDetail() {
-      return this.plantDetail;
-    },
-    getCounter() {
-      return this.counter;
-    },
-  },
-
   actions: {
+    /* Fetch data from backend and refresh plants */
     async setPlants() {
+      let response = [];
+
       try {
-        // GET request from DB by category
-        const response = await fetch(
-          `http://localhost:8080/plants/category/${this.category}`
-        );
-        // Refresh palnts list state
-        this.plants = await response.json();
+        // make condition logic if inFavorite or not
+        if (!this.inFavorite) {
+          // GET request from DB by category
+          response = await fetch(
+            `http://localhost:8080/plants/category/${this.category}`
+          );
+          // Refresh palnts list state
+          this.plants = await response.json();
+        } else {
+          // GET request from localStorage by category
+          const favoritePlants = localStorage.getItem("favoritePlants");
+          response = favoritePlants ? JSON.parse(favoritePlants) : [];
+          // Refresh palnts list state
+          this.plants = response;
+        }
       } catch (err) {
         console.log(err);
       }
     },
 
+    /* This method for search bar use regex */
     async setPlantsRegex(searchInput) {
+      let response = [];
+
       try {
-        let response = [];
         // Create a case-insensitive regular expression
         const regex = new RegExp(`^${searchInput}`, "i");
-        if (!this.intoFavorite) {
+
+        // make condition logic if inFavorite or not
+        if (!this.inFavorite) {
           // GET request from DB by category
           response = await fetch(
             `http://localhost:8080/plants/category/${this.category}`
@@ -65,25 +66,28 @@ export const useItemsState = defineStore("itemsState", {
             regex.test(plant.commonName)
           );
         }
-        // refresh state for plant id and plant detail if plants existing
+
+        // Refresh state for plant id and plant detail if plants existing
         if (this.plants.length !== 0) {
-          const firstPlant = this.plants[0];
-          this.setPlantId(firstPlant.id);
+          this.plantId = this.plants[0].id;
           this.setPlantDetail();
           this.hasResult = true;
         } else {
-          this.setPlantDetailNull();
+          // or display no result
+          this.plantDetail = [];
           this.hasResult = false;
         }
+
         // Set highlight character for item list
         this.highlight = searchInput;
         // Reset counter for itemsList (set .list.first style for first item)
-        this.resetCounter();
+        this.counter = 0;
       } catch (err) {
         console.log(err);
       }
     },
 
+    /* Fetch data from backend and refresh plant detail */
     async setPlantDetail() {
       try {
         // GET request from DB by ID
@@ -97,6 +101,7 @@ export const useItemsState = defineStore("itemsState", {
       }
     },
 
+    /* Check selected plant is in favorite or not, return true or false */
     checkFavorite() {
       try {
         const itemToCheck = JSON.stringify(this.plantDetail[0]);
@@ -109,6 +114,7 @@ export const useItemsState = defineStore("itemsState", {
       }
     },
 
+    /* Add favorite plant in localStorage */
     addToFavorite() {
       try {
         const itemToStore = this.plantDetail[0];
@@ -121,6 +127,7 @@ export const useItemsState = defineStore("itemsState", {
       }
     },
 
+    /* remove favorite plant in localStorage */
     removeFromFavorite() {
       try {
         const itemToRemove = JSON.stringify(this.plantDetail[0]);
@@ -134,33 +141,16 @@ export const useItemsState = defineStore("itemsState", {
           (item) => JSON.stringify(item) !== itemToRemove
         );
         localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
+
+        // set condition logic if in favorite or not
+        if (this.inFavorite) {
+          // refresh state
+          this.setPlants();
+          this.plantDetail = [];
+        }
       } catch (err) {
         console.log(err);
       }
-    },
-
-    setPlantDetailNull() {
-      this.plantDetail = [];
-    },
-
-    setPlantId(id) {
-      this.plantId = id;
-    },
-
-    setCategory(c) {
-      this.category = c;
-    },
-
-    /* Counter for itemsList (if counter == 0, set .list.first style, or remove it) */
-    increaseCounter() {
-      this.counter++;
-    },
-    resetCounter() {
-      this.counter = 0;
-    },
-
-    setHighlight(h) {
-      this.highlight = "";
     },
   },
 });

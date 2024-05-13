@@ -1,13 +1,13 @@
 <template>
   <div class="itemsList">
     <div
-      v-for="item in itemsState.getPlants"
+      v-for="item in itemsState.plants"
       :key="item.id"
       :class="[
         'list',
         {
           /* If counter == 0, set first item style (initial view), or remove it */
-          first: item === itemsState.getPlants[0] && itemsState.counter == 0,
+          first: item === itemsState.plants[0] && itemsState.counter == 0,
         },
         {
           /* Set selected item style */
@@ -44,7 +44,7 @@ import { useItemsState } from "~/src/store/itemsState";
 import { onMounted, ref } from "vue";
 const itemsState = useItemsState();
 
-/* Highlighting plants name with search input key words */
+/* Highlighting plants name with search input keywords */
 const highlightText = (text) => {
   if (itemsState.highlight !== "") {
     const searchInput = itemsState.highlight;
@@ -59,8 +59,8 @@ const selectItem = (item) => {
   // Set selected plant
   itemsState.selectedPlant.splice(0, 1, item);
   // Pinia state handler
-  itemsState.increaseCounter();
-  itemsState.setPlantId(item.id);
+  itemsState.counter++;
+  itemsState.plantId = item.id;
   itemsState.setPlantDetail();
 };
 
@@ -81,11 +81,11 @@ const handleScroll = () => {
 onMounted(() => {
   /* Initialize description card */
   itemsState.setPlantDetail();
-  // Add eventListener for scrollToTop button
+  /* Add eventListener for scrollToTop button */
   itemsList.value = document.querySelector(".itemsList");
   itemsList.value.addEventListener("scroll", handleScroll);
 
-  // Watch for changes in itemsState and scroll to top
+  /* If state changed scroll to top */
   watch(
     () => itemsState.category,
     (newValue, oldValue) => {

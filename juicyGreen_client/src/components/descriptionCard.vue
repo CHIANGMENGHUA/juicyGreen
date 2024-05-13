@@ -2,7 +2,7 @@
   <div class="descriptionCard">
     <div class="descriptionCard-content">
       <div
-        v-for="detail in itemsState.getPlantDetail"
+        v-for="detail in itemsState.plantDetail"
         :key="detail.id"
         class="plantName"
       >
@@ -10,7 +10,7 @@
       </div>
 
       <div
-        v-for="detail in itemsState.getPlantDetail"
+        v-for="detail in itemsState.plantDetail"
         :key="detail.id"
         class="card"
       >
@@ -66,13 +66,15 @@ const itemsState = useItemsState();
 
 let favoriteKey = ref(0);
 
+/* Handle click event */
 const handleAddToFavorite = () => {
   itemsState.addToFavorite();
+  // refresh addToFavorite button
   favoriteKey.value++;
 };
-
 const handleRemoveFromFavorite = () => {
   itemsState.removeFromFavorite();
+  // refresh removeFromFavorite button
   favoriteKey.value++;
 };
 

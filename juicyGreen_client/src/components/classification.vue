@@ -103,15 +103,15 @@ const selectedOption = ref(options[0]);
 /* Click event */
 const selectOption = (option) => {
   // Reset counter for itemsList (set .list.first style for first item)
-  itemsState.resetCounter();
+  itemsState.counter = 0;
   // Set selected category
   selectedOption.value = option;
   // Pinia state handler
-  itemsState.setCategory(option.category);
+  itemsState.category = option.category;
   // if search bar has been use, setPlantsRegex
   if (itemsState.highlight === "") {
     itemsState.setPlants();
-    itemsState.setPlantId(option.firstPlantId);
+    itemsState.plantId = option.firstPlantId;
     itemsState.setPlantDetail();
   } else {
     itemsState.setPlantsRegex(itemsState.highlight);
