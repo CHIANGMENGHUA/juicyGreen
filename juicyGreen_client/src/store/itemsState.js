@@ -142,9 +142,9 @@ export const useItemsState = defineStore("itemsState", {
         );
         localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
 
-        // set condition logic if in favorite or not
+        // set condition logic if in favorite then refresh state
         if (this.inFavorite) {
-          // refresh state
+          this.counter++;
           this.setPlants();
           this.plantDetail = [];
         }
