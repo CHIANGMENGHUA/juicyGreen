@@ -37,7 +37,7 @@
             /></a>
 
             <div
-              v-if="!itemsState.checkFavorite()"
+              v-if="!itemsState.checkFavorite(itemsState.plantDetail[0])"
               class="addToFavorite"
               :key="favoriteKey"
               @click="handleAddToFavorite"
@@ -46,7 +46,7 @@
             </div>
 
             <div
-              v-if="itemsState.checkFavorite()"
+              v-if="itemsState.checkFavorite(itemsState.plantDetail[0])"
               class="removeFromFavorite"
               :key="favoriteKey"
               @click="handleRemoveFromFavorite"
@@ -64,18 +64,19 @@
 import { useItemsState } from "~/src/store/itemsState";
 const itemsState = useItemsState();
 
-let favoriteKey = ref(0);
-
 /* Handle click event */
+let favoriteKey = ref(0);
 const handleAddToFavorite = () => {
-  itemsState.addToFavorite();
+  itemsState.addToFavorite(itemsState.plantDetail[0]);
   // refresh addToFavorite button
   favoriteKey.value++;
+  itemsState.favoriteKeyState++;
 };
 const handleRemoveFromFavorite = () => {
-  itemsState.removeFromFavorite();
+  itemsState.removeFromFavorite(itemsState.plantDetail[0]);
   // refresh removeFromFavorite button
   favoriteKey.value++;
+  itemsState.favoriteKeyState++;
 };
 
 /* Execution scroll to top */
@@ -91,6 +92,16 @@ onMounted(() => {
     (newValue, oldValue) => {
       if (newValue !== oldValue) {
         scrollToTop();
+      }
+    }
+  );
+
+  /* If favoriteKeyState changed refresh favorite button */
+  watch(
+    () => itemsState.favoriteKeyState,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        favoriteKey.value++;
       }
     }
   );

@@ -11,6 +11,7 @@ export const useItemsState = defineStore("itemsState", {
     highlight: "",
     hasResult: true,
     inFavorite: false,
+    favoriteKeyState: 0,
   }),
 
   actions: {
@@ -102,9 +103,9 @@ export const useItemsState = defineStore("itemsState", {
     },
 
     /* Check selected plant is in favorite or not, return true or false */
-    checkFavorite() {
+    checkFavorite(plant) {
       try {
-        const itemToCheck = JSON.stringify(this.plantDetail[0]);
+        const itemToCheck = JSON.stringify(plant);
         const storedItems =
           JSON.parse(localStorage.getItem("favoritePlants")) || [];
         return storedItems.some((item) => JSON.stringify(item) === itemToCheck);
@@ -115,12 +116,11 @@ export const useItemsState = defineStore("itemsState", {
     },
 
     /* Add favorite plant in localStorage */
-    addToFavorite() {
+    addToFavorite(plant) {
       try {
-        const itemToStore = this.plantDetail[0];
         let storedItems = localStorage.getItem("favoritePlants") || "[]";
         const parsedItems = JSON.parse(storedItems);
-        parsedItems.push(itemToStore);
+        parsedItems.push(plant);
         localStorage.setItem("favoritePlants", JSON.stringify(parsedItems));
       } catch (err) {
         console.log(err);
@@ -128,9 +128,9 @@ export const useItemsState = defineStore("itemsState", {
     },
 
     /* remove favorite plant in localStorage */
-    removeFromFavorite() {
+    removeFromFavorite(plant) {
       try {
-        const itemToRemove = JSON.stringify(this.plantDetail[0]);
+        const itemToRemove = JSON.stringify(plant);
         const storedItems = localStorage.getItem("favoritePlants");
         if (!storedItems) {
           console.log("No favorite items to remove.");

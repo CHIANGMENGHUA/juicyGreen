@@ -1,27 +1,47 @@
 <template>
   <div class="itemsList">
-    <div
-      v-for="item in itemsState.plants"
-      :key="item.id"
-      :class="[
-        'list',
-        {
-          /* If counter == 0, set first item style (initial view), or remove it */
-          first: item === itemsState.plants[0] && itemsState.counter == 0,
-        },
-        {
-          /* Set selected item style */
-          selected: item === itemsState.selectedPlant[0],
-        },
-      ]"
-      @click="selectItem(item)"
-    >
-      <div class="imgBox">
-        <img class="listImg" :src="item.image" />
+    <div v-for="item in itemsState.plants" class="list" :key="item.id">
+      <div
+        :class="[
+          'list-content',
+          {
+            /* If counter == 0, set first item style (initial view), or remove it */
+            first: item === itemsState.plants[0] && itemsState.counter == 0,
+          },
+          {
+            /* Set selected item style */
+            selected: item === itemsState.selectedPlant[0],
+          },
+        ]"
+        @click="selectItem(item)"
+      >
+        <div class="imgBox">
+          <img class="listImg" :src="item.image" />
+        </div>
+        <div class="list-description">
+          <h3 class="commonName" v-html="highlightText(item.commonName)"></h3>
+          <p class="BotanicalName">Botanical Name: {{ item.botanicalName }}</p>
+        </div>
       </div>
-      <div class="content">
-        <h3 class="commonName" v-html="highlightText(item.commonName)"></h3>
-        <p class="BotanicalName">Botanical Name: {{ item.botanicalName }}</p>
+
+      <div class="favButton">
+        <div
+          v-if="!itemsState.checkFavorite(item)"
+          class="addToFavorite"
+          :key="favoriteKey"
+          @click="handleAddToFavorite(item)"
+        >
+          <img src="http://localhost:8082/list_favorite.png" />
+        </div>
+
+        <div
+          v-if="itemsState.checkFavorite(item)"
+          class="removeFromFavorite"
+          :key="favoriteKey"
+          @click="handleRemoveFromFavorite(item)"
+        >
+          <img src="http://localhost:8082/list_trashCan.png" />
+        </div>
       </div>
     </div>
 
@@ -64,6 +84,21 @@ const selectItem = (item) => {
   itemsState.setPlantDetail();
 };
 
+/* Handle click event */
+let favoriteKey = ref(0);
+const handleAddToFavorite = (item) => {
+  itemsState.addToFavorite(item);
+  // refresh addToFavorite button
+  favoriteKey.value++;
+  itemsState.favoriteKeyState++;
+};
+const handleRemoveFromFavorite = (item) => {
+  itemsState.removeFromFavorite(item);
+  // refresh removeFromFavorite button
+  favoriteKey.value++;
+  itemsState.favoriteKeyState++;
+};
+
 /* ScrollToTop button */
 // Don't show scrollToTop button when initial
 const showScrollToTopButton = ref(false);
@@ -94,6 +129,16 @@ onMounted(() => {
       }
     }
   );
+
+  /* If favoriteKeyState changed refresh favorite button */
+  watch(
+    () => itemsState.favoriteKeyState,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        favoriteKey.value++;
+      }
+    }
+  );
 });
 </script>
 
@@ -105,6 +150,10 @@ onMounted(() => {
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.list {
+  display: flex;
 }
 
 .commonName {
@@ -121,11 +170,12 @@ onMounted(() => {
   margin-bottom: 0;
 }
 
-.list {
+.list-content {
+  width: 400px;
   position: relative;
   display: flex;
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
@@ -133,19 +183,19 @@ onMounted(() => {
   transition: transform 0.3s ease-in-out;
 }
 
-.list:hover {
+.list-content:hover {
   transform: translateX(5px);
   background-color: rgb(255, 196, 95);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* If counter == 0, set first item style (initial view), or remove it */
-.list.first {
+.list-content.first {
   background-color: rgba(100, 50, 0, 0.6);
 }
 
 /* Set selected item style */
-.list.selected {
+.list-content.selected {
   background-color: rgba(100, 50, 0, 0.6);
 }
 
@@ -157,6 +207,12 @@ onMounted(() => {
   width: 93px;
   height: 93px;
   border-radius: 10px;
+}
+
+.favButton {
+  position: relative;
+  top: 40px;
+  right: 10px;
 }
 
 .noResult {
