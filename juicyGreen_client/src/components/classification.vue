@@ -104,18 +104,20 @@ const selectedOption = ref(options[0]);
 const selectOption = (option) => {
   // Reset counter for itemsList (set .list.first style for first item)
   itemsState.counter = 0;
-  // Set selected category
+
+  // Set selected category and refresh state
   selectedOption.value = option;
-  // Pinia state handler
   itemsState.category = option.category;
-  // if search bar has been use, setPlantsRegex
-  if (itemsState.highlight === "") {
+
+  // If search bar has been use, execution setPlantsRegex
+  if (itemsState.searchInput === "") {
     itemsState.setPlants();
     itemsState.plantId = option.firstPlantId;
     itemsState.setPlantDetail();
   } else {
-    itemsState.setPlantsRegex(itemsState.highlight);
+    itemsState.setPlantsRegex(itemsState.searchInput);
   }
+
   // Change classification image
   document.querySelector(".selected-item").style.backgroundImage =
     "url(" + option.image + ")";

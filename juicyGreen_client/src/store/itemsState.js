@@ -8,7 +8,7 @@ export const useItemsState = defineStore("itemsState", {
     plantDetail: [],
     category: "Cactus",
     counter: 0,
-    highlight: "",
+    searchInput: "",
     hasResult: true,
     inFavorite: false,
     favoriteKeyState: 0,
@@ -20,18 +20,20 @@ export const useItemsState = defineStore("itemsState", {
       let response = [];
 
       try {
-        // make condition logic if inFavorite or not
+        // Make condition logic if inFavorite or not
         if (!this.inFavorite) {
           // GET request from DB by category
           response = await fetch(
             `http://localhost:8080/plants/category/${this.category}`
           );
+
           // Refresh palnts list state
           this.plants = await response.json();
         } else {
           // GET request from localStorage by category
           const favoritePlants = localStorage.getItem("favoritePlants");
           response = favoritePlants ? JSON.parse(favoritePlants) : [];
+
           // Refresh palnts list state
           this.plants = response;
         }
@@ -48,12 +50,13 @@ export const useItemsState = defineStore("itemsState", {
         // Create a case-insensitive regular expression
         const regex = new RegExp(`^${searchInput}`, "i");
 
-        // make condition logic if inFavorite or not
+        // Make condition logic if inFavorite or not
         if (!this.inFavorite) {
           // GET request from DB by category
           response = await fetch(
             `http://localhost:8080/plants/category/${this.category}`
           );
+
           // Refresh plants list state with filtered results
           this.plants = (await response.json()).filter((plant) =>
             regex.test(plant.commonName)
@@ -62,6 +65,7 @@ export const useItemsState = defineStore("itemsState", {
           // GET request from localStorage by category
           const favoritePlants = localStorage.getItem("favoritePlants");
           response = favoritePlants ? JSON.parse(favoritePlants) : [];
+
           // Refresh plants list state with filtered results
           this.plants = response.filter((plant) =>
             regex.test(plant.commonName)
@@ -79,8 +83,8 @@ export const useItemsState = defineStore("itemsState", {
           this.hasResult = false;
         }
 
-        // Set highlight character for item list
-        this.highlight = searchInput;
+        // Set searchInput character for item list
+        this.searchInput = searchInput;
         // Reset counter for itemsList (set .list.first style for first item)
         this.counter = 0;
       } catch (err) {
@@ -95,6 +99,7 @@ export const useItemsState = defineStore("itemsState", {
         const response = await fetch(
           `http://localhost:8080/plants/${this.plantId}`
         );
+
         // Refresh palnt detail state
         this.plantDetail.splice(0, 1, await response.json());
       } catch (err) {
@@ -102,12 +107,16 @@ export const useItemsState = defineStore("itemsState", {
       }
     },
 
-    /* Check selected plant is in favorite or not, return true or false */
+    /* Check selected plant is in localStorage or not, return true or false */
     checkFavorite(plant) {
       try {
         const itemToCheck = JSON.stringify(plant);
+
+        // Get plant from favorite
         const storedItems =
           JSON.parse(localStorage.getItem("favoritePlants")) || [];
+
+        // Check
         return storedItems.some((item) => JSON.stringify(item) === itemToCheck);
       } catch (err) {
         console.log(err);
@@ -118,8 +127,11 @@ export const useItemsState = defineStore("itemsState", {
     /* Add favorite plant in localStorage */
     addToFavorite(plant) {
       try {
+        // Get plants from favorite
         let storedItems = localStorage.getItem("favoritePlants") || "[]";
         const parsedItems = JSON.parse(storedItems);
+
+        // Add plant in favorite and update localStorage
         parsedItems.push(plant);
         localStorage.setItem("favoritePlants", JSON.stringify(parsedItems));
       } catch (err) {
@@ -132,17 +144,23 @@ export const useItemsState = defineStore("itemsState", {
       try {
         const itemToRemove = JSON.stringify(plant);
         const storedItems = localStorage.getItem("favoritePlants");
+
+        // If no any plants in favorite
         if (!storedItems) {
           console.log("No favorite items to remove.");
           return;
         }
+
+        // Remove plant from favorite
         const parsedItems = JSON.parse(storedItems);
         const updatedItems = parsedItems.filter(
           (item) => JSON.stringify(item) !== itemToRemove
         );
+
+        // Update localStorage
         localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
 
-        // set condition logic if in favorite then refresh state
+        // Set condition logic if in favorite then refresh state
         if (this.inFavorite) {
           this.counter++;
           this.setPlants();

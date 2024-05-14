@@ -66,16 +66,20 @@ const itemsState = useItemsState();
 
 /* Handle click event */
 let favoriteKey = ref(0);
+
 const handleAddToFavorite = () => {
   itemsState.addToFavorite(itemsState.plantDetail[0]);
-  // refresh addToFavorite button
+  // Refresh addToFavorite button
   favoriteKey.value++;
+  // Sync with itemsList
   itemsState.favoriteKeyState++;
 };
+
 const handleRemoveFromFavorite = () => {
   itemsState.removeFromFavorite(itemsState.plantDetail[0]);
-  // refresh removeFromFavorite button
+  // Refresh removeFromFavorite button
   favoriteKey.value++;
+  // Sync with itemsList
   itemsState.favoriteKeyState++;
 };
 
@@ -86,7 +90,7 @@ const scrollToTop = () => {
 };
 
 onMounted(() => {
-  // Watch for changes in itemsState and scroll to top
+  /* If state changed then scroll to top */
   watch(
     () => itemsState.plantId,
     (newValue, oldValue) => {

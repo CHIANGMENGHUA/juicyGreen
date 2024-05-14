@@ -16,8 +16,15 @@ const itemsState = useItemsState();
 
 const getInFavorite = () => {
   itemsState.inFavorite = true;
-  // Get favorite plants
-  itemsState.setPlants();
+
+  // Set favorite plants
+  // Check search bar has been use or not
+  if (itemsState.searchInput === "") {
+    itemsState.setPlants();
+  } else {
+    itemsState.setPlantsRegex(itemsState.searchInput);
+  }
+
   // Set condition logic if has favorite plants or not
   if (itemsState.plants.length === 0) {
     // If not, set descriptionCard display nothing
@@ -27,6 +34,7 @@ const getInFavorite = () => {
     itemsState.plantId = itemsState.plants[0].id;
     itemsState.setPlantDetail();
   }
+
   // Set none selected plant
   itemsState.counter = 0;
   itemsState.selectedPlant = [];

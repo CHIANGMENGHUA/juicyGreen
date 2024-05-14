@@ -45,7 +45,21 @@
       </div>
     </div>
 
-    <div v-if="!itemsState.hasResult" class="noResult">
+    <div
+      v-if="
+        itemsState.plants.length == 0 &&
+        itemsState.inFavorite &&
+        itemsState.searchInput === ''
+      "
+      class="nothingFound"
+    >
+      <img src="http://localhost:8082/nothingFound.png" />
+    </div>
+
+    <div
+      v-if="!itemsState.hasResult && itemsState.searchInput !== ''"
+      class="noResult"
+    >
       <img src="http://localhost:8082/noResult.png" />
     </div>
 
@@ -66,8 +80,8 @@ const itemsState = useItemsState();
 
 /* Highlighting plants name with search input keywords */
 const highlightText = (text) => {
-  if (itemsState.highlight !== "") {
-    const searchInput = itemsState.highlight;
+  if (itemsState.searchInput !== "") {
+    const searchInput = itemsState.searchInput;
     const regex = new RegExp(`^${searchInput}`, "gi");
     return text.replace(regex, "<mark>$&</mark>");
   }
@@ -78,7 +92,7 @@ const highlightText = (text) => {
 const selectItem = (item) => {
   // Set selected plant
   itemsState.selectedPlant.splice(0, 1, item);
-  // Pinia state handler
+  // State refresh
   itemsState.counter++;
   itemsState.plantId = item.id;
   itemsState.setPlantDetail();
@@ -86,16 +100,20 @@ const selectItem = (item) => {
 
 /* Handle click event */
 let favoriteKey = ref(0);
+
 const handleAddToFavorite = (item) => {
   itemsState.addToFavorite(item);
   // refresh addToFavorite button
   favoriteKey.value++;
+  // sync with descriptionCard
   itemsState.favoriteKeyState++;
 };
+
 const handleRemoveFromFavorite = (item) => {
   itemsState.removeFromFavorite(item);
   // refresh removeFromFavorite button
   favoriteKey.value++;
+  // sync with descriptionCard
   itemsState.favoriteKeyState++;
 };
 
@@ -103,11 +121,13 @@ const handleRemoveFromFavorite = (item) => {
 // Don't show scrollToTop button when initial
 const showScrollToTopButton = ref(false);
 const itemsList = ref(null);
+
 // Execution scroll to top
 const scrollToTop = () => {
   const itemsList = document.querySelector(".itemsList");
   itemsList.scrollTo({ top: 0, behavior: "smooth" });
 };
+
 // If start scroll down, show scrollToTop button
 const handleScroll = () => {
   showScrollToTopButton.value = itemsList.value.scrollTop > 0;
@@ -116,6 +136,7 @@ const handleScroll = () => {
 onMounted(() => {
   /* Initialize description card */
   itemsState.setPlantDetail();
+
   /* Add eventListener for scrollToTop button */
   itemsList.value = document.querySelector(".itemsList");
   itemsList.value.addEventListener("scroll", handleScroll);
@@ -123,6 +144,14 @@ onMounted(() => {
   /* If state changed scroll to top */
   watch(
     () => itemsState.category,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        scrollToTop();
+      }
+    }
+  );
+  watch(
+    () => itemsState.inFavorite,
     (newValue, oldValue) => {
       if (newValue !== oldValue) {
         scrollToTop();
