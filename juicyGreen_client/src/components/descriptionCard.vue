@@ -90,7 +90,18 @@ const scrollToTop = () => {
 };
 
 onMounted(() => {
+  /* Initialize description card */
+  itemsState.setPlantDetail();
+
   /* If state changed then scroll to top */
+  watch(
+    () => itemsState.plants,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        scrollToTop();
+      }
+    }
+  );
   watch(
     () => itemsState.plantId,
     (newValue, oldValue) => {

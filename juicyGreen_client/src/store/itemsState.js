@@ -6,7 +6,7 @@ export const useItemsState = defineStore("itemsState", {
     plantId: 1,
     selectedPlant: [],
     plantDetail: [],
-    category: "Cactus",
+    category: "All",
     counter: 0,
     searchInput: "",
     hasResult: true,
@@ -22,10 +22,16 @@ export const useItemsState = defineStore("itemsState", {
       try {
         // Make condition logic if inFavorite or not
         if (!this.inFavorite) {
-          // GET request from DB by category
-          response = await fetch(
-            `http://localhost:8080/plants/category/${this.category}`
-          );
+          // If selected all categories, get all plants
+          if (this.category === "All") {
+            // Get all plants from DB
+            response = await fetch("http://localhost:8080/plants/");
+          } else {
+            // GET request from DB by category
+            response = await fetch(
+              `http://localhost:8080/plants/category/${this.category}`
+            );
+          }
 
           // Refresh palnts list state
           this.plants = await response.json();
@@ -52,10 +58,16 @@ export const useItemsState = defineStore("itemsState", {
 
         // Make condition logic if inFavorite or not
         if (!this.inFavorite) {
-          // GET request from DB by category
-          response = await fetch(
-            `http://localhost:8080/plants/category/${this.category}`
-          );
+          // If selected all categories, get all plants
+          if (this.category === "All") {
+            // GET request from DB
+            response = await fetch("http://localhost:8080/plants/");
+          } else {
+            // GET request from DB by category
+            response = await fetch(
+              `http://localhost:8080/plants/category/${this.category}`
+            );
+          }
 
           // Refresh plants list state with filtered results
           this.plants = (await response.json()).filter((plant) =>
@@ -74,19 +86,28 @@ export const useItemsState = defineStore("itemsState", {
 
         // Refresh state for plant id and plant detail if plants existing
         if (this.plants.length !== 0) {
-          this.plantId = this.plants[0].id;
-          this.setPlantDetail();
           this.hasResult = true;
         } else {
           // or display no result
-          this.plantDetail = [];
           this.hasResult = false;
+        }
+
+        // If has search result or not
+        if (this.hasResult) {
+          this.plantId = this.plants[0].id;
+          this.setPlantDetail();
+        } else {
+          this.plantDetail = [];
+        }
+
+        // If in favorite, reset counter
+        if (!this.inFavorite) {
+          // Reset counter for itemsList (set .list.first style for first item)
+          this.counter = 0;
         }
 
         // Set searchInput character for item list
         this.searchInput = searchInput;
-        // Reset counter for itemsList (set .list.first style for first item)
-        this.counter = 0;
       } catch (err) {
         console.log(err);
       }
@@ -162,8 +183,16 @@ export const useItemsState = defineStore("itemsState", {
 
         // Set condition logic if in favorite then refresh state
         if (this.inFavorite) {
+          // Add counter for itemsList (remove .list.first style for first item)
           this.counter++;
-          this.setPlants();
+          // Set condition logic if search bar in used or not
+          if (this.searchInput === "") {
+            this.setPlants();
+          } else {
+            this.setPlantsRegex(this.searchInput);
+          }
+
+          // Do not display descriptionCard
           this.plantDetail = [];
         }
       } catch (err) {

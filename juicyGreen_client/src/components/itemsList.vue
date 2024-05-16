@@ -134,8 +134,8 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
-  /* Initialize description card */
-  itemsState.setPlantDetail();
+  // Set plants by category
+  itemsState.setPlants();
 
   /* Add eventListener for scrollToTop button */
   itemsList.value = document.querySelector(".itemsList");

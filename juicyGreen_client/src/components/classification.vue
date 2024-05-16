@@ -30,6 +30,12 @@ const itemsState = useItemsState();
 /* All categories */
 const options = [
   {
+    id: 0,
+    firstPlantId: 1,
+    category: "All",
+    image: "http://localhost:8082/classification/all.jpeg",
+  },
+  {
     id: 1,
     firstPlantId: 1,
     category: "Cactus",
@@ -122,11 +128,6 @@ const selectOption = (option) => {
   document.querySelector(".selected-item").style.backgroundImage =
     "url(" + option.image + ")";
 };
-
-onMounted(() => {
-  // Set plants by category
-  itemsState.setPlants();
-});
 </script>
 
 <style>
@@ -153,7 +154,7 @@ onMounted(() => {
 }
 
 .selected-item {
-  background: url("http://localhost:8082/classification/catcus.jpeg");
+  background: url("http://localhost:8082/classification/all.jpeg");
   background-size: cover;
   color: rgb(255, 255, 255);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
