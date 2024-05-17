@@ -12,6 +12,7 @@ export const useItemsState = defineStore("itemsState", {
     hasResult: true,
     inFavorite: false,
     favoriteKeyState: 0,
+    ifRemoveFromFavorite: false,
   }),
 
   actions: {
@@ -93,7 +94,7 @@ export const useItemsState = defineStore("itemsState", {
         }
 
         // If has search result or not
-        if (this.hasResult) {
+        if (this.hasResult && !this.ifRemoveFromFavorite) {
           this.plantId = this.plants[0].id;
           this.setPlantDetail();
         } else {
@@ -166,11 +167,8 @@ export const useItemsState = defineStore("itemsState", {
         const itemToRemove = JSON.stringify(plant);
         const storedItems = localStorage.getItem("favoritePlants");
 
-        // If no any plants in favorite
-        if (!storedItems) {
-          console.log("No favorite items to remove.");
-          return;
-        }
+        // Start removeFromFavorite processes
+        this.ifRemoveFromFavorite = true;
 
         // Remove plant from favorite
         const parsedItems = JSON.parse(storedItems);
@@ -195,6 +193,9 @@ export const useItemsState = defineStore("itemsState", {
           // Do not display descriptionCard
           this.plantDetail = [];
         }
+
+        // Finish removeFromFavorite processes
+        this.ifRemoveFromFavorite = false;
       } catch (err) {
         console.log(err);
       }

@@ -6,7 +6,7 @@
           'list-content',
           {
             /* If counter == 0, set first item style (initial view), or remove it */
-            first: item === itemsState.plants[0] && itemsState.counter == 0,
+            first: item === itemsState.plants[0] && itemsState.counter === 0,
           },
           {
             /* Set selected item style */
@@ -134,8 +134,10 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
-  // Set plants by category
-  itemsState.setPlants();
+  // Set plants by category if search bar not using
+  if (itemsState.searchInput === "") {
+    itemsState.setPlants();
+  }
 
   /* Add eventListener for scrollToTop button */
   itemsList.value = document.querySelector(".itemsList");
@@ -155,6 +157,16 @@ onMounted(() => {
     (newValue, oldValue) => {
       if (newValue !== oldValue) {
         scrollToTop();
+      }
+    }
+  );
+
+  /* If searchInput changed then reset counter */
+  watch(
+    () => itemsState.searchInput,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue) {
+        itemsState.counter = 0;
       }
     }
   );
