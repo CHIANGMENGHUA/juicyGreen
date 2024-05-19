@@ -25,7 +25,7 @@ const getInFavorite = () => {
     itemsState.setPlantsRegex(itemsState.searchInput);
   }
 
-  // Set condition logic if has favorite plants or not
+  // Set condition logic if favorite plants exist or not
   if (itemsState.plants.length === 0) {
     // If not, set descriptionCard display nothing
     itemsState.plantDetail = [];
