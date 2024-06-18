@@ -19,7 +19,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-public class PlantsRepositoryTest {
+public class PlantsApiTest {
 
 	@Mock
 	private PlantsRepository plantsRepository;

@@ -1,0 +1,14 @@
+Make a json file follow this format and let id be 101 to 110(10 items), and category keep same, edit commonName, botanicalName, description for 10 different type of Mushroom, others keep same too ->
+
+[
+  {
+    "id": 101,
+    "category": "Mushroom",
+    "commonName": "something",
+    "botanicalName": "something",
+    "description": "some_description",
+    "image": "image_link",
+    "externalImagesLink": "external_images_link",
+    "wikiLink": "wiki_link"
+  }
+]
