@@ -149,55 +149,49 @@ export const useItemsState = defineStore("itemsState", {
     /* Add favorite plant in localStorage */
     addToFavorite(plant) {
       try {
-        // Get plants from favorite
-        let storedItems = localStorage.getItem("favoritePlants") || "[]";
-        const parsedItems = JSON.parse(storedItems);
+        // Cache favorite plants
+        let storedItems = localStorage.getItem("favoritePlants");
+        let parsedItems = storedItems ? JSON.parse(storedItems) : [];
 
-        // Add plant in favorite and update localStorage
-        parsedItems.push(plant);
-        localStorage.setItem("favoritePlants", JSON.stringify(parsedItems));
+        // Check for duplicates
+        if (
+          !parsedItems.some(
+            (item) => JSON.stringify(item) === JSON.stringify(plant)
+          )
+        ) {
+          parsedItems.push(plant);
+          localStorage.setItem("favoritePlants", JSON.stringify(parsedItems));
+        }
       } catch (err) {
-        console.log(err);
+        console.error("Error adding to favorites:", err);
       }
     },
 
-    /* remove favorite plant in localStorage */
+    /* Remove favorite plant in localStorage */
     removeFromFavorite(plant) {
       try {
         const itemToRemove = JSON.stringify(plant);
         const storedItems = localStorage.getItem("favoritePlants");
 
-        // Start removeFromFavorite processes
-        this.ifRemoveFromFavorite = true;
+        if (storedItems) {
+          const parsedItems = JSON.parse(storedItems);
+          const updatedItems = parsedItems.filter(
+            (item) => JSON.stringify(item) !== itemToRemove
+          );
 
-        // Remove plant from favorite
-        const parsedItems = JSON.parse(storedItems);
-        const updatedItems = parsedItems.filter(
-          (item) => JSON.stringify(item) !== itemToRemove
-        );
+          localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
 
-        // Update localStorage
-        localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
-
-        // Set condition logic if in favorite then refresh state
-        if (this.inFavorite) {
-          // Add counter for itemsList (remove .list.first style for first item)
-          this.counter++;
-          // Set condition logic if search bar in used or not
-          if (this.searchInput === "") {
-            this.setPlants();
-          } else {
-            this.setPlantsRegex(this.searchInput);
+          // Update state if needed
+          if (this.inFavorite) {
+            this.counter++;
+            this.searchInput === ""
+              ? this.setPlants()
+              : this.setPlantsRegex(this.searchInput);
+            this.plantDetail = [];
           }
-
-          // Do not display descriptionCard
-          this.plantDetail = [];
         }
-
-        // Finish removeFromFavorite processes
-        this.ifRemoveFromFavorite = false;
       } catch (err) {
-        console.log(err);
+        console.error("Error removing from favorites:", err);
       }
     },
   },

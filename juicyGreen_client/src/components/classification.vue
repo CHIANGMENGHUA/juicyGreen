@@ -85,19 +85,19 @@ const options = [
   },
   {
     id: 9,
-    firstPlantId: 81,
+    firstPlantId: 78,
     category: "Ferns",
     image: "http://localhost:8082/classification/ferns.jpeg",
   },
   {
     id: 10,
-    firstPlantId: 91,
+    firstPlantId: 88,
     category: "Moss",
     image: "http://localhost:8082/classification/moss.jpeg",
   },
   {
     id: 11,
-    firstPlantId: 101,
+    firstPlantId: 98,
     category: "Mushroom",
     image: "http://localhost:8082/classification/mushroom.jpeg",
   },
