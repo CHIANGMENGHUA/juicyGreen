@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class juciyGreenApplication {
+public class JuicyGreenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(juciyGreenApplication.class, args);
+		SpringApplication.run(JuicyGreenApplication.class, args);
 	}
 
 }

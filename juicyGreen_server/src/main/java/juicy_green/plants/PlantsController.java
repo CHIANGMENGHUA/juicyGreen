@@ -31,7 +31,7 @@ public class PlantsController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Plant> findOneByid(@PathVariable int id) {
+    public Optional<Plant> findOneById(@PathVariable int id) {
         return plantsRepository.findById(id);
     }
 
@@ -40,19 +40,14 @@ public class PlantsController {
         return plantsRepository.findByCategory(category);
     }
 
-    @GetMapping("/commonName/{commonName}")
-    public Optional<Plant> findByCommonName(@PathVariable String commonName) {
-        return plantsRepository.findByCommonName(commonName);
-    }
-
     @PostMapping("/")
     public Plant create(@RequestBody Plant plant) {
         return plantsRepository.save(plant);
     }
 
-    @PutMapping("/commonName/{commonName}")
-    public Plant update(@PathVariable String commonName, @RequestBody Plant plantDetails) {
-        Optional<Plant> optionalPlant = plantsRepository.findByCommonName(commonName);
+    @PutMapping("/{id}")
+    public Plant update(@PathVariable int id, @RequestBody Plant plantDetails) {
+        Optional<Plant> optionalPlant = findOneById(id);
         if (optionalPlant.isPresent()) {
             Plant plant = optionalPlant.get();
             plant.setId(plantDetails.getId());

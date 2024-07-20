@@ -1,8 +1,6 @@
 package juicy_green.plants;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.times;
@@ -55,7 +53,7 @@ public class PlantsApiTest {
 		when(plantsRepository.findById(1)).thenReturn(Optional.of(plant));
 
 		// Act
-		Optional<Plant> result = plantsController.findOneByid(1);
+		Optional<Plant> result = plantsController.findOneById(1);
 
 		// Assert
 		assertTrue(result.isPresent());
@@ -75,21 +73,6 @@ public class PlantsApiTest {
 		// Assert
 		assertNotNull(result);
 		assertEquals(1, result.size());
-	}
-
-	@Test
-	public void testFindByCommonName() {
-		// Arrange
-		Plant plant = new Plant();
-		plant.setCommonName("commonName");
-		when(plantsRepository.findByCommonName("commonName")).thenReturn(Optional.of(plant));
-
-		// Act
-		Optional<Plant> result = plantsController.findByCommonName("commonName");
-
-		// Assert
-		assertTrue(result.isPresent());
-		assertEquals("commonName", result.get().getCommonName());
 	}
 
 	@Test
@@ -119,11 +102,11 @@ public class PlantsApiTest {
 		updatedPlant.setImage("image");
 		updatedPlant.setExternalImagesLink("externalImagesLink");
 		updatedPlant.setWikiLink("wikiLink");
-		when(plantsRepository.findByCommonName("commonName")).thenReturn(Optional.of(existingPlant));
+		when(plantsController.findOneById(1)).thenReturn(Optional.of(existingPlant));
 		when(plantsRepository.save(any(Plant.class))).thenReturn(updatedPlant);
 
 		// Act
-		Plant result = plantsController.update("commonName", updatedPlant);
+		Plant result = plantsController.update(1, updatedPlant);
 
 		// Assert
 		assertNotNull(result);

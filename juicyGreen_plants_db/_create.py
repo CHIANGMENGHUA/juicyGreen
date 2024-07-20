@@ -1,12 +1,12 @@
 import json
-import mysql.connector
+import pymysql
 from datetime import datetime
 
 # Get the current date and time
 created_at = datetime.now()
 
 # Connect to MySQL
-db_connection = mysql.connector.connect(
+db_connection = pymysql.connect(
     host="localhost", user="root", password="1234", database="plants"
 )
 cursor = db_connection.cursor()
