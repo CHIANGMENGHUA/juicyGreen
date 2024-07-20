@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "category": "Cactus",
     "commonName": "Saguaro Cactus",
     "botanicalName": "Carnegiea gigantea",
@@ -10,7 +9,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Saguaro"
   },
   {
-    "id": 2,
     "category": "Cactus",
     "commonName": "Prickly Pear Cactus",
     "botanicalName": "Opuntia spp.",
@@ -20,7 +18,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Opuntia"
   },
   {
-    "id": 3,
     "category": "Cactus",
     "commonName": "Barrel Cactus",
     "botanicalName": "Ferocactus spp.",
@@ -30,7 +27,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Barrel_cactus"
   },
   {
-    "id": 4,
     "category": "Cactus",
     "commonName": "Old Man Cactus",
     "botanicalName": "Cephalocereus senilis",
@@ -40,7 +36,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Cephalocereus_senilis"
   },
   {
-    "id": 5,
     "category": "Cactus",
     "commonName": "Organ Pipe Cactus",
     "botanicalName": "Stenocereus thurberi",
@@ -50,7 +45,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Stenocereus_thurberi"
   },
   {
-    "id": 6,
     "category": "Cactus",
     "commonName": "Hedgehog Cactus",
     "botanicalName": "Echinocereus spp.",
@@ -60,7 +54,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Echinocereus"
   },
   {
-    "id": 7,
     "category": "Cactus",
     "commonName": "Fishhook Barrel Cactus",
     "botanicalName": "Ferocactus wislizeni",
@@ -70,7 +63,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Ferocactus_wislizeni"
   },
   {
-    "id": 8,
     "category": "Cactus",
     "commonName": "Golden Barrel Cactus",
     "botanicalName": "Kroenleinia grusonii",
@@ -80,7 +72,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Kroenleinia_grusonii"
   },
   {
-    "id": 9,
     "category": "Cactus",
     "commonName": "Totem Pole Cactus",
     "botanicalName": "Lophocereus schottii",
@@ -90,7 +81,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Lophocereus_schottii"
   },
   {
-    "id": 10,
     "category": "Cactus",
     "commonName": "Bunny Ear Cactus",
     "botanicalName": "Opuntia microdasys",
@@ -100,7 +90,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Opuntia_microdasys"
   },
   {
-    "id": 11,
     "category": "Succulents",
     "commonName": "Jade Plant",
     "botanicalName": "Crassula ovata",
@@ -110,7 +99,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Crassula_ovata"
   },
   {
-    "id": 12,
     "category": "Succulents",
     "commonName": "Echeveria",
     "botanicalName": "Echeveria spp.",
@@ -120,7 +108,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Echeveria"
   },
   {
-    "id": 13,
     "category": "Succulents",
     "commonName": "Aloe Vera",
     "botanicalName": "Aloe barbadensis miller",
@@ -130,7 +117,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Aloe_vera"
   },
   {
-    "id": 14,
     "category": "Succulents",
     "commonName": "Burro's Tail",
     "botanicalName": "Sedum morganianum",
@@ -140,7 +126,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Sedum_morganianum"
   },
   {
-    "id": 15,
     "category": "Succulents",
     "commonName": "Panda Plant",
     "botanicalName": "Kalanchoe tomentosa",
@@ -150,7 +135,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Kalanchoe_tomentosa"
   },
   {
-    "id": 16,
     "category": "Succulents",
     "commonName": "Zebra Plant",
     "botanicalName": "Aphelandra squarrosa",
@@ -160,7 +144,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Aphelandra_squarrosa"
   },
   {
-    "id": 17,
     "category": "Succulents",
     "commonName": "String Of Pearls",
     "botanicalName": "Senecio rowleyanus",
@@ -170,7 +153,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Curio_rowleyanus"
   },
   {
-    "id": 18,
     "category": "Succulents",
     "commonName": "Lithops",
     "botanicalName": "Lithops spp.",
@@ -180,7 +162,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Lithops"
   },
   {
-    "id": 19,
     "category": "Succulents",
     "commonName": "Aeonium",
     "botanicalName": "Aeonium spp.",
@@ -190,7 +171,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Aeonium"
   },
   {
-    "id": 20,
     "category": "Succulents",
     "commonName": "Gasteria",
     "botanicalName": "Gasteria spp.",
@@ -200,7 +180,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Gasteria"
   },
   {
-    "id": 21,
     "category": "Flower",
     "commonName": "Sunflower",
     "botanicalName": "Helianthus annuus",
@@ -210,7 +189,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Common_sunflower"
   },
   {
-    "id": 22,
     "category": "Flower",
     "commonName": "Rose",
     "botanicalName": "Rosa",
@@ -220,7 +198,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Rose"
   },
   {
-    "id": 23,
     "category": "Flower",
     "commonName": "Tulip",
     "botanicalName": "Tulipa",
@@ -230,7 +207,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Tulip"
   },
   {
-    "id": 24,
     "category": "Flower",
     "commonName": "Daisy",
     "botanicalName": "Bellis perennis",
@@ -240,7 +216,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Bellis_perennis"
   },
   {
-    "id": 25,
     "category": "Flower",
     "commonName": "Orchid",
     "botanicalName": "Orchidaceae",
@@ -250,7 +225,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Orchid"
   },
   {
-    "id": 26,
     "category": "Flower",
     "commonName": "Lily",
     "botanicalName": "Lilium",
@@ -260,7 +234,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Lilium"
   },
   {
-    "id": 27,
     "category": "Flower",
     "commonName": "Hibiscus",
     "botanicalName": "Hibiscus",
@@ -270,7 +243,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hibiscus"
   },
   {
-    "id": 28,
     "category": "Flower",
     "commonName": "Peony",
     "botanicalName": "Paeonia",
@@ -280,7 +252,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Peony"
   },
   {
-    "id": 29,
     "category": "Flower",
     "commonName": "Carnation",
     "botanicalName": "Dianthus caryophyllus",
@@ -290,7 +261,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Dianthus_caryophyllus"
   },
   {
-    "id": 30,
     "category": "Flower",
     "commonName": "Iris",
     "botanicalName": "Iris",
@@ -300,7 +270,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Iris_(plant)"
   },
   {
-    "id": 31,
     "category": "Tree",
     "commonName": "Oak",
     "botanicalName": "Quercus",
@@ -310,7 +279,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Oak"
   },
   {
-    "id": 32,
     "category": "Tree",
     "commonName": "Maple",
     "botanicalName": "Acer",
@@ -320,7 +288,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Maple"
   },
   {
-    "id": 33,
     "category": "Tree",
     "commonName": "Pine",
     "botanicalName": "Pinus",
@@ -330,7 +297,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Pine"
   },
   {
-    "id": 34,
     "category": "Tree",
     "commonName": "Birch",
     "botanicalName": "Betula",
@@ -340,7 +306,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Birch"
   },
   {
-    "id": 35,
     "category": "Tree",
     "commonName": "Willow",
     "botanicalName": "Salix",
@@ -350,7 +315,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Willow"
   },
   {
-    "id": 36,
     "category": "Tree",
     "commonName": "Redwood",
     "botanicalName": "Sequoioideae",
@@ -360,7 +324,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Sequoioideae"
   },
   {
-    "id": 37,
     "category": "Tree",
     "commonName": "Baobab",
     "botanicalName": "Adansonia",
@@ -370,7 +333,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Adansonia"
   },
   {
-    "id": 38,
     "category": "Tree",
     "commonName": "Eucalyptus",
     "botanicalName": "Eucalyptus",
@@ -380,7 +342,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Eucalyptus"
   },
   {
-    "id": 39,
     "category": "Tree",
     "commonName": "Banyan",
     "botanicalName": "Ficus benghalensis",
@@ -390,7 +351,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Banyan"
   },
   {
-    "id": 40,
     "category": "Tree",
     "commonName": "Ginkgo",
     "botanicalName": "Ginkgo biloba",
@@ -400,7 +360,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Ginkgo_biloba"
   },
   {
-    "id": 41,
     "category": "Herbs",
     "commonName": "Basil",
     "botanicalName": "Ocimum basilicum",
@@ -410,7 +369,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Basil"
   },
   {
-    "id": 42,
     "category": "Herbs",
     "commonName": "Rosemary",
     "botanicalName": "Rosmarinus officinalis",
@@ -420,7 +378,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Rosemary"
   },
   {
-    "id": 43,
     "category": "Herbs",
     "commonName": "Thyme",
     "botanicalName": "Thymus vulgaris",
@@ -430,7 +387,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Thyme"
   },
   {
-    "id": 44,
     "category": "Herbs",
     "commonName": "Mint",
     "botanicalName": "Mentha",
@@ -440,7 +396,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Mentha"
   },
   {
-    "id": 45,
     "category": "Herbs",
     "commonName": "Parsley",
     "botanicalName": "Petroselinum crispum",
@@ -450,7 +405,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Parsley"
   },
   {
-    "id": 46,
     "category": "Herbs",
     "commonName": "Cilantro",
     "botanicalName": "Coriandrum sativum",
@@ -460,7 +414,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Coriander"
   },
   {
-    "id": 47,
     "category": "Herbs",
     "commonName": "Sage",
     "botanicalName": "Salvia officinalis",
@@ -470,7 +423,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Salvia_officinalis"
   },
   {
-    "id": 48,
     "category": "Herbs",
     "commonName": "Oregano",
     "botanicalName": "Origanum vulgare",
@@ -480,7 +432,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Oregano"
   },
   {
-    "id": 49,
     "category": "Herbs",
     "commonName": "Dill",
     "botanicalName": "Anethum graveolens",
@@ -490,7 +441,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Dill"
   },
   {
-    "id": 50,
     "category": "Herbs",
     "commonName": "Chives",
     "botanicalName": "Allium schoenoprasum",
@@ -500,7 +450,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Chives"
   },
   {
-    "id": 51,
     "category": "Shrubs",
     "commonName": "Japanese Spirea",
     "botanicalName": "Spiraea japonica",
@@ -510,7 +459,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Spiraea_japonica"
   },
   {
-    "id": 52,
     "category": "Shrubs",
     "commonName": "Forsythia",
     "botanicalName": "Forsythia x intermedia",
@@ -520,7 +468,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Forsythia"
   },
   {
-    "id": 53,
     "category": "Shrubs",
     "commonName": "Hydrangea",
     "botanicalName": "Hydrangea macrophylla",
@@ -530,7 +477,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hydrangea_macrophylla"
   },
   {
-    "id": 54,
     "category": "Shrubs",
     "commonName": "Azalea",
     "botanicalName": "Rhododendron sp.",
@@ -540,7 +486,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Azalea"
   },
   {
-    "id": 55,
     "category": "Shrubs",
     "commonName": "Lilac",
     "botanicalName": "Syringa vulgaris",
@@ -550,7 +495,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Syringa_vulgaris"
   },
   {
-    "id": 56,
     "category": "Shrubs",
     "commonName": "Rose of Sharon",
     "botanicalName": "Hibiscus syriacus",
@@ -560,7 +504,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hibiscus_syriacus"
   },
   {
-    "id": 57,
     "category": "Shrubs",
     "commonName": "Butterfly Bush",
     "botanicalName": "Buddleja davidii",
@@ -570,7 +513,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Buddleja_davidii"
   },
   {
-    "id": 58,
     "category": "Shrubs",
     "commonName": "Potentilla",
     "botanicalName": "Potentilla fruticosa",
@@ -580,7 +522,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Potentilla"
   },
   {
-    "id": 59,
     "category": "Shrubs",
     "commonName": "Viburnum",
     "botanicalName": "Viburnum spp.",
@@ -590,7 +531,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Viburnum"
   },
   {
-    "id": 60,
     "category": "Shrubs",
     "commonName": "Weigela",
     "botanicalName": "Weigela",
@@ -600,7 +540,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Weigela"
   },
   {
-    "id": 61,
     "category": "Vine",
     "commonName": "Virginia Creeper",
     "botanicalName": "Parthenocissus quinquefolia",
@@ -610,7 +549,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Parthenocissus_quinquefolia"
   },
   {
-    "id": 62,
     "category": "Vine",
     "commonName": "Boston Ivy",
     "botanicalName": "Parthenocissus tricuspidata",
@@ -620,7 +558,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Parthenocissus_tricuspidata"
   },
   {
-    "id": 63,
     "category": "Vine",
     "commonName": "English Ivy",
     "botanicalName": "Hedera helix",
@@ -630,7 +567,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hedera_helix"
   },
   {
-    "id": 64,
     "category": "Vine",
     "commonName": "Trumpet Creeper",
     "botanicalName": "Campsis radicans",
@@ -640,7 +576,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Campsis_radicans"
   },
   {
-    "id": 65,
     "category": "Vine",
     "commonName": "Honeysuckle",
     "botanicalName": "Lonicera spp.",
@@ -650,7 +585,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Honeysuckle"
   },
   {
-    "id": 66,
     "category": "Vine",
     "commonName": "Wisteria",
     "botanicalName": "Wisteria spp.",
@@ -660,7 +594,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Wisteria"
   },
   {
-    "id": 67,
     "category": "Vine",
     "commonName": "Climbing Hydrangea",
     "botanicalName": "Hydrangea petiolaris",
@@ -670,7 +603,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hydrangea_petiolaris"
   },
   {
-    "id": 68,
     "category": "Vine",
     "commonName": "Clematis",
     "botanicalName": "Clematis spp.",
@@ -680,7 +612,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Clematis"
   },
   {
-    "id": 69,
     "category": "Vine",
     "commonName": "Jasmine Vine",
     "botanicalName": "Jasminum spp.",
@@ -690,7 +621,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Jasmine"
   },
   {
-    "id": 70,
     "category": "Vine",
     "commonName": "Morning Glory",
     "botanicalName": "Ipomoea spp.",
@@ -700,7 +630,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Ipomoea"
   },
   {
-    "id": 71,
     "category": "Bamboo",
     "commonName": "Bamboo",
     "botanicalName": "Bambusoideae",
@@ -710,7 +639,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Bamboo"
   },
   {
-    "id": 72,
     "category": "Bamboo",
     "commonName": "Giant Bamboo",
     "botanicalName": "Dendrocalamus giganteus",
@@ -720,7 +648,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Dendrocalamus_giganteus"
   },
   {
-    "id": 73,
     "category": "Bamboo",
     "commonName": "Black Bamboo",
     "botanicalName": "Phyllostachys nigra",
@@ -730,7 +657,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Phyllostachys_nigra"
   },
   {
-    "id": 74,
     "category": "Bamboo",
     "commonName": "Golden Bamboo",
     "botanicalName": "Phyllostachys aurea",
@@ -740,7 +666,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Phyllostachys_aurea"
   },
   {
-    "id": 75,
     "category": "Bamboo",
     "commonName": "Moso Bamboo",
     "botanicalName": "Phyllostachys edulis",
@@ -750,7 +675,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Phyllostachys_edulis"
   },
   {
-    "id": 76,
     "category": "Bamboo",
     "commonName": "Dwarf Buddha's Belly Bamboo",
     "botanicalName": "Bambusa vulgaris 'Wamin'",
@@ -760,7 +684,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Bambusa_vulgaris"
   },
   {
-    "id": 77,
     "category": "Bamboo",
     "commonName": "Heavenly Bamboo",
     "botanicalName": "Nandina domestica",
@@ -770,7 +693,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Nandina"
   },
   {
-    "id": 81,
     "category": "Ferns",
     "commonName": "Boston Fern",
     "botanicalName": "Nephrolepis exaltata",
@@ -780,7 +702,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Nephrolepis_exaltata"
   },
   {
-    "id": 82,
     "category": "Ferns",
     "commonName": "Maidenhair Fern",
     "botanicalName": "Adiantum spp.",
@@ -790,7 +711,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Adiantum"
   },
   {
-    "id": 83,
     "category": "Ferns",
     "commonName": "Bird's Nest Fern",
     "botanicalName": "Asplenium nidus",
@@ -800,7 +720,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Asplenium_nidus"
   },
   {
-    "id": 84,
     "category": "Ferns",
     "commonName": "Staghorn Fern",
     "botanicalName": "Platycerium spp.",
@@ -810,7 +729,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Platycerium"
   },
   {
-    "id": 85,
     "category": "Ferns",
     "commonName": "Rabbit's Foot Fern",
     "botanicalName": "Davallia spp.",
@@ -820,7 +738,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Davallia"
   },
   {
-    "id": 86,
     "category": "Ferns",
     "commonName": "Japanese Painted Fern",
     "botanicalName": "Athyrium niponicum",
@@ -830,7 +747,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Athyrium_niponicum"
   },
   {
-    "id": 87,
     "category": "Ferns",
     "commonName": "Macho Fern",
     "botanicalName": "Nephrolepis biserrata",
@@ -840,7 +756,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Nephrolepis_biserrata"
   },
   {
-    "id": 88,
     "category": "Ferns",
     "commonName": "Pellaea",
     "botanicalName": "Pellaea spp.",
@@ -850,7 +765,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Pellaea_(plant)"
   },
   {
-    "id": 89,
     "category": "Ferns",
     "commonName": "Sword Fern",
     "botanicalName": "Nephrolepis cordifolia",
@@ -860,7 +774,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Nephrolepis_cordifolia"
   },
   {
-    "id": 90,
     "category": "Ferns",
     "commonName": "Japanese Holly Fern",
     "botanicalName": "Cyrtomium falcatum",
@@ -870,7 +783,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Cyrtomium_falcatum"
   },
   {
-    "id": 91,
     "category": "Moss",
     "commonName": "Fern Moss",
     "botanicalName": "Thuidium delicatulum",
@@ -880,7 +792,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Thuidium_delicatulum"
   },
   {
-    "id": 92,
     "category": "Moss",
     "commonName": "Cushion Moss",
     "botanicalName": "Leucobryum glaucum",
@@ -890,7 +801,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Leucobryum_glaucum"
   },
   {
-    "id": 93,
     "category": "Moss",
     "commonName": "Haircap Moss",
     "botanicalName": "Polytrichum",
@@ -900,7 +810,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Polytrichum"
   },
   {
-    "id": 94,
     "category": "Moss",
     "commonName": "Star Moss",
     "botanicalName": "Syntrichia ruralis",
@@ -910,7 +819,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Syntrichia_ruralis"
   },
   {
-    "id": 95,
     "category": "Moss",
     "commonName": "Sphagnum Moss",
     "botanicalName": "Sphagnum spp.",
@@ -920,7 +828,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Sphagnum"
   },
   {
-    "id": 96,
     "category": "Moss",
     "commonName": "Woolly Moss",
     "botanicalName": "Racomitrium lanuginosum",
@@ -930,7 +837,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Racomitrium_lanuginosum"
   },
   {
-    "id": 97,
     "category": "Moss",
     "commonName": "African Clubmoss",
     "botanicalName": "Selaginella kraussiana",
@@ -940,7 +846,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Selaginella_kraussiana"
   },
   {
-    "id": 98,
     "category": "Moss",
     "commonName": "Silver Moss",
     "botanicalName": "Bryum argenteum",
@@ -950,7 +855,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Bryum_argenteum"
   },
   {
-    "id": 99,
     "category": "Moss",
     "commonName": "Fork Mosses",
     "botanicalName": "Dicranum spp.",
@@ -960,7 +864,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Dicranum"
   },
   {
-    "id": 100,
     "category": "Moss",
     "commonName": "Hypnum Moss",
     "botanicalName": "Hypnum cupressiforme",
@@ -970,7 +873,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hypnum_cupressiforme"
   },
   {
-    "id": 101,
     "category": "Mushroom",
     "commonName": "Golden Chanterelle",
     "botanicalName": "Cantharellus cibarius",
@@ -980,7 +882,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Cantharellus_cibarius"
   },
   {
-    "id": 102,
     "category": "Mushroom",
     "commonName": "Shiitake",
     "botanicalName": "Lentinula edodes",
@@ -990,7 +891,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Shiitake"
   },
   {
-    "id": 103,
     "category": "Mushroom",
     "commonName": "Porcini",
     "botanicalName": "Boletus edulis",
@@ -1000,7 +900,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Boletus_edulis"
   },
   {
-    "id": 104,
     "category": "Mushroom",
     "commonName": "Lion's Mane",
     "botanicalName": "Hericium erinaceus",
@@ -1010,7 +909,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Hericium_erinaceus"
   },
   {
-    "id": 105,
     "category": "Mushroom",
     "commonName": "Enoki",
     "botanicalName": "Flammulina filiformis",
@@ -1020,7 +918,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Flammulina_filiformis"
   },
   {
-    "id": 106,
     "category": "Mushroom",
     "commonName": "Morel",
     "botanicalName": "Morchella",
@@ -1030,7 +927,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Morchella"
   },
   {
-    "id": 107,
     "category": "Mushroom",
     "commonName": "Oyster Mushroom",
     "botanicalName": "Pleurotus ostreatus",
@@ -1040,7 +936,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Pleurotus_ostreatus"
   },
   {
-    "id": 108,
     "category": "Mushroom",
     "commonName": "King Trumpet Mushroom",
     "botanicalName": "Pleurotus eryngii",
@@ -1050,7 +945,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Pleurotus_eryngii"
   },
   {
-    "id": 109,
     "category": "Mushroom",
     "commonName": "Cultivated Mushroom",
     "botanicalName": "Agaricus bisporus",
@@ -1060,7 +954,6 @@
     "wikiLink": "https://en.wikipedia.org/wiki/Agaricus_bisporus"
   },
   {
-    "id": 110,
     "category": "Mushroom",
     "commonName": "Maitake",
     "botanicalName": "Grifola frondosa",
