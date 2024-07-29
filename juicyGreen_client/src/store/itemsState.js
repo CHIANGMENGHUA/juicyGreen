@@ -181,7 +181,7 @@ export const useItemsState = defineStore("itemsState", {
 
           localStorage.setItem("favoritePlants", JSON.stringify(updatedItems));
 
-          // Update state if needed
+          // Update state if in favorite
           if (this.inFavorite) {
             this.counter++;
             this.searchInput === ""
